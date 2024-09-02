@@ -58,6 +58,27 @@ My research interest includes neural machine translation and computer vision. I 
 
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
+# 💻 Experiences
+
+#  Research Experiences
+<ul>
+  <li>
+    <strong>Research Assistant [Jan 2020 - December 2020]</strong> <br>
+    Cyber Security Lab,<br> 
+    University of Dhaka, Dhaka, Bangladesh 
+  </li>
+</ul>
+
+#  Industry Experiences
+
+<ul>
+  <li>
+    <b>Software Engineer [November 2023 - June 2024]</b> <br>
+    <a href="https://www.itransition.com> Itransition Software Bangladesh Limited </a> <br>
+    Banani, Dhaka, Bangladesh 
+  </li> 
+</ul> 
+
 # 🎖 Honors and Awards
 - *July 2020*, [Award of Merit](https://drive.google.com/drive/folders/1dYR3MENGxMj1R7cw1RVZr-ERpE4sGJLh) as part of team "DU_Hyperledger" in International Blockchain Olympiad (IBCOL) 2020. 
 - *May 2020*, [9th place](https://drive.google.com/drive/folders/1Wg1jzND3ncyZcagQsClQ7uz2KMjL8D6O) as part of team "DU_Hyperledger" in Blockchain Olympiad Bangladesh (BCOLBD) 2020.
