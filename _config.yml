@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Showkot Hossain"
-description              : "Personal website"
+description              : ""
 repository               : "showkoth/showkoth.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -24,8 +24,9 @@ author:
   name             : "Showkot Hossain"
   avatar           : "images/shossain-nd-ldin.jpeg"
   bio              : "PhD Student"
-  location         : "Notre Dame, IN, USA"
+  major            : "Computer Engineering"
   employer         : "University of Notre Dame"
+  location         : "Notre Dame, IN, USA"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=kbODGysAAAAJ"
   email            : "shossain@nd.edu"
