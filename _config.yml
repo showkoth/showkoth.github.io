@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Showkot Hossain"
-description              : "Department of Computer Science and Engineering \n 355B Fitzpatrick Hall of Engineering \n University of Notre Dame"
+description              : "Computer Science and Engineering,\n355B Fitzpatrick Hall of Engineering,\nUniversity of Notre Dame"
 repository               : "showkoth/showkoth.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Showkot Hossain"
   avatar           : "images/shossain-nd-ldin.jpeg"
-  bio              : "PhD Student"
+  bio              : "PhD Student @ DSP-Lab"
   major            :
   employer         :
   location         : "Notre Dame, IN 46556, USA"
