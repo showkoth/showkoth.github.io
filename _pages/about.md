@@ -67,7 +67,7 @@ M H Rakib, **Showkot Hossain**, Mosarrat Jahan, Upama Kabir
     <p align="justify">
     <b>A Blockchain-Enabled Scalable Network Log Management System</b> <br>
     M H Rakib, <b>Showkot Hossain</b>, Mosarrat Jahan, Upama Kabir <br>
-    Journal of Computer Science, 18(6), 496-508. https://doi.org/10.3844/jcssp.2022.496.508<br>
+    Journal of Computer Science, 18(6), 496-508<br>
     [<a href="https://doi.org/10.3844/jcssp.2022.496.508"> DOI </a>]
     [<a href="https://drive.google.com/file/d/1XmRp3NtPElyY6rhJews8L1Dpv0XvZdyz/view" target="\_blank"> Paper </a>]
     [<a href="https://drive.google.com/file/d/1ykxrhZhHBFXapdSb2-AaCOgUlvxgFWET/view?usp=sharing"> Poster </a>]
