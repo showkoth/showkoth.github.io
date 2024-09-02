@@ -61,7 +61,7 @@ M H Rakib, **Showkot Hossain**, Mosarrat Jahan, Upama Kabir
 -->
 <ul>
   
-  <div class='paper-box'><div class='paper-box-image'><div><div class="badge">JCS '22</div><img src='assets/SystemModel.pdf' alt="sym" width="100%"></div></div>
+  <div class='paper-box'><div class='paper-box-image'><div><div class="badge">JCS '22</div><img src='images/SystemModel.jpg' alt="sym" width="100%"></div></div>
   <div class='paper-box-text' markdown="1">
   <li>
     <p align="justify">
