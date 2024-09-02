@@ -39,8 +39,8 @@ My research interest includes neural machine translation and computer vision. I 
 
 
 # 🔥 News
-- *[Aug 2024]*: &nbsp;🎉🎉 Started my PhD in Computer Engineering at University of Notre Dame, IN, USA. 
-- *[Mar 2024]*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *[Aug 2024]*: &nbsp;🎉🎉 Started my PhD in Computer Engineering at the University of Notre Dame, IN, USA. 
+- *[Mar 2024]*: &nbsp;🎉🎉 Selected for Research Assistant (RA) position at the Department of CSE, University of Notre Dame. 
 
 # 📝 Publications 
 
