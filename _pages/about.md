@@ -73,17 +73,25 @@ My research interest includes neural machine translation and computer vision. I 
 
 <ul>
   <li>
-    <b>Software Engineer [November 2023 - June 2024]</b> <br>
-    <a href="https://www.itransition.com> Itransition Software Bangladesh Limited </a> <br>
-    Banani, Dhaka, Bangladesh 
+    <b>Software Engineer, Level 3 [Nov 2023 - Jun 2024]</b> <br>
+    <a href="https://www.itransition.com"> Itransition Software Bangladesh Limited </a> <br>
+    Banani, Dhaka 1213, Bangladesh 
   </li> 
 </ul>
 
 <ul>
   <li>
-    <b>Software Engineer, Level 2 [March 2023 - November 2023]</b> <br>
-    <a href="https://www.itransition.com> Itransition Software Bangladesh Limited </a> <br>
-    Banani, Dhaka, Bangladesh 
+    <b>Software Engineer, Level 2 [Mar 2023 - Nov 2023]</b> <br>
+    <a href="https://konai.com/"> Kona Software Lab Limited </a> <br>
+    Gulshan 1, Dhaka 1212, Bangladesh 
+  </li> 
+</ul>
+
+<ul>
+  <li>
+    <b>Software Engineer, Level 1 [Oct 2020 - Mar 2023]</b> <br>
+    <a href="https://dohatec.com/"> Dohatec New Media </a> <br>
+    43 Purana Paltan Line, Dhaka 1000, Bangladesh 
   </li> 
 </ul> 
 
