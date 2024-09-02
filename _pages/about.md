@@ -59,8 +59,8 @@ My research interest includes neural machine translation and computer vision. I 
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
 # 🎖 Honors and Awards
-- *July 2020*, [Award of Merit](https://drive.google.com/drive/folders/1dYR3MENGxMj1R7cw1RVZr-ERpE4sGJLh) in International Blockchain Olympiad (IBCOL) 2020. 
-- *May 2020*, [9th place](https://drive.google.com/drive/folders/1Wg1jzND3ncyZcagQsClQ7uz2KMjL8D6O) in Blockchain Olympiad Bangladesh (BCOLBD) 2020.
+- *July 2020*, [Award of Merit](https://drive.google.com/drive/folders/1dYR3MENGxMj1R7cw1RVZr-ERpE4sGJLh) as part of team "DU_Hyperledger" in International Blockchain Olympiad (IBCOL) 2020. 
+- *May 2020*, [9th place](https://drive.google.com/drive/folders/1Wg1jzND3ncyZcagQsClQ7uz2KMjL8D6O) as part of team "DU_Hyperledger" in Blockchain Olympiad Bangladesh (BCOLBD) 2020.
 - Secured government scholarships with a full tuition waiver for achieving good results (top 2%, scored above 80%
 in each subject, GPA 5.0 out of 5.0) in primary(5th grade), junior (8th grade), secondary(10th & 12th grade)
 level exams under the Board of Intermediate and Secondary Education, Rajshahi, Bangladesh. 
