@@ -1,1 +1,11 @@
+@INPROCEEDINGS{9346310,
+  author={Rakib, Mohammad Habibullah and Hossain, Showkot and Jahan, Mosarrat and Kabir, Upama},
+  booktitle={2020 IEEE 8th International Conference on Smart City and Informatization (iSCI)}, 
+  title={Towards Blockchain-Driven Network Log Management System}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={73-80},
+  keywords={Data privacy;Smart cities;Blockchain;Probability;Real-time systems;Performance analysis;Servers;Blockchain;distributed computing;log management system},
+  doi={10.1109/iSCI50694.2020.00019}}
 
