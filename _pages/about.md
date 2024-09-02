@@ -64,7 +64,7 @@ My research interest includes neural machine translation and computer vision. I 
 
 # 💻 Experiences
 
-#  Research Experiences
+## Research Experiences
 <ul>
   <li>
     <strong>Research Assistant [Jan 2020 - December 2020]</strong> <br>
@@ -73,7 +73,7 @@ My research interest includes neural machine translation and computer vision. I 
   </li>
 </ul>
 
-#  Industry Experiences
+## Industry Experiences
 
 <ul>
   <li>
