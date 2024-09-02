@@ -95,6 +95,13 @@ My research interest includes neural machine translation and computer vision. I 
   </li> 
 </ul> 
 
+# 📖 Educations
+- *Aug 2024 - (present)*, PhD in Computer Engineering, University of Notre Dame, Notre Dame, IN 46556, USA. 
+- *Jan 2016 - Jan 2020*, Bachelor of Science (BSc) in Computer Science and Engineering, University of Dhaka, Dhaka 1000, Bangladesh.
+
+# 💻 Internships
+- *June 2020 - Aug 2020*, Blockchain Developer at [Technohaven Company Limited](https://technohaven.com/), Dhaka, Bangladesh.
+
 # 🎖 Honors and Awards
 - *July 2020*, [Award of Merit](https://drive.google.com/drive/folders/1dYR3MENGxMj1R7cw1RVZr-ERpE4sGJLh) as part of team "DU_Hyperledger" in International Blockchain Olympiad (IBCOL) 2020. 
 - *May 2020*, [9th place](https://drive.google.com/drive/folders/1Wg1jzND3ncyZcagQsClQ7uz2KMjL8D6O) as part of team "DU_Hyperledger" in Blockchain Olympiad Bangladesh (BCOLBD) 2020.
@@ -102,13 +109,8 @@ My research interest includes neural machine translation and computer vision. I 
 in each subject, GPA 5.0 out of 5.0) in primary(5th grade), junior (8th grade), secondary(10th & 12th grade)
 level exams under the Board of Intermediate and Secondary Education, Rajshahi, Bangladesh. 
 
-# 📖 Educations
-- *Aug 2024 - (present)*, PhD in Computer Engineering, University of Notre Dame, Notre Dame, IN 46556, USA. 
-- *Jan 2016 - Jan 2020*, Bachelor of Science (BSc) in Computer Science and Engineering, University of Dhaka, Dhaka 1000, Bangladesh. 
-
+<!--
 # 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
-
-# 💻 Internships
-- *June 2020 - Aug 2020*, Blockchain Developer at [Technohaven Company Limited](https://technohaven.com/), Dhaka, Bangladesh.
+-->
