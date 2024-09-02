@@ -78,18 +78,19 @@ M H Rakib, **Showkot Hossain**, Mosarrat Jahan, Upama Kabir
   </div>
   </div>
 
-  <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NuerIPS GLFrontiers '23</div><img src='images/gadebm.png' alt="sym" width="100%"></div></div>
+  <div class='paper-box'><div class='paper-box-image'><div><div class="badge">iSCI '20</div><img src='images/gadebm.png' alt="sym" width="100%"></div></div>
   <div class='paper-box-text' markdown="1">
    <li>
     <p align="justify">
-    <b>GAD-EBM: Graph Anomaly Detection using Energy-Based Models</b> <br>
-    <b>Amit Roy</b>, Juan Shu, Olivier	Elshocht, Jeroen	Smeets, Ruqi Zhang, Pan	Li <br>
-    New Frontiers in Graph Learning (GLFrontiers), NeurIPS Workshop 2023 <br>
-    [<a href="https://openreview.net/attachment?id=I5hf3opvgK&name=pdf" target="\_blank"> Paper </a>]
-    [<a href="https://drive.google.com/file/d/1GjC6YFkWd_fblxA6SDIjwDA6o_aw6IWn/view?usp=sharing" target="\_blank"> Poster </a>]  
-    [<a href="https://github.com/Graph-COM/GAD-EBM" target="\_blank"> Code </a>]
-    [<a href="assets/bibfile/GADEBM.txt" target="\_blank"> BibTex </a>]  
-    <img src="https://img.shields.io/github/stars/graph-com/GAD-EBM?style=social" alt="">  
+    <b>Towards Blockchain-Driven Network Log Management System</b> <br>
+    M H Rakib, <b>Showkot Hossain</b>, Mosarrat Jahan, Upama Kabir <br>
+     2020 IEEE 8th International Conference on Smart City and Informatization (iSCI), Guangzhou, China, 2020, pp.
+73-80.<br>
+    [<a href="https://doi.org/10.1109/iSCI50694.2020.00019"> DOI </a>]
+    [<a href="https://drive.google.com/file/d/1Xp0ipTiZPFf0pFZZY9SJiOViSwEsC_QU/view" target="\_blank"> Paper </a>]
+    [<a href="https://www.youtube.com/watch?v=-qNZF6VylgQ" target="\_blank"> Presentation </a>]  
+    [<a href="https://github.com/mhhrakib/log-bc" target="\_blank"> Code </a>]
+    [<a href="assets/LogBC.txt" target="\_blank"> BibTex </a>]  
     </p>
   </li>
   </div>
