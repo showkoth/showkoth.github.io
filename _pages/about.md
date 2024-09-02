@@ -44,6 +44,7 @@ My research interest includes neural machine translation and computer vision. I 
 
 # 📝 Publications 
 
+<!--
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -57,6 +58,45 @@ M H Rakib, **Showkot Hossain**, Mosarrat Jahan, Upama Kabir
 </div>
 
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+-->
+<ul>
+  
+  <div class='paper-box'><div class='paper-box-image'><div><div class="badge">JCS '22</div><img src='images/gadnr.png' alt="sym" width="100%"></div></div>
+  <div class='paper-box-text' markdown="1">
+  <li>
+    <p align="justify">
+    <b>A Blockchain-Enabled Scalable Network Log Management System</b> <br>
+    M H Rakib, <b>Showkot Hossain</b>, Mosarrat Jahan, Upama Kabir <br>
+    Journal of Computer Science, 18(6), 496-508. https://doi.org/10.3844/jcssp.2022.496.508<br>
+    [<a href="https://doi.org/10.3844/jcssp.2022.496.508"> DOI </a>]
+    [<a href="https://drive.google.com/file/d/1XmRp3NtPElyY6rhJews8L1Dpv0XvZdyz/view" target="\_blank"> Paper </a>]
+    [<a href="https://drive.google.com/file/d/1ykxrhZhHBFXapdSb2-AaCOgUlvxgFWET/view?usp=sharing"> Poster </a>]
+    [<a href="https://github.com/mhhrakib/log-bc" target="\_blank"> Code </a>]
+    [<a href="assets/bibfile/jcssp.2022.496.508.bib" target="\_blank"> BibTex </a>]
+    </p>
+  </li>
+  </div>
+  </div>
+
+  <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NuerIPS GLFrontiers '23</div><img src='images/gadebm.png' alt="sym" width="100%"></div></div>
+  <div class='paper-box-text' markdown="1">
+   <li>
+    <p align="justify">
+    <b>GAD-EBM: Graph Anomaly Detection using Energy-Based Models</b> <br>
+    <b>Amit Roy</b>, Juan Shu, Olivier	Elshocht, Jeroen	Smeets, Ruqi Zhang, Pan	Li <br>
+    New Frontiers in Graph Learning (GLFrontiers), NeurIPS Workshop 2023 <br>
+    [<a href="https://openreview.net/attachment?id=I5hf3opvgK&name=pdf" target="\_blank"> Paper </a>]
+    [<a href="https://drive.google.com/file/d/1GjC6YFkWd_fblxA6SDIjwDA6o_aw6IWn/view?usp=sharing" target="\_blank"> Poster </a>]  
+    [<a href="https://github.com/Graph-COM/GAD-EBM" target="\_blank"> Code </a>]
+    [<a href="assets/bibfile/GADEBM.txt" target="\_blank"> BibTex </a>]  
+    <img src="https://img.shields.io/github/stars/graph-com/GAD-EBM?style=social" alt="">  
+    </p>
+  </li>
+  </div>
+  </div>
+
+ </ul>
+
 
 # 📖 Educations
 - *Aug 2024 - (present)*, PhD in Computer Engineering, University of Notre Dame, Notre Dame, IN 46556, USA. 
