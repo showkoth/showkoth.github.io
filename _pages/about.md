@@ -72,7 +72,7 @@ M H Rakib, **Showkot Hossain**, Mosarrat Jahan, Upama Kabir
     [<a href="https://drive.google.com/file/d/1XmRp3NtPElyY6rhJews8L1Dpv0XvZdyz/view" target="\_blank"> Paper </a>]
     [<a href="https://drive.google.com/file/d/1ykxrhZhHBFXapdSb2-AaCOgUlvxgFWET/view?usp=sharing"> Poster </a>]
     [<a href="https://github.com/mhhrakib/log-bc" target="\_blank"> Code </a>]
-    [<a href="assets/bibfile/jcssp.2022.496.508.bib" target="\_blank"> BibTex </a>]
+    [<a href="assets/jcssp.2022.496.508.bib" target="\_blank"> BibTex </a>]
     </p>
   </li>
   </div>
