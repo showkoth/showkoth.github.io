@@ -65,7 +65,7 @@ My research interest includes neural machine translation and computer vision. I 
   <li>
     <strong>Research Assistant [Jan 2020 - December 2020]</strong> <br>
     Cyber Security Lab, University of Dhaka, Dhaka, Bangladesh<br>
-    Supervisor: [Dr. Mosarrat Jahan](https://www.du.ac.bd/faculty/faculty_details/CSE/1777)
+    Supervisor: <a href = "https://www.du.ac.bd/faculty/faculty_details/CSE/1777">Dr. Mosarrat Jahan</a>
   </li>
 </ul>
 
@@ -74,6 +74,14 @@ My research interest includes neural machine translation and computer vision. I 
 <ul>
   <li>
     <b>Software Engineer [November 2023 - June 2024]</b> <br>
+    <a href="https://www.itransition.com> Itransition Software Bangladesh Limited </a> <br>
+    Banani, Dhaka, Bangladesh 
+  </li> 
+</ul>
+
+<ul>
+  <li>
+    <b>Software Engineer, Level 2 [March 2023 - November 2023]</b> <br>
     <a href="https://www.itransition.com> Itransition Software Bangladesh Limited </a> <br>
     Banani, Dhaka, Bangladesh 
   </li> 
