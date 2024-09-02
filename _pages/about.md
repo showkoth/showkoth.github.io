@@ -70,6 +70,7 @@ My research interest includes neural machine translation and computer vision. I 
     <strong>Research Assistant [Jan 2020 - December 2020]</strong> <br>
     Cyber Security Lab, University of Dhaka, Dhaka, Bangladesh<br>
     Supervisor: <a href = "https://www.du.ac.bd/faculty/faculty_details/CSE/1777">Dr. Mosarrat Jahan</a>
+    Co-supervisor: <a href = "https://du.ac.bd/index.php/faculty/faculty_details/CSE/1765">Dr. Upama Kabir</a>
   </li>
 </ul>
 
