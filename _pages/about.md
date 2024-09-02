@@ -78,7 +78,7 @@ M H Rakib, **Showkot Hossain**, Mosarrat Jahan, Upama Kabir
   </div>
   </div>
 
-  <div class='paper-box'><div class='paper-box-image'><div><div class="badge">iSCI '20</div><img src='images/gadebm.png' alt="sym" width="100%"></div></div>
+  <div class='paper-box'><div class='paper-box-image'><div><div class="badge">iSCI '20</div><img src='images/arc.png' alt="sym" width="100%"></div></div>
   <div class='paper-box-text' markdown="1">
    <li>
     <p align="justify">
