@@ -58,6 +58,10 @@ My research interest includes neural machine translation and computer vision. I 
 
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
+# 📖 Educations
+- *Aug 2024 - (present)*, PhD in Computer Engineering, University of Notre Dame, Notre Dame, IN 46556, USA. 
+- *Jan 2016 - Jan 2020*, Bachelor of Science (BSc) in Computer Science and Engineering, University of Dhaka, Dhaka 1000, Bangladesh.
+
 # 💻 Experiences
 
 #  Research Experiences
@@ -94,10 +98,6 @@ My research interest includes neural machine translation and computer vision. I 
     43 Purana Paltan Line, Dhaka 1000, Bangladesh 
   </li> 
 </ul> 
-
-# 📖 Educations
-- *Aug 2024 - (present)*, PhD in Computer Engineering, University of Notre Dame, Notre Dame, IN 46556, USA. 
-- *Jan 2016 - Jan 2020*, Bachelor of Science (BSc) in Computer Science and Engineering, University of Dhaka, Dhaka 1000, Bangladesh.
 
 # 💻 Internships
 - *June 2020 - Aug 2020*, Blockchain Developer at [Technohaven Company Limited](https://technohaven.com/), Dhaka, Bangladesh.
