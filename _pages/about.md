@@ -32,7 +32,7 @@ I am currently pursuing my PhD in Computer Science at the University of Notre Da
 
 <a href="https://calendly.com/shossain-nd">Click here to schedule a meeting with me!</a> I'm open to discussing research, collaboration opportunities, or just chatting.
 
-## 🚀🚀 Looking for Summer 2026 Opportunities
+## 🚀🚀 <span style="color: #FF6B35;">Looking for Summer 2026 Opportunities</span>
 
 **I am actively seeking Summer 2026 internship opportunities** in research or software engineering positions.
 
