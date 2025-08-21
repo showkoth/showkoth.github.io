@@ -20,11 +20,11 @@ redirect_from:
 
 ### 👋 Hi, I am Showkot Hossain, a Security and Decentralized Systems researcher from Bangladesh. 
 
-I am currently pursuing my PhD in Computer Engineering at the University of Notre Dame, Indiana, USA. I work as a Graduate Research Assistant under <a href="https://sites.nd.edu/taeho-jung/">Prof. Taeho Jung</a>, Associate Professor at the University of Notre Dame, specializing in Security and Decentralized Systems.
+I am currently pursuing my PhD in Computer Engineering at the University of Notre Dame, Indiana, USA. I work as a Graduate Research Assistant under <a href="https://sites.nd.edu/taeho-jung/">Prof. Taeho Jung</a>, Associate Professor at the University of Notre Dame.
 
 ### About Me
 
-- **Research Areas:** My research interests lie in Security, Decentralized Systems, and Cryptography.
+- **Research Areas:** My research interests lie in Security, Distributed Systems, and Confidential Computing.
 - **Education:** I received my Bachelor of Science in Computer Science and Engineering from the University of Dhaka in January 2020.
 - **Professional Experience:** After graduation, I worked as a Software Engineer for about 3.5 years at leading multi-national software companies in Dhaka, Bangladesh.
 - **Undergraduate Research:** My undergrad thesis topic was security and blockchain, supervised by <a href = "https://www.du.ac.bd/faculty/faculty_details/CSE/1777">Dr. Mosarrat Jahan</a> and <a href = "https://du.ac.bd/index.php/faculty/faculty_details/CSE/1765">Dr. Upama Kabir</a>.
@@ -106,8 +106,13 @@ M H Rakib, **Showkot Hossain**, Mosarrat Jahan, Upama Kabir
 
 # 💻 Experiences
 
-## Research Experiences
+## Academia
 <ul>
+  <li>
+    <strong>Graduate Research Assistant [Aug 2024 - Present]</strong> <br>
+    <a href="https://sites.nd.edu/taeho-jung/dsp-lab/">Data Security and Privacy Lab (DSP-Lab)</a>, University of Notre Dame, IN, USA<br>
+    Advisor: <a href="https://sites.nd.edu/taeho-jung/">Prof. Taeho Jung</a>
+  </li>
   <li>
     <strong>Research Assistant [Jan 2020 - December 2020]</strong> <br>
     Cyber Security Lab, University of Dhaka, Dhaka, Bangladesh<br>
@@ -116,7 +121,7 @@ M H Rakib, **Showkot Hossain**, Mosarrat Jahan, Upama Kabir
   </li>
 </ul>
 
-## Industry Experiences
+## Industry
 
 <ul>
   <li>
