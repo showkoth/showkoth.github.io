@@ -28,6 +28,12 @@ I am currently pursuing my PhD in Computer Science at the University of Notre Da
 - **Professional Experience:** After graduation, I worked as a Software Engineer for about 3.5 years at leading multi-national software companies in Dhaka, Bangladesh.
 - **Undergraduate Research:** My undergrad thesis topic was security and blockchain, supervised by <a href = "https://www.du.ac.bd/faculty/faculty_details/CSE/1777">Dr. Mosarrat Jahan</a> and <a href = "https://du.ac.bd/index.php/faculty/faculty_details/CSE/1765">Dr. Upama Kabir</a>.
 
+### 🚀 Looking for Summer 2026 Opportunities
+
+**I am actively seeking Summer 2026 internship opportunities** in research or software engineering positions.
+
+Feel free to reach out if you have opportunities or know of positions that might be a good fit!
+
 ### Want to Talk?
 
 <a href="https://calendly.com/shossain-nd">Click here to schedule a meeting with me!</a> I'm open to discussing research, collaboration opportunities, or just chatting.
