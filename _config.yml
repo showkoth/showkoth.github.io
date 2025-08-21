@@ -30,7 +30,7 @@ author:
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=kbODGysAAAAJ"
   email            : "shossain@nd.edu"
-  researchgate     : "https://www.researchgate.net/profile/Showkot-Hossain-2"
+  researchgate     : 
   uri              :
   bitbucket        :
   codepen          :
@@ -52,7 +52,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : 
+  twitter          : "showkot_h"
   vine             :
   weibo            :
   xing             :
