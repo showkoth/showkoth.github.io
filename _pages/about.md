@@ -32,7 +32,7 @@ I am currently pursuing my PhD in Computer Science at the University of Notre Da
 
 <a href="https://calendly.com/shossain-nd">Click here to schedule a meeting with me!</a> I'm open to discussing research, collaboration opportunities, or just chatting.
 
-### 🚀🚀 Looking for Summer 2026 Opportunities
+## 🚀🚀 Looking for Summer 2026 Opportunities
 
 **I am actively seeking Summer 2026 internship opportunities** in research or software engineering positions.
 
@@ -159,7 +159,6 @@ Feel free to reach out if you have opportunities or know of positions that might
     43 Purana Paltan Line, Dhaka 1000, Bangladesh 
   </li> 
 </ul>
-
 
 # 💻 Internships
 
