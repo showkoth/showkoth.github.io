@@ -45,9 +45,8 @@ My research interest includes neural machine translation and computer vision. I 
 
 # 📝 Publications 
 
-<ul>
-  
-  <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">JCS '22</div><img src='images/SystemModel.jpg' alt="sym" width="100%"></div></div> -->
+<ol>
+
   <div class='paper-box-text' markdown="1">
   <li>
     <p align="justify">
@@ -63,7 +62,6 @@ My research interest includes neural machine translation and computer vision. I 
   </li>
   </div>
 
-  <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">iSCI '20</div><img src='images/arc.png' alt="sym" width="100%"></div></div> -->
   <div class='paper-box-text' markdown="1">
    <li>
     <p align="justify">
@@ -80,7 +78,7 @@ My research interest includes neural machine translation and computer vision. I 
   </li>
   </div>
 
- </ul>
+ </ol>
 
 
 # 📖 Educations
