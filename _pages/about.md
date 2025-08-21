@@ -17,9 +17,9 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-### 👋 Hi, I am Showkot Hossain, a Security and Decentralized Systems researcher from Bangladesh.
+### 👋 Hi, I am Showkot Hossain, a Security and Distributed Systems researcher from a small but beautiful country, Bangladesh.
 
-I am currently pursuing my PhD in Computer Engineering at the University of Notre Dame, Indiana, USA. I work as a Graduate Research Assistant under <a href="https://sites.nd.edu/taeho-jung/">Prof. Taeho Jung</a>, Associate Professor at the University of Notre Dame.
+I am currently pursuing my PhD in Computer Science at the University of Notre Dame, Indiana, USA. I work as a Graduate Research Assistant under <a href="https://sites.nd.edu/taeho-jung/">Prof. Taeho Jung</a>, Associate Professor at the same university.
 
 ### About Me
 
