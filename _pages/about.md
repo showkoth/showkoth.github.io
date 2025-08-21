@@ -3,7 +3,7 @@ permalink: /
 title: ""
 excerpt: ""
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
@@ -17,8 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-
-### 👋 Hi, I am Showkot Hossain, a Security and Decentralized Systems researcher from Bangladesh. 
+### 👋 Hi, I am Showkot Hossain, a Security and Decentralized Systems researcher from Bangladesh.
 
 I am currently pursuing my PhD in Computer Engineering at the University of Notre Dame, Indiana, USA. I work as a Graduate Research Assistant under <a href="https://sites.nd.edu/taeho-jung/">Prof. Taeho Jung</a>, Associate Professor at the University of Notre Dame.
 
@@ -37,15 +36,26 @@ I am currently pursuing my PhD in Computer Engineering at the University of Notr
 My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
 -->
 
-
 # 🔥 Latest News
-- *[July 2025]*: &nbsp; A paper accepted by METAVERSE 2025
-- *[Aug 2024]*: &nbsp;🎉🎉 Started my PhD in Computer Engineering at the University of Notre Dame, IN, USA. 
-- *[Mar 2024]*: &nbsp;🎉🎉 Selected for Research Assistant (RA) position at the Department of CSE, University of Notre Dame. 
 
-# 📝 Publications 
+- _[July 2025]_: &nbsp; A paper accepted by METAVERSE 2025
+- _[Aug 2024]_: &nbsp;🎉🎉 Started my PhD in Computer Engineering at the University of Notre Dame, IN, USA.
+- _[Mar 2024]_: &nbsp;🎉🎉 Selected for Research Assistant (RA) position at the Department of CSE, University of Notre Dame.
+
+# 📝 Publications
 
 <ol>
+
+  <div class='paper-box-text' markdown="1">
+  <li>
+    <p align="justify">
+    <b>SecLog: Atomic-swap Based Secure Logging for Decentralized Data Sharing</b> <br>
+    Avery Hughes, <b>Showkot Hossain</b>, Wenyi Tang, Taeho Jung, Changhao Chenli <br>
+    International Conference on Metaverse (METAVERSE 2025)<br>
+    <!-- Add links when available -->
+    </p>
+  </li>
+  </div>
 
   <div class='paper-box-text' markdown="1">
   <li>
@@ -80,14 +90,15 @@ My research interest includes neural machine translation and computer vision. I 
 
  </ol>
 
-
 # 📖 Educations
-- *Aug 2024 - (present)*, PhD in Computer Engineering, University of Notre Dame, Notre Dame, IN 46556, USA. 
-- *Jan 2016 - Jan 2020*, Bachelor of Science (BSc) in Computer Science and Engineering, University of Dhaka, Dhaka 1000, Bangladesh.
+
+- _Aug 2024 - (present)_, PhD in Computer Engineering, University of Notre Dame, Notre Dame, IN 46556, USA.
+- _Jan 2016 - Jan 2020_, Bachelor of Science (BSc) in Computer Science and Engineering, University of Dhaka, Dhaka 1000, Bangladesh.
 
 # 💻 Experiences
 
 ## Academia
+
 <ul>
   <li>
     <strong>Graduate Research Assistant [Aug 2024 - Present]</strong> <br>
@@ -126,20 +137,22 @@ My research interest includes neural machine translation and computer vision. I 
     <a href="https://dohatec.com/"> Dohatec New Media </a> <br>
     43 Purana Paltan Line, Dhaka 1000, Bangladesh 
   </li> 
-</ul> 
+</ul>
 
 # 💻 Internships
-- *June 2020 - Aug 2020*, Blockchain Developer at [Technohaven Company Limited](https://technohaven.com/), Dhaka, Bangladesh.
+
+- _June 2020 - Aug 2020_, Blockchain Developer at [Technohaven Company Limited](https://technohaven.com/), Dhaka, Bangladesh.
 
 # 🎖 Honors and Awards
-- *July 2020*, [Award of Merit](https://drive.google.com/drive/folders/1dYR3MENGxMj1R7cw1RVZr-ERpE4sGJLh) as part of team "DU_Hyperledger" in International Blockchain Olympiad (IBCOL) 2020. 
-- *May 2020*, [9th place](https://drive.google.com/drive/folders/1Wg1jzND3ncyZcagQsClQ7uz2KMjL8D6O) as part of team "DU_Hyperledger" in Blockchain Olympiad Bangladesh (BCOLBD) 2020.
+
+- _July 2020_, [Award of Merit](https://drive.google.com/drive/folders/1dYR3MENGxMj1R7cw1RVZr-ERpE4sGJLh) as part of team "DU_Hyperledger" in International Blockchain Olympiad (IBCOL) 2020.
+- _May 2020_, [9th place](https://drive.google.com/drive/folders/1Wg1jzND3ncyZcagQsClQ7uz2KMjL8D6O) as part of team "DU_Hyperledger" in Blockchain Olympiad Bangladesh (BCOLBD) 2020.
 - Secured government scholarships with a full tuition waiver for achieving good results (top 2%, scored above 80%
-in each subject, GPA 5.0 out of 5.0) in primary(5th grade), junior (8th grade), secondary(10th & 12th grade)
-level exams under the Board of Intermediate and Secondary Education, Rajshahi, Bangladesh. 
+  in each subject, GPA 5.0 out of 5.0) in primary(5th grade), junior (8th grade), secondary(10th & 12th grade)
+  level exams under the Board of Intermediate and Secondary Education, Rajshahi, Bangladesh.
 
 <!--
 # 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
 -->
