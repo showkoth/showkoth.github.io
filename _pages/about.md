@@ -172,6 +172,10 @@ Feel free to reach out if you have opportunities or know of positions that might
   in each subject, GPA 5.0 out of 5.0) in primary(5th grade), junior (8th grade), secondary(10th & 12th grade)
   level exams under the Board of Intermediate and Secondary Education, Rajshahi, Bangladesh.
 
+# 🎯 Misc
+
+- I love to spend time with family and friends, watch movies and travelling.
+
 <!--
 # 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.
