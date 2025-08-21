@@ -62,7 +62,6 @@ My research interest includes neural machine translation and computer vision. I 
     </p>
   </li>
   </div>
-  </div>
 
   <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">iSCI '20</div><img src='images/arc.png' alt="sym" width="100%"></div></div> -->
   <div class='paper-box-text' markdown="1">
@@ -79,7 +78,6 @@ My research interest includes neural machine translation and computer vision. I 
     [<a href="assets/LogBC.txt" target="\_blank"> BibTex </a>]  
     </p>
   </li>
-  </div>
   </div>
 
  </ul>
