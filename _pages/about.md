@@ -97,7 +97,7 @@ My research interest includes neural machine translation and computer vision. I 
 
 # 💻 Experiences
 
-## Academia
+## Research
 
 <ul>
   <li>
@@ -110,6 +110,16 @@ My research interest includes neural machine translation and computer vision. I 
     Cyber Security Lab, University of Dhaka, Dhaka, Bangladesh<br>
     Supervisor: <a href = "https://www.du.ac.bd/faculty/faculty_details/CSE/1777">Dr. Mosarrat Jahan</a>
     Co-supervisor: <a href = "https://du.ac.bd/index.php/faculty/faculty_details/CSE/1765">Dr. Upama Kabir</a>
+  </li>
+</ul>
+
+## Teaching
+
+<ul>
+  <li>
+    <strong>Teaching Assistant [Fall 2025]</strong> <br>
+    CSE-20110: Discrete Mathematics, University of Notre Dame, IN, USA<br>
+    Instructor: <a href="https://sites.nd.edu/taeho-jung/">Prof. Taeho Jung</a>
   </li>
 </ul>
 
@@ -138,6 +148,7 @@ My research interest includes neural machine translation and computer vision. I 
     43 Purana Paltan Line, Dhaka 1000, Bangladesh 
   </li> 
 </ul>
+
 
 # 💻 Internships
 
