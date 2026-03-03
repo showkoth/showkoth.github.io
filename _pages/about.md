@@ -148,14 +148,21 @@ Feel free to reach out if you have opportunities or know of positions that might
   </li>
 </ul>
 
-## Reviewing
+## Services
 
 <ul>
   <li>
-    IEEE International Conference on Blockchain and Cryptocurrency (ICBC 2026)
+    <b>Reviewer</b>, IEEE International Conference on Blockchain and Cryptocurrency (ICBC 2026)
   </li>
-    <li>
-    IEEE International Conference on Blockchain and Cryptocurrency (ICBC 2025)
+  <li>
+    <b>Reviewer</b>, IEEE International Conference on Blockchain and Cryptocurrency (ICBC 2025)
+  </li>
+  <li>
+    <b>Student Volunteer</b>, International
+Conference on Innovation and Engineering (ICIET 2019)
+  </li>
+  <li>
+    <b>Mentor</b>, SCB-PA Inter School and College Programming Contest.
   </li>
 </ul>
 
