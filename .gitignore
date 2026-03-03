@@ -1,5 +1,5 @@
 _site/
 push.sh
 .DS_Store
-academic-cv/academic-cv.cls
-academic-cv/main.tex
+# academic-cv/academic-cv.cls
+# academic-cv/main.tex
