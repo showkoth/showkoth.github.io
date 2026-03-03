@@ -21,7 +21,7 @@ redirect_from:
 
 I am pursuing my PhD in Computer Science at the University of Notre Dame, Indiana, USA. I am a Graduate Research Assistant under <a href="https://sites.nd.edu/taeho-jung/">Prof. Taeho Jung</a>, Associate Professor at the same university. I received my Bachelor of Science in Computer Science and Engineering from the University of Dhaka in January 2020. My undergrad thesis topic was security and blockchain, supervised by <a href = "https://www.du.ac.bd/faculty/faculty_details/CSE/1777">Dr. Mosarrat Jahan</a> and <a href = "https://du.ac.bd/index.php/faculty/faculty_details/CSE/1765">Dr. Upama Kabir</a>. After completing my undergraduate, I worked as a Software Engineer for about 3.5 years at leading multi-national software companies in Dhaka, Bangladesh. Then I started my PhD here at Notre Dame...
 
-**Current Research Areas:** My research interests lie in Security, Distributed Systems, and Confidential Computing.
+**Current Research Areas:** Distributed Systems, Security, and Confidential Computing.
 
 ### To learn more about me, please check my CV.
 
