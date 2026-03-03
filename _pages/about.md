@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-### 👋 Hi, I am Showkot Hossain, a systems researcher from Bangladesh.
+### Hi, I am Showkot Hossain, a systems researcher from Bangladesh.
 
 I am currently pursuing my PhD in Computer Science at the University of Notre Dame, Indiana, USA. I work as a Graduate Research Assistant under <a href="https://sites.nd.edu/taeho-jung/">Prof. Taeho Jung</a>, Associate Professor at the same university.
 
@@ -28,30 +28,30 @@ I am currently pursuing my PhD in Computer Science at the University of Notre Da
 - **Professional Experience:** After graduation, I worked as a Software Engineer for about 3.5 years at leading multi-national software companies in Dhaka, Bangladesh.
 - **Undergraduate Research:** My undergrad thesis topic was security and blockchain, supervised by <a href = "https://www.du.ac.bd/faculty/faculty_details/CSE/1777">Dr. Mosarrat Jahan</a> and <a href = "https://du.ac.bd/index.php/faculty/faculty_details/CSE/1765">Dr. Upama Kabir</a>.
 
-### 📄 To learn more about me, please download my CV.
+### To learn more about me, please download my CV.
 
-<a href="academic-cv/acedemic-cv.pdf" target="_blank" style="display: inline-block; padding: 8px 20px; background-color: #2C3E50; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">📥 Download CV (PDF)</a>
+<a href="academic-cv/acedemic-cv.pdf" target="_blank" style="display: inline-block; padding: 8px 20px; background-color: #2C3E50; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">Download CV (PDF)</a>
 <span style="color: #888; font-size: 0.9em;">&nbsp; Last updated: Mar 2026</span>
 
 ### Want to Talk?
 
 <a href="https://calendly.com/shossain-nd">Click here to schedule a meeting with me!</a> I'm open to discussing research, collaboration opportunities, or just chatting.
 
-## 🚀🚀 <span style="color: #FF6B35;">Looking for summer internship opportunities</span>
+## <span style="color: #FF6B35;">Looking for summer internship opportunities</span>
 
 **I am actively seeking Summer 2026/2027 internship opportunities** in research or software engineering positions.
 
 Feel free to reach out if you have opportunities or know of positions that might be a good fit!
 
-# 🔥 Latest News
+# Latest News
 
 - _[Jan 2026]_: &nbsp; A paper published in AI & SOCIETY 2026
 - _[Sep 2025]_: &nbsp; A paper accepted by IEEE Blockchain 2025
 - _[July 2025]_: &nbsp; A paper accepted by METAVERSE 2025
-- _[Aug 2024]_: &nbsp;🎉🎉 Started my PhD in Computer Engineering at the University of Notre Dame, IN, USA.
-- _[Mar 2024]_: &nbsp;🎉🎉 Selected for Research Assistant (RA) position at the Department of CSE, University of Notre Dame.
+- _[Aug 2024]_: &nbsp; Started my PhD in Computer Engineering at the University of Notre Dame, IN, USA.
+- _[Mar 2024]_: &nbsp; Selected for Research Assistant (RA) position at the Department of CSE, University of Notre Dame.
 
-# 📝 Publications
+# Publications
 
 <ol style="padding-left: 3.5em;">
 
@@ -120,12 +120,12 @@ Feel free to reach out if you have opportunities or know of positions that might
 
  </ol>
 
-# 📖 Educations
+# Educations
 
 - _Aug 2024 - (present)_, PhD in Computer Engineering, University of Notre Dame, Notre Dame, IN 46556, USA.
 - _Jan 2016 - Jan 2020_, Bachelor of Science (BSc) in Computer Science and Engineering, University of Dhaka, Dhaka 1000, Bangladesh.
 
-# 💻 Experiences
+# Experiences
 
 ## Research
 
@@ -197,11 +197,11 @@ Conference on Innovation and Engineering (ICIET 2019)
   </li> 
 </ul>
 
-# 💻 Internships
+# Internships
 
 - _June 2020 - Aug 2020_, Blockchain Developer at [Technohaven Company Limited](https://technohaven.com/), Dhaka, Bangladesh.
 
-# 🎖 Honors and Awards
+# Honors and Awards
 
 - _July 2020_, [Award of Merit](https://drive.google.com/drive/folders/1dYR3MENGxMj1R7cw1RVZr-ERpE4sGJLh) as part of team "DU_Hyperledger" in International Blockchain Olympiad (IBCOL) 2020.
 - _May 2020_, [9th place](https://drive.google.com/drive/folders/1Wg1jzND3ncyZcagQsClQ7uz2KMjL8D6O) as part of team "DU_Hyperledger" in Blockchain Olympiad Bangladesh (BCOLBD) 2020.
@@ -209,12 +209,12 @@ Conference on Innovation and Engineering (ICIET 2019)
   in each subject, GPA 5.0 out of 5.0) in primary(5th grade), junior (8th grade), secondary(10th & 12th grade)
   level exams under the Board of Intermediate and Secondary Education, Rajshahi, Bangladesh.
 
-# 🎯 Misc
+# Misc
 
 - I love to spend time with family and friends, watch movies and travelling.
 
 <!--
-# 💬 Invited Talks
+# Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
 -->
