@@ -25,10 +25,10 @@ I am currently pursuing my PhD in Computer Science at the University of Notre Da
 
 - **Research Areas:** My research interests lie in Security, Distributed Systems, and Confidential Computing.
 - **Education:** I received my Bachelor of Science in Computer Science and Engineering from the University of Dhaka in January 2020.
-- **Professional Experience:** After graduation, I worked as a Software Engineer for about 3.5 years at leading multi-national software companies in Dhaka, Bangladesh.
 - **Undergraduate Research:** My undergrad thesis topic was security and blockchain, supervised by <a href = "https://www.du.ac.bd/faculty/faculty_details/CSE/1777">Dr. Mosarrat Jahan</a> and <a href = "https://du.ac.bd/index.php/faculty/faculty_details/CSE/1765">Dr. Upama Kabir</a>.
+- **Professional Experience:** After my undergraduate, I worked as a Software Engineer for about 3.5 years at leading multi-national software companies in Dhaka, Bangladesh. Then I started my PhD...
 
-### To learn more about me, please download my CV.
+### To learn more about me, please check my CV.
 
 <a href="academic-cv/acedemic-cv.pdf" target="_blank" style="display: inline-block; padding: 8px 20px; background-color: #2C3E50; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">Download CV (PDF)</a>
 <span style="color: #888; font-size: 0.9em;">&nbsp; Last updated: Mar 2026</span>
