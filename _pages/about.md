@@ -28,14 +28,14 @@ I am currently pursuing my PhD in Computer Science at the University of Notre Da
 - **Professional Experience:** After graduation, I worked as a Software Engineer for about 3.5 years at leading multi-national software companies in Dhaka, Bangladesh.
 - **Undergraduate Research:** My undergrad thesis topic was security and blockchain, supervised by <a href = "https://www.du.ac.bd/faculty/faculty_details/CSE/1777">Dr. Mosarrat Jahan</a> and <a href = "https://du.ac.bd/index.php/faculty/faculty_details/CSE/1765">Dr. Upama Kabir</a>.
 
-### Want to Talk?
-
-<a href="https://calendly.com/shossain-nd">Click here to schedule a meeting with me!</a> I'm open to discussing research, collaboration opportunities, or just chatting.
-
-### 📄 Curriculum Vitae
+### 📄 To learn more about me, please download my CV.
 
 <a href="academic-cv/acedemic-cv.pdf" target="_blank" style="display: inline-block; padding: 8px 20px; background-color: #2C3E50; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">📥 Download CV (PDF)</a>
 <span style="color: #888; font-size: 0.9em;">&nbsp; Last updated: Mar 2026</span>
+
+### Want to Talk?
+
+<a href="https://calendly.com/shossain-nd">Click here to schedule a meeting with me!</a> I'm open to discussing research, collaboration opportunities, or just chatting.
 
 ## 🚀🚀 <span style="color: #FF6B35;">Looking for summer internship opportunities</span>
 
