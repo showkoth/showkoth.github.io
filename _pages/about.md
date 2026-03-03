@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-### 👋 Hi, I am Showkot Hossain, a curious researcher from a small but beautiful country, Bangladesh.
+### 👋 Hi, I am Showkot Hossain, a systems researcher from Bangladesh.
 
 I am currently pursuing my PhD in Computer Science at the University of Notre Dame, Indiana, USA. I work as a Graduate Research Assistant under <a href="https://sites.nd.edu/taeho-jung/">Prof. Taeho Jung</a>, Associate Professor at the same university.
 
@@ -34,12 +34,14 @@ I am currently pursuing my PhD in Computer Science at the University of Notre Da
 
 ## 🚀🚀 <span style="color: #FF6B35;">Looking for Summer 2026 Opportunities</span>
 
-**I am actively seeking Summer 2026 internship opportunities** in research or software engineering positions.
+**I am actively seeking Summer 2026/2027 internship opportunities** in research or software engineering positions.
 
 Feel free to reach out if you have opportunities or know of positions that might be a good fit!
 
 # 🔥 Latest News
 
+- _[2026]_: &nbsp; A paper published in AI & SOCIETY 2026
+- _[2025]_: &nbsp; A paper accepted by IEEE Blockchain 2025
 - _[July 2025]_: &nbsp; A paper accepted by METAVERSE 2025
 - _[Aug 2024]_: &nbsp;🎉🎉 Started my PhD in Computer Engineering at the University of Notre Dame, IN, USA.
 - _[Mar 2024]_: &nbsp;🎉🎉 Selected for Research Assistant (RA) position at the Department of CSE, University of Notre Dame.
@@ -51,10 +53,32 @@ Feel free to reach out if you have opportunities or know of positions that might
   <div class='paper-box-text' markdown="1">
   <li>
     <p align="justify">
-    <b>SecLog: Atomic-swap Based Secure Logging for Decentralized Data Sharing</b> <br>
+    <b>Consentful-by-Design: A Perspective on Safeguarding Data Ownership from Generative AI Leveraging Lessons from the Healthcare Domain</b> <br>
+    Akis Linardos, Theresa Willem, Alena Buyx, <b>Showkot Hossain</b>, Taeho Jung, Dimitrios Makris, Spyridon Bakas <br>
+    AI & SOCIETY, Springer London, 1-13, 2026<br>
+    [<a href="https://link.springer.com/article/10.1007/s00146-025-02817-6" target="\_blank"> Paper </a>]
+    </p>
+  </li>
+  </div>
+
+  <div class='paper-box-text' markdown="1">
+  <li>
+    <p align="justify">
+    <b>MtDB: A Decentralized Multi-Tenant Database for Secure Data Sharing</b> <br>
+    <b>Showkot Hossain</b>, Wenyi Tang, Changhao Chenli, Haijian Sun, WenZhan Song, Seokki Lee, Mic Bowman, Taeho Jung <br>
+    8th IEEE International Conference on Blockchain (IEEE Blockchain 2025), pp. 79-86<br>
+    [<a href="https://ieeexplore.ieee.org/abstract/document/11264649/" target="\_blank"> Paper </a>]
+    </p>
+  </li>
+  </div>
+
+  <div class='paper-box-text' markdown="1">
+  <li>
+    <p align="justify">
+    <b>SecLog: Atomic-Swap Based Secure Logging for Decentralized Data Sharing</b> <br>
     Avery Hughes, <b>Showkot Hossain</b>, Wenyi Tang, Taeho Jung, Changhao Chenli <br>
-    International Conference on Metaverse (METAVERSE 2025)<br>
-    <!-- Add links when available -->
+    International Conference on Metaverse (METAVERSE 2025), pp. 115-124, Springer<br>
+    [<a href="https://link.springer.com/chapter/10.1007/978-3-032-06323-6_9" target="\_blank"> Paper </a>]
     </p>
   </li>
   </div>
@@ -64,7 +88,7 @@ Feel free to reach out if you have opportunities or know of positions that might
     <p align="justify">
     <b>A Blockchain-Enabled Scalable Network Log Management System</b> <br>
     M H Rakib, <b>Showkot Hossain</b>, Mosarrat Jahan, Upama Kabir <br>
-    Journal of Computer Science, 18(6), 496-508<br>
+    Journal of Computer Science, 18(6), 496-508, 2022<br>
     [<a href="https://doi.org/10.3844/jcssp.2022.496.508"> DOI </a>]
     [<a href="https://drive.google.com/file/d/1XmRp3NtPElyY6rhJews8L1Dpv0XvZdyz/view" target="\_blank"> Paper </a>]
     [<a href="https://drive.google.com/file/d/1ykxrhZhHBFXapdSb2-AaCOgUlvxgFWET/view?usp=sharing"> Poster </a>]
@@ -79,8 +103,7 @@ Feel free to reach out if you have opportunities or know of positions that might
     <p align="justify">
     <b>Towards Blockchain-Driven Network Log Management System</b> <br>
     M H Rakib, <b>Showkot Hossain</b>, Mosarrat Jahan, Upama Kabir <br>
-     2020 IEEE 8th International Conference on Smart City and Informatization (iSCI), Guangzhou, China, 2020, pp.
-73-80.<br>
+     2020 IEEE 8th International Conference on Smart City and Informatization (iSCI), Guangzhou, China, 2020, pp. 73-80<br>
     [<a href="https://doi.org/10.1109/iSCI50694.2020.00019"> DOI </a>]
     [<a href="https://drive.google.com/file/d/1Xp0ipTiZPFf0pFZZY9SJiOViSwEsC_QU/view" target="\_blank"> Paper </a>]
     [<a href="https://www.youtube.com/watch?v=-qNZF6VylgQ" target="\_blank"> Presentation </a>]  
@@ -129,7 +152,9 @@ Feel free to reach out if you have opportunities or know of positions that might
 
 <ul>
   <li>
-    <strong>Reviewer [2025]</strong> <br>
+    IEEE International Conference on Blockchain and Cryptocurrency (ICBC 2026)
+  </li>
+    <li>
     IEEE International Conference on Blockchain and Cryptocurrency (ICBC 2025)
   </li>
 </ul>
