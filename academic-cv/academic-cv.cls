@@ -51,9 +51,9 @@
 
 \hypersetup{
     colorlinks=true,
-    urlcolor=linkcolor,
-    linkcolor=linkcolor,
-    citecolor=linkcolor,
+    urlcolor=black,
+    linkcolor=black,
+    citecolor=black,
 }
 
 %----- HEADER & FOOTER SETUP ---------------------------------------------------
@@ -78,6 +78,7 @@
 \newcommand{\cvgithub}[1]{\def\@cvgithub{#1}}
 \newcommand{\cvlinkedin}[1]{\def\@cvlinkedin{#1}}
 \newcommand{\cvscholar}[1]{\def\@cvscholar{#1}}
+\newcommand{\cvresearchgate}[1]{\def\@cvresearchgate{#1}}
 
 \newcommand{\makecvheader}{%
   \begin{center}
@@ -86,14 +87,15 @@
   \end{center}
   \vspace{6pt}
   \begin{center}
-    \small\color{graytext}
-    % \faMapMarkerAlt~\@cvaddress \quad\textbar\quad
+    \small\color{secondarycolor}
+    \faMapMarkerAlt~\@cvaddress \\[4pt]
+    \faPhone~\@cvphone \quad\textbar\quad
     \href{mailto:\@cvemail}{\faEnvelope~\@cvemail} \quad\textbar\quad
-    % \faPhone~\@cvphone \\[4pt]
     \href{http://\@cvsite}{\faGlobe~\@cvsite} \quad\textbar\quad
-    \href{https://github.com/\@cvgithub}{\faGithub~\@cvgithub} \quad\textbar\quad
+    \href{https://github.com/\@cvgithub}{\faGithub~\@cvgithub} \\[4pt]
     \href{https://linkedin.com/in/\@cvlinkedin}{\faLinkedin~\@cvlinkedin} \quad\textbar\quad
-    \href{https://scholar.google.com/citations?user=\@cvscholar}{\faGraduationCap~\@cvscholar}
+    \href{https://scholar.google.com/citations?user=\@cvscholar}{\faGraduationCap~Google Scholar} \quad\textbar\quad
+    \href{\@cvresearchgate}{\faFlask~ResearchGate}
   \end{center}
   \vspace{8pt}
 }
