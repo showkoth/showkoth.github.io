@@ -40,8 +40,8 @@ Feel free to reach out if you have opportunities or know of positions that might
 
 # 🔥 Latest News
 
-- _[2026]_: &nbsp; A paper published in AI & SOCIETY 2026
-- _[2025]_: &nbsp; A paper accepted by IEEE Blockchain 2025
+- _[Jan 2026]_: &nbsp; A paper published in AI & SOCIETY 2026
+- _[Sep 2025]_: &nbsp; A paper accepted by IEEE Blockchain 2025
 - _[July 2025]_: &nbsp; A paper accepted by METAVERSE 2025
 - _[Aug 2024]_: &nbsp;🎉🎉 Started my PhD in Computer Engineering at the University of Notre Dame, IN, USA.
 - _[Mar 2024]_: &nbsp;🎉🎉 Selected for Research Assistant (RA) position at the Department of CSE, University of Notre Dame.
