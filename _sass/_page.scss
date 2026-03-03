@@ -63,7 +63,7 @@
   h1 {
     margin-top: 1em;
     padding-bottom: 0.5em;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 2px solid #0c2340;
   }
 
   p, li, dl {
@@ -84,10 +84,13 @@
   }
 
   a {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #1a56db;
+    transition: color 0.15s ease;
 
     &:hover {
       text-decoration: underline;
+      color: #0c2340;
 
       img {
         box-shadow: 0 0 10px rgba(#000, 0.25);
