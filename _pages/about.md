@@ -32,6 +32,11 @@ I am currently pursuing my PhD in Computer Science at the University of Notre Da
 
 <a href="https://calendly.com/shossain-nd">Click here to schedule a meeting with me!</a> I'm open to discussing research, collaboration opportunities, or just chatting.
 
+### 📄 Curriculum Vitae
+
+<a href="academic-cv/acedemic-cv.pdf" target="_blank" style="display: inline-block; padding: 8px 20px; background-color: #2C3E50; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">📥 Download CV (PDF)</a>
+<span style="color: #888; font-size: 0.9em;">&nbsp; Last updated: Mar 2026</span>
+
 ## 🚀🚀 <span style="color: #FF6B35;">Looking for summer internship opportunities</span>
 
 **I am actively seeking Summer 2026/2027 internship opportunities** in research or software engineering positions.
