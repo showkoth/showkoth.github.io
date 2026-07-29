@@ -1,0 +1,12 @@
+# Optional venue styling/links for publication badges (keyed by the `abbr` field in papers.bib).
+"IEEE BC":
+  url: https://ieee-blockchain.org/
+  color: "#00629B"
+
+"AI&SOC":
+  url: https://link.springer.com/journal/146
+  color: "#1B3765"
+
+"METAVERSE":
+  url: https://link.springer.com/book/10.1007/978-3-032-06323-6
+  color: "#6f42c1"
