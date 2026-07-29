@@ -1,6 +1,7 @@
 # this file contains the social media links and usernames of the author
 # the socials will be displayed in the order they are defined here
-email: shossain@nd.edu # your email address
+# email: omitted on purpose — the theme renders it as a plaintext mailto, so the
+# address is shown obfuscated in _pages/about.md instead
 scholar_userid: kbODGysAAAAJ # your Google Scholar ID
 orcid_id: 0009-0009-0341-8828 # your ORCID ID
 semanticscholar_id: 2386825725 # your Semantic Scholar ID
