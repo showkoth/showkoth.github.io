@@ -1,7 +1,9 @@
 {% comment %}
-  Local override of al_folio_core's news.liquid.
-  Only change from upstream: dates render as '%b %Y' (Mon Year) instead of
-  '%b %d, %Y'. Re-check this file against the theme on major upgrades.
+  Local override of al_folio_core's news.liquid. Changes from upstream:
+    1. Dates render as '%b %Y' (Mon Year) instead of '%b %d, %Y'.
+    2. When the list is limited and more entries exist, a "more news" button
+       links to the full /news/ page.
+  Re-check this file against the theme on major upgrades.
 {% endcomment %}
 <div class="news">
   {% if site.news != blank %}
@@ -33,6 +35,11 @@
         {% endfor %}
       </table>
     </div>
+    {% if include.limit and news_limit < news_size %}
+      <div class="more-news mt-2">
+        <a class="btn btn-sm btn-outline-primary" href="{{ '/news/' | relative_url }}">more news &rarr;</a>
+      </div>
+    {% endif %}
   {% else %}
     <p>No news so far...</p>
   {% endif %}
