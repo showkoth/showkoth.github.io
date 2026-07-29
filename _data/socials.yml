@@ -10,7 +10,8 @@ research_gate_profile: Showkot-Hossain-2 # the slug from your ResearchGate profi
 github_username: showkoth # your GitHub user name
 linkedin_username: showkoth # your LinkedIn user name
 x_username: showkot_h # your X handle
-cv_pdf: /assets/pdf/academic-cv.pdf # path to your CV PDF file
+# cv_pdf: omitted on purpose — the CV is reachable from the nav and its own page,
+# so it does not need an icon in the social row
 # rss_icon: uncomment to show the RSS icon
 custom_social: # OpenReview has no icon in academicons; `logo` must be an icon class, not a URL
   logo: fa-solid fa-file-pen
