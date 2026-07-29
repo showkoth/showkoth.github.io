@@ -2,10 +2,15 @@
 # the socials will be displayed in the order they are defined here
 email: shossain@nd.edu # your email address
 scholar_userid: kbODGysAAAAJ # your Google Scholar ID
+orcid_id: 0009-0009-0341-8828 # your ORCID ID
+semanticscholar_id: 2386825725 # your Semantic Scholar ID
+dblp_url: https://dblp.org/pid/285/3932.html # your DBLP profile URL
 github_username: showkoth # your GitHub user name
 linkedin_username: showkoth # your LinkedIn user name
 x_username: showkot_h # your X handle
-# orcid_id: # your ORCID ID — add after registering at https://orcid.org
-# dblp_url: # your DBLP profile URL
 cv_pdf: /assets/pdf/academic-cv.pdf # path to your CV PDF file
-rss_icon: false
+# rss_icon: uncomment to show the RSS icon
+custom_social: # OpenReview has no icon in academicons; `logo` must be an icon class, not a URL
+  logo: fa-solid fa-file-pen
+  title: OpenReview
+  url: https://openreview.net/profile?id=~Showkot_Hossain1
