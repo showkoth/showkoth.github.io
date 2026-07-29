@@ -10,6 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p><i class="fa-solid fa-house"></i> Notre Dame, IN 46556</p>
+    <p><i class="fa-solid fa-at"></i> <a href="mailto:shossain@nd.edu">shossain@nd.edu</a></p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
