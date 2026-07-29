@@ -18,7 +18,7 @@ social: true # includes social icons at the bottom of the page
 announcements:
   enabled: true # includes a list of news items
   scrollable: false # adds a vertical scroll bar if there are more than 3 news items
-  limit: 3 # leave blank to include all the news in the `_news` folder
+  limit: # all entries are rendered; assets/js/site-tweaks.js collapses past the third
 
 latest_posts:
   enabled: false
@@ -35,3 +35,6 @@ Before my PhD, I spent about 3.5 years as a software engineer at multinational s
 <div class="alert" style="clear: right; border-left: 4px solid var(--global-theme-color); padding: 0.75rem 1rem; margin: 1.5rem 0; background: var(--global-code-bg-color); border-radius: 4px;">
   <strong>🔍 Seeking Summer 2026/2027 internships</strong> in research or software engineering — systems, security, or confidential computing. <a href="mailto:{{ 'shossain@nd.edu' | encode_email }}">Email me</a> or <a href="https://calendly.com/shossain-nd">schedule a chat</a>.
 </div>
+
+<div data-news-collapse="3" hidden></div>
+<script src="{{ '/assets/js/site-tweaks.js' | relative_url }}"></script>

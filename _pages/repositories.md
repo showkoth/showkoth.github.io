@@ -45,3 +45,5 @@ nav_order: 3
   {% endfor %}
 </div>
 {% endif %}
+
+<script src="{{ '/assets/js/site-tweaks.js' | relative_url }}"></script>

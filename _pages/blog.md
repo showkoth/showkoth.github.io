@@ -194,3 +194,5 @@ pagination:
 {% endif %}
 
 </div>
+
+<script src="{{ '/assets/js/site-tweaks.js' | relative_url }}"></script>
