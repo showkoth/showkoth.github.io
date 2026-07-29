@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p><i class="fa-solid fa-house"></i> Notre Dame, IN 46556</p>
-    <p><i class="fa-solid fa-at"></i> <a href="mailto:shossain@nd.edu">shossain@nd.edu</a></p>
+    <p><i class="fa-solid fa-at"></i> shossain at nd dot edu</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -33,5 +33,5 @@ My research focuses on **distributed systems, security, and confidential computi
 Before my PhD, I spent about 3.5 years as a software engineer at multinational software companies in Dhaka, Bangladesh. I received my BSc in Computer Science and Engineering from the [University of Dhaka](https://www.du.ac.bd/) in 2020, where my thesis on blockchain-based log management was supervised by [Dr. Mosarrat Jahan](https://www.du.ac.bd/faculty/faculty_details/CSE/1777) and [Dr. Upama Kabir](https://du.ac.bd/index.php/faculty/faculty_details/CSE/1765).
 
 <div class="alert" style="clear: right; border-left: 4px solid var(--global-theme-color); padding: 0.75rem 1rem; margin: 1.5rem 0; background: var(--global-code-bg-color); border-radius: 4px;">
-  <strong>🔍 Seeking Summer 2026/2027 internships</strong> in research or software engineering — systems, security, or confidential computing. <a href="mailto:shossain@nd.edu">Email me</a> or <a href="https://calendly.com/shossain-nd">schedule a chat</a>.
+  <strong>🔍 Seeking Summer 2026/2027 internships</strong> in research or software engineering — systems, security, or confidential computing. <a href="mailto:{{ 'shossain@nd.edu' | encode_email }}">Email me</a> or <a href="https://calendly.com/shossain-nd">schedule a chat</a>.
 </div>
