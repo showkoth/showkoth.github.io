@@ -9,9 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>355B Fitzpatrick Hall of Engineering</p>
-    <p>University of Notre Dame</p>
-    <p>Notre Dame, IN 46556, USA</p>
+    <p><i class="fa-solid fa-house"></i> Notre Dame, IN 46556</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
