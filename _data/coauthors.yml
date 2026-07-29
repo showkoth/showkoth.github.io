@@ -1,0 +1,13 @@
+# Links co-author names in publication entries to their websites.
+# Key is the co-author's last name as it appears in papers.bib.
+"Jung":
+  - firstname: ["Taeho", "T."]
+    url: https://sites.nd.edu/taeho-jung/
+
+"Jahan":
+  - firstname: ["Mosarrat", "M."]
+    url: https://www.du.ac.bd/faculty/faculty_details/CSE/1777
+
+"Kabir":
+  - firstname: ["Upama", "U."]
+    url: https://du.ac.bd/index.php/faculty/faculty_details/CSE/1765

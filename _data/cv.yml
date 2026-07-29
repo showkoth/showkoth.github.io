@@ -1,0 +1,150 @@
+cv:
+  name: Showkot Hossain
+  label: PhD Student, Computer Science and Engineering
+  email: shossain@nd.edu
+  location: Notre Dame, IN, USA
+  image: ""
+  summary: PhD student at the University of Notre Dame researching distributed systems, security, and confidential computing. Previously a software engineer with 3.5+ years of industry experience.
+
+  social_networks:
+    - network: GitHub
+      username: showkoth
+    - network: LinkedIn
+      username: showkoth
+    - network: X
+      username: showkot_h
+
+  sections:
+    Education:
+      - institution: University of Notre Dame
+        location: Notre Dame, IN, USA
+        url: https://www.nd.edu/
+        area: Computer Science and Engineering
+        studyType: PhD
+        start_date: 2024-08-01
+        end_date: present
+        highlights:
+          - Graduate Research Assistant, Data Security and Privacy Lab (DSP-Lab)
+          - Advisor — Prof. Taeho Jung
+
+      - institution: University of Dhaka
+        location: Dhaka, Bangladesh
+        url: https://www.du.ac.bd/
+        area: Computer Science and Engineering
+        studyType: BSc
+        start_date: 2016-01-01
+        end_date: 2020-01-31
+        highlights:
+          - Undergraduate thesis on security and blockchain, supervised by Dr. Mosarrat Jahan and Dr. Upama Kabir
+
+    Experience:
+      - company: Data Security and Privacy Lab (DSP-Lab), University of Notre Dame
+        position: Graduate Research Assistant
+        location: Notre Dame, IN, USA
+        start_date: 2024-08-01
+        end_date: present
+        summary: Research on distributed systems, security, and confidential computing under Prof. Taeho Jung.
+        highlights:
+          - Designed and built MtDB, a decentralized multi-tenant database for secure data sharing (IEEE Blockchain 2025)
+          - Co-authored SecLog, an atomic-swap based secure logging protocol (METAVERSE 2025)
+
+      - company: Cyber Security Lab, University of Dhaka
+        position: Research Assistant
+        location: Dhaka, Bangladesh
+        start_date: 2020-01-01
+        end_date: 2020-12-31
+        summary: Blockchain-based network log management research under Dr. Mosarrat Jahan and Dr. Upama Kabir.
+
+      - company: Itransition Software Bangladesh Limited
+        position: Software Engineer, Level 3
+        location: Dhaka, Bangladesh
+        url: https://www.itransition.com
+        start_date: 2023-11-01
+        end_date: 2024-06-30
+
+      - company: Kona Software Lab Limited
+        position: Software Engineer, Level 2
+        location: Dhaka, Bangladesh
+        url: https://konai.com/
+        start_date: 2023-03-01
+        end_date: 2023-11-30
+
+      - company: Dohatec New Media
+        position: Software Engineer, Level 1
+        location: Dhaka, Bangladesh
+        url: https://dohatec.com/
+        start_date: 2020-10-01
+        end_date: 2023-03-31
+
+      - company: Technohaven Company Limited
+        position: Blockchain Developer (Intern)
+        location: Dhaka, Bangladesh
+        url: https://technohaven.com/
+        start_date: 2020-06-01
+        end_date: 2020-08-31
+
+      - company: University of Notre Dame
+        position: Teaching Assistant — CSE-20110 Discrete Mathematics
+        location: Notre Dame, IN, USA
+        start_date: 2025-08-01
+        end_date: 2025-12-31
+        summary: Instructor — Prof. Taeho Jung
+
+    Volunteer:
+      - company: IEEE International Conference on Blockchain and Cryptocurrency (ICBC)
+        position: Reviewer
+        location: ""
+        start_date: 2025-01-01
+        end_date: 2026-12-31
+        summary: Reviewer for ICBC 2025 and ICBC 2026.
+
+      - company: International Conference on Innovation and Engineering (ICIET 2019)
+        position: Student Volunteer
+        location: Dhaka, Bangladesh
+        start_date: 2019-01-01
+        end_date: 2019-12-31
+
+      - company: SCB-PA Inter School and College Programming Contest
+        position: Mentor
+        location: Bangladesh
+        start_date: 2019-01-01
+        end_date: 2019-12-31
+
+    Awards:
+      - title: Award of Merit — International Blockchain Olympiad (IBCOL 2020)
+        date: 2020-07-01
+        awarder: International Blockchain Olympiad
+        url: https://drive.google.com/drive/folders/1dYR3MENGxMj1R7cw1RVZr-ERpE4sGJLh
+        summary: As part of team "DU_Hyperledger".
+
+      - title: 9th Place — Blockchain Olympiad Bangladesh (BCOLBD 2020)
+        date: 2020-05-01
+        awarder: Blockchain Olympiad Bangladesh
+        url: https://drive.google.com/drive/folders/1Wg1jzND3ncyZcagQsClQ7uz2KMjL8D6O
+        summary: As part of team "DU_Hyperledger".
+
+      - title: Government Scholarships (Primary through Higher Secondary)
+        awarder: Board of Intermediate and Secondary Education, Rajshahi, Bangladesh
+        summary: Full tuition waiver for top-1% results (GPA 5.0/5.0, above 80% in every subject) in 5th, 8th, 10th, and 12th grade board examinations.
+
+    Skills:
+      - name: Programming
+        icon: fa-solid fa-code
+        keywords: "Python, Java, C/C++, JavaScript, Solidity"
+      - name: Web & Backend
+        icon: fa-solid fa-server
+        keywords: "Spring Boot, React, Node.js, FastAPI, JPA, Hibernate, RabbitMQ, Kafka, ELK Stack, JUnit, Mockito"
+      - name: Databases
+        icon: fa-solid fa-database
+        keywords: "PostgreSQL, MS SQL Server, MongoDB, Redis"
+      - name: ML & Blockchain
+        icon: fa-solid fa-link
+        keywords: "Pandas, NumPy, PyTorch, TensorFlow, Smart Contracts, Hyperledger Fabric"
+      - name: Misc
+        icon: fa-solid fa-toolbox
+        keywords: "TEE, Docker, Jenkins, Postman, Swagger, JMeter, Jira, Git"
+
+    Interests:
+      - name: Beyond Research
+        icon: fa-solid fa-tag
+        keywords: "Family and friends, movies, travelling"

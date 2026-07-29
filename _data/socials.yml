@@ -1,0 +1,11 @@
+# this file contains the social media links and usernames of the author
+# the socials will be displayed in the order they are defined here
+email: shossain@nd.edu # your email address
+scholar_userid: kbODGysAAAAJ # your Google Scholar ID
+github_username: showkoth # your GitHub user name
+linkedin_username: showkoth # your LinkedIn user name
+x_username: showkot_h # your X handle
+# orcid_id: # your ORCID ID — add after registering at https://orcid.org
+# dblp_url: # your DBLP profile URL
+cv_pdf: /assets/pdf/academic-cv.pdf # path to your CV PDF file
+rss_icon: false
