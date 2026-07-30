@@ -96,16 +96,4 @@ the CV page and the RenderCV PDF, so there is only one copy of these facts.
 
 {% endif %}
 
-## honors & awards
-
-<ul>
-  {% for item in sections.Awards %}
-    <li class="mb-3">
-      {% if item.url %}<a href="{{ item.url }}"><strong>{{ item.title }}</strong></a>{% else %}<strong>{{ item.title }}</strong>{% endif %}<br />
-      {{ item.awarder }}{% if item.date %} · <em>{{ item.date | date: '%b %Y' }}</em>{% endif %}
-      {% if item.summary %}<br />{{ item.summary }}{% endif %}
-    </li>
-  {% endfor %}
-</ul>
-
 <script src="{{ '/assets/js/site-tweaks.js' | relative_url }}"></script>
