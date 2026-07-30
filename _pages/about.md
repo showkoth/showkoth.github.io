@@ -30,11 +30,11 @@ I am a PhD student in Computer Science and Engineering at the [University of Not
 
 My research focuses on **distributed systems, security, and confidential computing**. I build systems that let mutually distrusting parties share and compute on data with strong integrity and confidentiality guarantees. You can find my recent publications on my [Google Scholar profile](https://scholar.google.com/citations?user=kbODGysAAAAJ).
 
-Previously I received my BSc in Computer Science and Engineering from the [University of Dhaka](https://www.du.ac.bd/) in 2020. Before starting my PhD, I spent about 3.5 years as a software engineer at multinational software companies in Dhaka, Bangladesh. For my full academic and professional background, see the Education & Experience page.
+Previously I received my BSc in Computer Science and Engineering from the [University of Dhaka](https://www.du.ac.bd/) in 2020. Before starting my PhD, I spent about 3.5 years as a software engineer at multinational software companies in Dhaka, Bangladesh. For my full academic and professional background, see the [Education & Experience]({{ '/education-experience/' | relative_url }}) page.
 
 <!-- My undergraduate thesis on secure log management was advised by [Dr. Mosarrat Jahan](https://www.du.ac.bd/faculty/faculty_details/CSE/1777) and [Dr. Upama Kabir](https://du.ac.bd/index.php/faculty/faculty_details/CSE/1765). -->
 
-<div class="alert" style="clear: right; border-left: 4px solid var(--global-theme-color); padding: 0.75rem 1rem; margin: 1.5rem 0; background: var(--global-code-bg-color); border-radius: 4px;">
+<div class="internship-callout" style="clear: right; border-left: 4px solid var(--global-theme-color); padding: 0.75rem 1rem; margin: 1.5rem 0; background: var(--global-code-bg-color); border-radius: 4px;">
   <strong>🔍 Seeking Summer 2027 internships</strong> in research or software engineering — systems, security, or confidential computing. If you have anything to discuss with me, feel free to email me or <a href="https://calendly.com/shossain-nd">schedule a chat</a>.
 </div>
 
