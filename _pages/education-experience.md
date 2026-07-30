@@ -1,11 +1,22 @@
 ---
 layout: page
 permalink: /education-experience/
-title: education & experience
-description: My academic background, research and industry experience, and academic service.
+title: education & experience # kept for the nav label and browser tab; the header itself is hidden below
 nav: true
 nav_order: 2
 ---
+
+{% comment %}
+The page layout always renders a title + description header. It is a theme
+file, so it cannot be overridden here (see test/style_contract.js); hide it
+instead. The section headings below carry the page on their own.
+{% endcomment %}
+
+<style>
+  .post-header {
+    display: none;
+  }
+</style>
 
 {% comment %}
 Everything on this page is rendered from \_data/cv.yml, the same file that feeds
