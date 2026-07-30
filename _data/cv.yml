@@ -38,17 +38,16 @@ cv:
           - Undergraduate thesis on security and blockchain, supervised by Dr. Mosarrat Jahan and Dr. Upama Kabir
 
     Experience:
-      - company: Data Security and Privacy Lab (DSP-Lab), University of Notre Dame
+      - company: University of Notre Dame
         position: Graduate Research Assistant
         location: Notre Dame, IN, USA
         start_date: 2024-08-01
         end_date: present
-        summary: Research on distributed systems, security, and confidential computing under Prof. Taeho Jung.
         highlights:
-          - Designed and built MtDB, a decentralized multi-tenant database for secure data sharing (IEEE Blockchain 2025)
-          - Co-authored SecLog, an atomic-swap based secure logging protocol (METAVERSE 2025)
+          - Authored 2+ peer-reviewed publications focusing on distributed systems, security, and confidential computing.
+          - Mentored 5+ undergraduate students on research projects related to distributed systems and security.
 
-      - company: Cyber Security Lab, University of Dhaka
+      - company: University of Dhaka
         position: Research Assistant
         location: Dhaka, Bangladesh
         start_date: 2020-01-01
