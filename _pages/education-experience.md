@@ -48,10 +48,13 @@ the CV page and the RenderCV PDF, so there is only one copy of these facts.
   {% endfor %}
 </ul>
 
+{% assign teaching = sections.Experience | where: 'category', 'teaching' %}
+{% assign roles = sections.Experience | where_exp: 'item', "item.category != 'teaching'" %}
+
 ## experience
 
 <ul>
-  {% for item in sections.Experience %}
+  {% for item in roles %}
     <li class="mb-3">
       <strong>{{ item.position }}</strong><br />
       {% if item.url %}<a href="{{ item.url }}">{{ item.company }}</a>{% else %}{{ item.company }}{% endif %}
@@ -71,6 +74,27 @@ the CV page and the RenderCV PDF, so there is only one copy of these facts.
     </li>
   {% endfor %}
 </ul>
+
+{% if teaching.size > 0 %}
+
+## teaching
+
+<ul>
+  {% for item in teaching %}
+    <li class="mb-3">
+      <strong>{{ item.position }}</strong><br />
+      {% if item.url %}<a href="{{ item.url }}">{{ item.company }}</a>{% else %}{{ item.company }}{% endif %}
+      {% if item.location %} · {{ item.location }}{% endif %}<br />
+      <em>
+        {{ item.start_date | date: '%b %Y' }} –
+        {% if item.end_date == 'present' %}Present{% else %}{{ item.end_date | date: '%b %Y' }}{% endif %}
+      </em>
+      {% if item.summary %}<br />{{ item.summary }}{% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+{% endif %}
 
 ## honors & awards
 
