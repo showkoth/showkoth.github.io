@@ -72,21 +72,6 @@ the CV page and the RenderCV PDF, so there is only one copy of these facts.
   {% endfor %}
 </ul>
 
-## academic service
-
-<ul>
-  {% for item in sections.Volunteer %}
-    <li class="mb-3">
-      <strong>{{ item.position }}</strong> — {{ item.company }}
-      {% if item.location and item.location != '' %} · {{ item.location }}{% endif %}<br />
-      {% assign start_year = item.start_date | date: '%Y' %}
-      {% assign end_year = item.end_date | date: '%Y' %}
-      <em>{{ start_year }}{% unless end_year == start_year %} – {{ end_year }}{% endunless %}</em>
-      {% if item.summary %}<br />{{ item.summary }}{% endif %}
-    </li>
-  {% endfor %}
-</ul>
-
 ## honors & awards
 
 <ul>
