@@ -1,3 +1,23 @@
 metadata:
-  last_updated: ""
-papers: {}
+  last_updated: '2026-07-31'
+papers:
+  kbODGysAAAAJ:Tyk-4Ss8FVUC:
+    citations: 0
+    title: 'Consentful-by-design: a perspective on safeguarding data ownership from generative AI leveraging lessons from the healthcare domain'
+    year: '2026'
+  kbODGysAAAAJ:UeHWp8X0CEIC:
+    citations: 0
+    title: 'SecLog: Atomic-Swap Based Secure Logging for Decentralized Data Sharing'
+    year: '2025'
+  kbODGysAAAAJ:Y0pCki6q_DkC:
+    citations: 3
+    title: 'MtDB: A Decentralized Multi-Tenant Database for Secure Data Sharing'
+    year: '2025'
+  kbODGysAAAAJ:d1gkVwhDpl0C:
+    citations: 19
+    title: A blockchain-enabled scalable network log management system
+    year: '2022'
+  kbODGysAAAAJ:u-x6o8ySG0sC:
+    citations: 9
+    title: Towards blockchain-driven network log management system
+    year: '2020'
