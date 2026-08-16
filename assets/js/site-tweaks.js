@@ -10,11 +10,29 @@
  *   2. Footer "Last updated" drops the day: "July 29, 2026" -> "July 2026".
  *   3. On pages that opt in via `data-news-collapse`, news entries past the
  *      third are hidden behind a "show older news" button.
+ *   4. Light mode swaps the theme's purple accent for the palette's deep blue.
  */
 (function () {
   "use strict";
 
   const MONTH_DAY_YEAR = /^([A-Za-z]+)\s+\d{1,2},\s*(\d{4})$/;
+
+  // The light theme hardcodes purple in the theme gem's _sass/_themes.scss,
+  // which the starter contract forbids shadowing, so re-declare the variables
+  // here. #00369f is the theme's own $blue-color-dark. Dark mode is untouched.
+  function quietLightAccent() {
+    const style = document.createElement("style");
+    style.textContent = [
+      'html:not([data-theme="dark"]) {',
+      "  --global-theme-color: #00369f;",
+      "  --global-hover-color: #00369f;",
+      "  --global-code-bg-color: rgba(0, 54, 159, 0.05);",
+      "}",
+    ].join("\n");
+    document.head.appendChild(style);
+  }
+
+  quietLightAccent();
 
   function trimNewsDates() {
     document.querySelectorAll(".news th[scope='row']").forEach(function (cell) {
