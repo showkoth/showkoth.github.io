@@ -41,6 +41,7 @@ cv:
       - company: University of Notre Dame
         position: Graduate Research Assistant
         location: Notre Dame, IN, USA
+        url: https://www.nd.edu/
         start_date: 2024-08-01
         end_date: present
         highlights:
@@ -50,6 +51,7 @@ cv:
       - company: University of Dhaka
         position: Research Assistant
         location: Dhaka, Bangladesh
+        url: https://www.du.ac.bd/
         start_date: 2020-01-01
         end_date: 2020-12-31
         summary: Blockchain-based network log management research under Dr. Mosarrat Jahan and Dr. Upama Kabir.
@@ -87,6 +89,7 @@ cv:
       - company: University of Notre Dame
         position: Teaching Assistant — CSE-20110 Discrete Mathematics
         location: Notre Dame, IN, USA
+        url: https://www.nd.edu/
         start_date: 2025-08-01
         end_date: 2025-12-31
         summary: Instructor — Prof. Taeho Jung
