@@ -53,11 +53,11 @@ the CV page and the RenderCV PDF, so there is only one copy of these facts.
         {{ item.start_date | date: '%b %Y' }} –
         {% if item.end_date == 'present' %}Present{% else %}{{ item.end_date | date: '%b %Y' }}{% endif %}
       </em>
-      {% if item.summary %}<br />{{ item.summary }}{% endif %}
+      {% if item.summary %}<br />{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}{% endif %}
       {% if item.highlights %}
         <ul>
           {% for highlight in item.highlights %}
-            <li>{{ highlight }}</li>
+            <li>{{ highlight | markdownify | remove: '<p>' | remove: '</p>' }}</li>
           {% endfor %}
         </ul>
       {% endif %}
@@ -80,7 +80,7 @@ the CV page and the RenderCV PDF, so there is only one copy of these facts.
       {% if item.highlights %}
         <ul>
           {% for highlight in item.highlights %}
-            <li>{{ highlight }}</li>
+            <li>{{ highlight | markdownify | remove: '<p>' | remove: '</p>' }}</li>
           {% endfor %}
         </ul>
       {% endif %}
@@ -102,7 +102,7 @@ the CV page and the RenderCV PDF, so there is only one copy of these facts.
         {{ item.start_date | date: '%b %Y' }} –
         {% if item.end_date == 'present' %}Present{% else %}{{ item.end_date | date: '%b %Y' }}{% endif %}
       </em>
-      {% if item.summary %}<br />{{ item.summary }}{% endif %}
+      {% if item.summary %}<br />{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}{% endif %}
     </li>
   {% endfor %}
 </ul>
