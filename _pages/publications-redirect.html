@@ -1,0 +1,20 @@
+---
+# Permanent client-side redirect: the publications page moved to /research/.
+# The stack has no jekyll-redirect-from, so a meta-refresh stub keeps old
+# links (search results, shared URLs) working.
+permalink: /publications/
+sitemap: false
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <link rel="canonical" href="{{ '/research/' | relative_url }}" />
+    <meta http-equiv="refresh" content="0; url={{ '/research/' | relative_url }}" />
+  </head>
+  <body>
+    <p>This page moved to <a href="{{ '/research/' | relative_url }}">/research/</a>.</p>
+  </body>
+</html>
