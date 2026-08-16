@@ -36,6 +36,12 @@ instead. The section headings below carry the page on their own.
     margin-top: 2rem;
   }
 
+  /* Cap the measure: full-container lines run far past a readable 65–80ch
+     and leave a dead zone between titles and the right-aligned dates. */
+  .post article {
+    max-width: 56rem;
+  }
+
   /* Timeline: a rail down the left with a dot per entry. */
   .timeline {
     list-style: none;
@@ -57,8 +63,13 @@ instead. The section headings below carry the page on their own.
     width: 12px;
     height: 12px;
     border-radius: 50%;
+    background: var(--global-bg-color);
+    border: 2px solid var(--global-theme-color);
+  }
+
+  /* Ongoing roles get a filled dot; past ones stay hollow. */
+  .timeline > li.current::before {
     background: var(--global-theme-color);
-    border: 2px solid var(--global-bg-color);
   }
 
   /* Scale contrast: titles lifted slightly, secondary info (dates, blurbs)
@@ -96,12 +107,11 @@ Each experience entry's `blurb` is the one-line web version; the fuller
 
 <ul class="timeline">
   {% for item in roles %}
-    <li>
+    <li{% if item.end_date == 'present' %} class="current"{% endif %}>
       <div class="d-flex flex-wrap justify-content-between align-items-baseline">
         <span>
           <strong>{{ item.position }}</strong> —
           {% if item.url %}<a href="{{ item.url }}">{{ item.company }}</a>{% else %}{{ item.company }}{% endif %}
-          {% if item.location %} · {{ item.location }}{% endif %}
         </span>
         <em>
           {{ item.start_date | date: '%b %Y' }} –
@@ -119,12 +129,11 @@ Each experience entry's `blurb` is the one-line web version; the fuller
 
 <ul class="timeline">
   {% for item in sections.Education %}
-    <li>
+    <li{% if item.end_date == 'present' %} class="current"{% endif %}>
       <div class="d-flex flex-wrap justify-content-between align-items-baseline">
         <span>
           <strong>{{ item.studyType }} in {{ item.area }}</strong> —
           {% if item.url %}<a href="{{ item.url }}">{{ item.institution }}</a>{% else %}{{ item.institution }}{% endif %}
-          {% if item.location %} · {{ item.location }}{% endif %}
         </span>
         <em>
           {{ item.start_date | date: '%b %Y' }} –
@@ -146,12 +155,11 @@ Each experience entry's `blurb` is the one-line web version; the fuller
 
 <ul class="timeline">
   {% for item in teaching %}
-    <li>
+    <li{% if item.end_date == 'present' %} class="current"{% endif %}>
       <div class="d-flex flex-wrap justify-content-between align-items-baseline">
         <span>
           <strong>{{ item.position }}</strong> —
           {% if item.url %}<a href="{{ item.url }}">{{ item.company }}</a>{% else %}{{ item.company }}{% endif %}
-          {% if item.location %} · {{ item.location }}{% endif %}
         </span>
         <em>
           {{ item.start_date | date: '%b %Y' }} –
