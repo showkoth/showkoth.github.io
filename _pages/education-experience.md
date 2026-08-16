@@ -61,8 +61,15 @@ instead. The section headings below carry the page on their own.
     border: 2px solid var(--global-bg-color);
   }
 
+  /* Scale contrast: titles lifted slightly, secondary info (dates, blurbs)
+     stepped down, so entries read as headline + detail instead of flat text. */
+  .timeline strong {
+    font-size: 1.0625rem;
+  }
+
   .timeline .entry-detail {
     color: var(--global-text-color-light);
+    font-size: 0.875rem;
   }
 
   /* Keep dates on the right edge even when a long title forces a wrap. */
@@ -70,6 +77,7 @@ instead. The section headings below carry the page on their own.
     margin-left: auto;
     white-space: nowrap;
     padding-left: 1rem;
+    font-size: 0.875rem;
   }
 </style>
 
