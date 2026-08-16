@@ -86,7 +86,7 @@
   \begin{center}
     {\LARGE\bfseries\scshape \@cvname}\\[6pt]
     {\small\color{secondarycolor}
-    \faMapMarkerAlt~\@cvaddress \\[3pt]
+    \faMapMarker~\@cvaddress \\[3pt]
     \faPhone~\@cvphone \quad\textbar\quad
     \href{mailto:\@cvemail}{\faEnvelope~\@cvemail} \quad\textbar\quad
     \href{http://\@cvsite}{\faGlobe~\@cvsite} \quad\textbar\quad
