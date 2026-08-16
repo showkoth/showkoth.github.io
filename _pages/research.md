@@ -11,7 +11,7 @@ nav_order: 1
 
 I build systems that let mutually distrusting parties store, share, and compute on data with cryptographic integrity and confidentiality guarantees. Current directions include decentralized data infrastructures ([Web3DB](https://www.web3db.org/), [Web3FS](https://fs.web3db.org/)), secure logging and provenance for data sharing in the age of generative AI.
 
-See my publications below. Also available on [Google Scholar](https://scholar.google.com/citations?user=kbODGysAAAAJ).
+**Profiles:** [Google Scholar](https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}) · [Semantic Scholar](https://www.semanticscholar.org/author/{{ site.data.socials.semanticscholar_id }}) · [DBLP]({{ site.data.socials.dblp_url }}) · [OpenReview]({{ site.data.socials.custom_social.url }}) · [ORCID](https://orcid.org/{{ site.data.socials.orcid_id }})
 
 <!-- Bibsearch Feature -->
 
