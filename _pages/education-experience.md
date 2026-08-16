@@ -40,6 +40,7 @@ instead. The section headings below carry the page on their own.
      and leave a dead zone between titles and the right-aligned dates. */
   .post article {
     max-width: 56rem;
+    margin-inline: auto;
   }
 
   /* Timeline: a rail down the left with a dot per entry. */
@@ -162,8 +163,12 @@ Each experience entry's `blurb` is the one-line web version; the fuller
           {% if item.url %}<a href="{{ item.url }}">{{ item.company }}</a>{% else %}{{ item.company }}{% endif %}
         </span>
         <em>
-          {{ item.start_date | date: '%b %Y' }} –
-          {% if item.end_date == 'present' %}Present{% else %}{{ item.end_date | date: '%b %Y' }}{% endif %}
+          {% if item.date_label %}
+            {{ item.date_label }}
+          {% else %}
+            {{ item.start_date | date: '%b %Y' }} –
+            {% if item.end_date == 'present' %}Present{% else %}{{ item.end_date | date: '%b %Y' }}{% endif %}
+          {% endif %}
         </em>
       </div>
       {% if item.summary %}<div class="entry-detail">{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>{% endif %}
