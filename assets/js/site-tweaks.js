@@ -41,6 +41,22 @@
       "article h2::first-letter {",
       "  text-transform: uppercase;",
       "}",
+      // The theme renders social icons at 4rem; at that size nine icons
+      // outweigh the page. Whisper, don't shout.
+      ".social .contact-icons {",
+      "  font-size: 2rem;",
+      "}",
+      // The news table hardcodes an inline 20% date column, stranding the
+      // date far from its text; !important is the only way past an inline
+      // style. 6.5rem fits 'Jan 2026' with room.
+      ".news th[scope='row'] {",
+      "  width: 6.5rem !important;",
+      "  white-space: nowrap;",
+      "}",
+      // Match the profile photo's rounding to the callout box.
+      ".profile img {",
+      "  border-radius: 8px;",
+      "}",
     ].join("\n");
     document.head.appendChild(style);
   }
