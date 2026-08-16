@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /services/
-title: services # kept for the nav label and browser tab; the header itself is hidden below
+title: Services # kept for the nav label and browser tab; the header itself is hidden below
 nav: true
 nav_order: 3
 ---
@@ -40,7 +40,7 @@ overridden here (see test/style_contract.js), so it is hidden instead.
 
 {% assign sections = site.data.cv.cv.sections %}
 
-## academic service
+## Academic service
 
 <ul>
   {% for item in sections.Volunteer %}

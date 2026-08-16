@@ -35,6 +35,12 @@
       "html {",
       "  font-size: 17px;",
       "}",
+      // Site headings are sentence case. Repo-owned text is already edited;
+      // this catches theme-rendered lowercase headings (the about page's
+      // announcements block renders a hardcoded "news").
+      "article h2::first-letter {",
+      "  text-transform: uppercase;",
+      "}",
     ].join("\n");
     document.head.appendChild(style);
   }

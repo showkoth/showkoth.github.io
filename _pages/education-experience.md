@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /education-experience/
-title: education & experience # kept for the nav label and browser tab; the header itself is hidden below
+title: Education & experience # kept for the nav label and browser tab; the header itself is hidden below
 nav: true
 nav_order: 2
 ---
@@ -92,7 +92,7 @@ Each experience entry's `blurb` is the one-line web version; the fuller
 {% assign teaching = sections.Experience | where: 'category', 'teaching' %}
 {% assign roles = sections.Experience | where_exp: 'item', "item.category != 'teaching'" %}
 
-## professional experience
+## Professional experience
 
 <ul class="timeline">
   {% for item in roles %}
@@ -115,7 +115,7 @@ Each experience entry's `blurb` is the one-line web version; the fuller
   {% endfor %}
 </ul>
 
-## education
+## Education
 
 <ul class="timeline">
   {% for item in sections.Education %}
@@ -142,7 +142,7 @@ Each experience entry's `blurb` is the one-line web version; the fuller
 
 {% if teaching.size > 0 %}
 
-## teaching
+## Teaching
 
 <ul class="timeline">
   {% for item in teaching %}

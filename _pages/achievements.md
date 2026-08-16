@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /achievements/
-title: achievements # kept for the nav label and browser tab; the header itself is hidden below
+title: Achievements # kept for the nav label and browser tab; the header itself is hidden below
 nav: true
 nav_order: 4
 ---
@@ -40,7 +40,7 @@ overridden here (see test/style_contract.js), so it is hidden instead.
 
 {% assign sections = site.data.cv.cv.sections %}
 
-## honors & awards
+## Honors & awards
 
 <ul>
   {% for item in sections.Awards %}
