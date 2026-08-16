@@ -11,6 +11,8 @@
  *   3. On pages that opt in via `data-news-collapse`, news entries past the
  *      third are hidden behind a "show older news" button.
  *   4. Light mode swaps the theme's purple accent for the palette's deep blue.
+ *   5. Root font-size is raised 16px -> 17px; the theme sizes everything in
+ *      rem, so the whole type scale grows proportionally on every page.
  */
 (function () {
   "use strict";
@@ -27,6 +29,11 @@
       "  --global-theme-color: #00369f;",
       "  --global-hover-color: #00369f;",
       "  --global-code-bg-color: rgba(0, 54, 159, 0.05);",
+      "}",
+      // 16px reads small at desktop widths; the theme's own Sass can't be
+      // shadowed here (see the style contract), so scale the root instead.
+      "html {",
+      "  font-size: 17px;",
       "}",
     ].join("\n");
     document.head.appendChild(style);
