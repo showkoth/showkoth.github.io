@@ -17,6 +17,20 @@ overridden here (see test/style_contract.js), so it is hidden instead.
   .post-header {
     display: none;
   }
+
+  /* Mute in-content links: many orgs are linked here, and full accent color
+     turns the list into a stripe pattern. Accent returns on hover. */
+  .post article a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--global-divider-color);
+    text-underline-offset: 2px;
+  }
+
+  .post article a:hover {
+    color: var(--global-theme-color);
+    text-decoration-color: var(--global-theme-color);
+  }
 </style>
 
 {% assign sections = site.data.cv.cv.sections %}
