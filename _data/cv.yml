@@ -54,6 +54,9 @@ cv:
         url: https://www.itransition.com
         start_date: 2023-11-01
         end_date: 2024-06-30
+        highlights:
+          - Collaborated with global clients to design and implement high-performance APIs for [Product Madness](https://www.productmadness.com/), a leading mobile game studio with 5M+ monthly active users, consistently meeting release deadlines.
+          - Led a team of 5 developers building and maintaining features with Spring Boot (Java), React, and PostgreSQL in an Agile process.
 
       - company: Kona Software Lab Limited
         position: Software Engineer, Level 2
@@ -61,6 +64,9 @@ cv:
         url: https://konai.com/
         start_date: 2023-03-01
         end_date: 2023-11-30
+        highlights:
+          - Implemented the authentication and authorization system for microservices handling 13M+ [KonaCard](https://www.konacard.co.kr/) users.
+          - Redesigned the database architecture and developed a migration script, reducing query latency by 25%.
 
       - company: Dohatec New Media
         position: Software Engineer, Level 1
@@ -68,6 +74,9 @@ cv:
         url: https://dohatec.com/
         start_date: 2020-10-01
         end_date: 2023-03-31
+        highlights:
+          - Researched and developed a microservices-based backend for [ePMIS](https://epmis.gov.bd/) — the Government of Bangladesh's Electronic Project Management Information System — prioritizing high performance and scalability.
+          - Collaborated with cross-functional Agile teams to design high-performance RESTful APIs using Spring (Java), AngularJS, and SQL Server.
 
       - company: Technohaven Company Limited
         position: Blockchain Developer (Intern)
@@ -75,6 +84,8 @@ cv:
         url: https://technohaven.com/
         start_date: 2020-06-01
         end_date: 2020-08-31
+        highlights:
+          - Developed a prototype supply-chain traceability system using Hyperledger Fabric. [[Code](https://github.com/showkoth/echain)]
 
       - company: University of Dhaka
         position: Research Assistant
@@ -82,7 +93,9 @@ cv:
         url: https://www.du.ac.bd/
         start_date: 2020-01-01
         end_date: 2020-12-31
-        summary: Blockchain-based network log management research under [Dr. Mosarrat Jahan](https://www.du.ac.bd/faculty/faculty_details/CSE/1777) and [Dr. Upama Kabir](https://du.ac.bd/index.php/faculty/faculty_details/CSE/1765).
+        summary: Cyber Security Lab, advised by [Dr. Mosarrat Jahan](https://www.du.ac.bd/faculty/faculty_details/CSE/1777) and [Dr. Upama Kabir](https://du.ac.bd/index.php/faculty/faculty_details/CSE/1765).
+        highlights:
+          - Built a prototype system for secure provenance tracking and real-time monitoring using PKI and blockchain; published one peer-reviewed journal article and one conference paper.
 
       # Teaching lives inside Experience because the CV plugin only renders a
       # fixed set of section names; `category` lets the site group it separately.
