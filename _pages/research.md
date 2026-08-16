@@ -9,7 +9,7 @@ nav_order: 1
 
 <!-- _pages/research.md — /publications/ redirects here (see publications-redirect.html) -->
 
-I build systems that let mutually distrusting parties store, share, and compute on data with cryptographic integrity and confidentiality guarantees. Current directions include decentralized multi-tenant databases ([Web3DB](https://www.web3db.org/), MtDB), secure logging and provenance for data sharing, and consent and data-ownership mechanisms in the age of generative AI.
+I build systems that let mutually distrusting parties store, share, and compute on data with cryptographic integrity and confidentiality guarantees. Current directions include decentralized data infrastructure ([Web3DB](https://www.web3db.org/), MtDB, and [Web3FS](https://fs.web3db.org/), its decentralized file system), secure logging and provenance for data sharing, and consent and data-ownership mechanisms in the age of generative AI.
 
 Publications below, also on [Google Scholar](https://scholar.google.com/citations?user=kbODGysAAAAJ).
 
