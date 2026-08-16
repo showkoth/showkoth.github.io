@@ -48,14 +48,6 @@ cv:
           - Authored 2+ peer-reviewed publications focusing on distributed systems, security, and confidential computing.
           - Mentored 5+ undergraduate students on research projects related to distributed systems and security.
 
-      - company: University of Dhaka
-        position: Research Assistant
-        location: Dhaka, Bangladesh
-        url: https://www.du.ac.bd/
-        start_date: 2020-01-01
-        end_date: 2020-12-31
-        summary: Blockchain-based network log management research under [Dr. Mosarrat Jahan](https://www.du.ac.bd/faculty/faculty_details/CSE/1777) and [Dr. Upama Kabir](https://du.ac.bd/index.php/faculty/faculty_details/CSE/1765).
-
       - company: Itransition Software Bangladesh Limited
         position: Software Engineer, Level 3
         location: Dhaka, Bangladesh
@@ -83,6 +75,14 @@ cv:
         url: https://technohaven.com/
         start_date: 2020-06-01
         end_date: 2020-08-31
+
+      - company: University of Dhaka
+        position: Research Assistant
+        location: Dhaka, Bangladesh
+        url: https://www.du.ac.bd/
+        start_date: 2020-01-01
+        end_date: 2020-12-31
+        summary: Blockchain-based network log management research under [Dr. Mosarrat Jahan](https://www.du.ac.bd/faculty/faculty_details/CSE/1777) and [Dr. Upama Kabir](https://du.ac.bd/index.php/faculty/faculty_details/CSE/1765).
 
       # Teaching lives inside Experience because the CV plugin only renders a
       # fixed set of section names; `category` lets the site group it separately.
