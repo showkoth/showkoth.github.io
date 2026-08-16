@@ -31,6 +31,11 @@ overridden here (see test/style_contract.js), so it is hidden instead.
     color: var(--global-theme-color);
     text-decoration-color: var(--global-theme-color);
   }
+
+  /* Air between sections so entries group under their heading. */
+  .post article h2 {
+    margin-top: 2rem;
+  }
 </style>
 
 {% assign sections = site.data.cv.cv.sections %}
@@ -39,7 +44,7 @@ overridden here (see test/style_contract.js), so it is hidden instead.
 
 <ul>
   {% for item in sections.Awards %}
-    <li class="mb-3">
+    <li class="mb-4">
       {% if item.url %}<a href="{{ item.url }}"><strong>{{ item.title }}</strong></a>{% else %}<strong>{{ item.title }}</strong>{% endif %}<br />
       {{ item.awarder }}{% if item.date %} · <em>{{ item.date | date: '%b %Y' }}</em>{% endif %}
       {% if item.summary %}<br />{{ item.summary }}{% endif %}

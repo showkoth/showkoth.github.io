@@ -37,6 +37,11 @@ instead. The section headings below carry the page on their own.
     white-space: nowrap;
     padding-left: 1rem;
   }
+
+  /* Air between sections so entries group under their heading. */
+  .post article h2 {
+    margin-top: 2rem;
+  }
 </style>
 
 {% comment %}
@@ -52,7 +57,7 @@ the CV page and the RenderCV PDF, so there is only one copy of these facts.
 
 <ul>
   {% for item in roles %}
-    <li class="mb-3">
+    <li class="mb-4">
       <div class="d-flex flex-wrap justify-content-between align-items-baseline">
         <span>
           <strong>{{ item.position }}</strong> —
@@ -80,7 +85,7 @@ the CV page and the RenderCV PDF, so there is only one copy of these facts.
 
 <ul>
   {% for item in sections.Education %}
-    <li class="mb-3">
+    <li class="mb-4">
       <div class="d-flex flex-wrap justify-content-between align-items-baseline">
         <span>
           <strong>{{ item.studyType }} in {{ item.area }}</strong> —
@@ -109,7 +114,7 @@ the CV page and the RenderCV PDF, so there is only one copy of these facts.
 
 <ul>
   {% for item in teaching %}
-    <li class="mb-3">
+    <li class="mb-4">
       <div class="d-flex flex-wrap justify-content-between align-items-baseline">
         <span>
           <strong>{{ item.position }}</strong> —
