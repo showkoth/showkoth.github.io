@@ -46,14 +46,18 @@ the CV page and the RenderCV PDF, so there is only one copy of these facts.
 <ul>
   {% for item in roles %}
     <li class="mb-3">
-      <strong>{{ item.position }}</strong><br />
-      {% if item.url %}<a href="{{ item.url }}">{{ item.company }}</a>{% else %}{{ item.company }}{% endif %}
-      {% if item.location %} · {{ item.location }}{% endif %}<br />
-      <em>
-        {{ item.start_date | date: '%b %Y' }} –
-        {% if item.end_date == 'present' %}Present{% else %}{{ item.end_date | date: '%b %Y' }}{% endif %}
-      </em>
-      {% if item.summary %}<br />{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}{% endif %}
+      <div class="d-flex flex-wrap justify-content-between align-items-baseline">
+        <span>
+          <strong>{{ item.position }}</strong> —
+          {% if item.url %}<a href="{{ item.url }}">{{ item.company }}</a>{% else %}{{ item.company }}{% endif %}
+          {% if item.location %} · {{ item.location }}{% endif %}
+        </span>
+        <em>
+          {{ item.start_date | date: '%b %Y' }} –
+          {% if item.end_date == 'present' %}Present{% else %}{{ item.end_date | date: '%b %Y' }}{% endif %}
+        </em>
+      </div>
+      {% if item.summary %}{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}{% endif %}
       {% if item.highlights %}
         <ul>
           {% for highlight in item.highlights %}
@@ -70,13 +74,17 @@ the CV page and the RenderCV PDF, so there is only one copy of these facts.
 <ul>
   {% for item in sections.Education %}
     <li class="mb-3">
-      <strong>{{ item.studyType }} in {{ item.area }}</strong><br />
-      {% if item.url %}<a href="{{ item.url }}">{{ item.institution }}</a>{% else %}{{ item.institution }}{% endif %}
-      {% if item.location %} · {{ item.location }}{% endif %}<br />
-      <em>
-        {{ item.start_date | date: '%b %Y' }} –
-        {% if item.end_date == 'present' %}Present{% else %}{{ item.end_date | date: '%b %Y' }}{% endif %}
-      </em>
+      <div class="d-flex flex-wrap justify-content-between align-items-baseline">
+        <span>
+          <strong>{{ item.studyType }} in {{ item.area }}</strong> —
+          {% if item.url %}<a href="{{ item.url }}">{{ item.institution }}</a>{% else %}{{ item.institution }}{% endif %}
+          {% if item.location %} · {{ item.location }}{% endif %}
+        </span>
+        <em>
+          {{ item.start_date | date: '%b %Y' }} –
+          {% if item.end_date == 'present' %}Present{% else %}{{ item.end_date | date: '%b %Y' }}{% endif %}
+        </em>
+      </div>
       {% if item.highlights %}
         <ul>
           {% for highlight in item.highlights %}
@@ -95,14 +103,18 @@ the CV page and the RenderCV PDF, so there is only one copy of these facts.
 <ul>
   {% for item in teaching %}
     <li class="mb-3">
-      <strong>{{ item.position }}</strong><br />
-      {% if item.url %}<a href="{{ item.url }}">{{ item.company }}</a>{% else %}{{ item.company }}{% endif %}
-      {% if item.location %} · {{ item.location }}{% endif %}<br />
-      <em>
-        {{ item.start_date | date: '%b %Y' }} –
-        {% if item.end_date == 'present' %}Present{% else %}{{ item.end_date | date: '%b %Y' }}{% endif %}
-      </em>
-      {% if item.summary %}<br />{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}{% endif %}
+      <div class="d-flex flex-wrap justify-content-between align-items-baseline">
+        <span>
+          <strong>{{ item.position }}</strong> —
+          {% if item.url %}<a href="{{ item.url }}">{{ item.company }}</a>{% else %}{{ item.company }}{% endif %}
+          {% if item.location %} · {{ item.location }}{% endif %}
+        </span>
+        <em>
+          {{ item.start_date | date: '%b %Y' }} –
+          {% if item.end_date == 'present' %}Present{% else %}{{ item.end_date | date: '%b %Y' }}{% endif %}
+        </em>
+      </div>
+      {% if item.summary %}{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}{% endif %}
     </li>
   {% endfor %}
 </ul>
