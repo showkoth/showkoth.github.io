@@ -31,22 +31,53 @@ instead. The section headings below carry the page on their own.
     text-decoration-color: var(--global-theme-color);
   }
 
-  /* Keep dates on the right edge even when a long title forces a wrap. */
-  .post article li > .d-flex > em {
-    margin-left: auto;
-    white-space: nowrap;
-    padding-left: 1rem;
-  }
-
   /* Air between sections so entries group under their heading. */
   .post article h2 {
     margin-top: 2rem;
+  }
+
+  /* Timeline: a rail down the left with a dot per entry. */
+  .timeline {
+    list-style: none;
+    margin-left: 0.4rem;
+    padding-left: 1.4rem;
+    border-left: 2px solid var(--global-divider-color);
+  }
+
+  .timeline > li {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+
+  .timeline > li::before {
+    content: "";
+    position: absolute;
+    left: calc(-1.4rem - 7px);
+    top: 0.4em;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--global-theme-color);
+    border: 2px solid var(--global-bg-color);
+  }
+
+  .timeline .entry-detail {
+    color: var(--global-text-color-light);
+  }
+
+  /* Keep dates on the right edge even when a long title forces a wrap. */
+  .timeline > li > .d-flex > em {
+    margin-left: auto;
+    white-space: nowrap;
+    padding-left: 1rem;
   }
 </style>
 
 {% comment %}
 Everything on this page is rendered from \_data/cv.yml, the same file that feeds
 the CV page and the RenderCV PDF, so there is only one copy of these facts.
+Each experience entry's `blurb` is the one-line web version; the fuller
+`highlights` are rendered only by the CV page and PDF.
 {% endcomment %}
 
 {% assign sections = site.data.cv.cv.sections %}
@@ -55,9 +86,9 @@ the CV page and the RenderCV PDF, so there is only one copy of these facts.
 
 ## professional experience
 
-<ul>
+<ul class="timeline">
   {% for item in roles %}
-    <li class="mb-4">
+    <li>
       <div class="d-flex flex-wrap justify-content-between align-items-baseline">
         <span>
           <strong>{{ item.position }}</strong> —
@@ -69,13 +100,8 @@ the CV page and the RenderCV PDF, so there is only one copy of these facts.
           {% if item.end_date == 'present' %}Present{% else %}{{ item.end_date | date: '%b %Y' }}{% endif %}
         </em>
       </div>
-      {% if item.summary %}{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}{% endif %}
-      {% if item.highlights %}
-        <ul>
-          {% for highlight in item.highlights %}
-            <li>{{ highlight | markdownify | remove: '<p>' | remove: '</p>' }}</li>
-          {% endfor %}
-        </ul>
+      {% if item.blurb %}
+        <div class="entry-detail">{{ item.blurb | markdownify | remove: '<p>' | remove: '</p>' }}</div>
       {% endif %}
     </li>
   {% endfor %}
@@ -83,9 +109,9 @@ the CV page and the RenderCV PDF, so there is only one copy of these facts.
 
 ## education
 
-<ul>
+<ul class="timeline">
   {% for item in sections.Education %}
-    <li class="mb-4">
+    <li>
       <div class="d-flex flex-wrap justify-content-between align-items-baseline">
         <span>
           <strong>{{ item.studyType }} in {{ item.area }}</strong> —
@@ -98,11 +124,9 @@ the CV page and the RenderCV PDF, so there is only one copy of these facts.
         </em>
       </div>
       {% if item.highlights %}
-        <ul>
-          {% for highlight in item.highlights %}
-            <li>{{ highlight | markdownify | remove: '<p>' | remove: '</p>' }}</li>
-          {% endfor %}
-        </ul>
+        {% for highlight in item.highlights %}
+          <div class="entry-detail">{{ highlight | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+        {% endfor %}
       {% endif %}
     </li>
   {% endfor %}
@@ -112,9 +136,9 @@ the CV page and the RenderCV PDF, so there is only one copy of these facts.
 
 ## teaching
 
-<ul>
+<ul class="timeline">
   {% for item in teaching %}
-    <li class="mb-4">
+    <li>
       <div class="d-flex flex-wrap justify-content-between align-items-baseline">
         <span>
           <strong>{{ item.position }}</strong> —
@@ -126,7 +150,7 @@ the CV page and the RenderCV PDF, so there is only one copy of these facts.
           {% if item.end_date == 'present' %}Present{% else %}{{ item.end_date | date: '%b %Y' }}{% endif %}
         </em>
       </div>
-      {% if item.summary %}{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}{% endif %}
+      {% if item.summary %}<div class="entry-detail">{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>{% endif %}
     </li>
   {% endfor %}
 </ul>

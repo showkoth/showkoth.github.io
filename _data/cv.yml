@@ -44,6 +44,8 @@ cv:
         url: https://www.nd.edu/
         start_date: 2024-08-01
         end_date: present
+        # blurb is the one-line web version; the CV plugin and PDF use highlights.
+        blurb: Researching and developing [Web3DB](https://www.web3db.org/), a decentralized platform for secure data sharing; mentoring undergraduate researchers.
         highlights:
           - Researching and developing [Web3DB](https://www.web3db.org/), a decentralized platform for secure data sharing and management, in a collaborative team.
           - Authored 2+ peer-reviewed publications focusing on distributed systems, security, and confidential computing.
@@ -55,6 +57,7 @@ cv:
         url: https://www.itransition.com
         start_date: 2023-11-01
         end_date: 2024-07-31
+        blurb: Built high-performance APIs for [Product Madness](https://www.productmadness.com/), a mobile game studio with 5M+ monthly active users; led a team of 5 developers.
         highlights:
           - Collaborated with global clients to design and implement high-performance APIs for [Product Madness](https://www.productmadness.com/), a leading mobile game studio with 5M+ monthly active users, consistently meeting release deadlines.
           - Led a team of 5 developers building and maintaining features with Spring Boot (Java), React, and PostgreSQL in an Agile process.
@@ -65,6 +68,7 @@ cv:
         url: https://konai.com/
         start_date: 2023-03-01
         end_date: 2023-11-30
+        blurb: Implemented authentication and authorization for microservices serving 13M+ [KonaCard](https://www.konacard.co.kr/) users; cut query latency 25% with a database redesign.
         highlights:
           - Implemented the authentication and authorization system for microservices handling 13M+ [KonaCard](https://www.konacard.co.kr/) users.
           - Redesigned the database architecture and developed a migration script, reducing query latency by 25%.
@@ -75,6 +79,7 @@ cv:
         url: https://dohatec.com/
         start_date: 2020-10-01
         end_date: 2023-03-31
+        blurb: Developed the microservices backend for [ePMIS](https://epmis.gov.bd/), the Government of Bangladesh's national project-management system.
         highlights:
           - Researched and developed a microservices-based backend for [ePMIS](https://epmis.gov.bd/) — the Government of Bangladesh's Electronic Project Management Information System — prioritizing high performance and scalability.
           - Collaborated with cross-functional Agile teams to design high-performance RESTful APIs using Spring (Java), AngularJS, and SQL Server.
@@ -85,6 +90,7 @@ cv:
         url: https://technohaven.com/
         start_date: 2020-06-01
         end_date: 2020-08-31
+        blurb: Built a prototype supply-chain traceability system on Hyperledger Fabric. [[Code](https://github.com/showkoth/echain)]
         highlights:
           - Developed a prototype supply-chain traceability system using Hyperledger Fabric. [[Code](https://github.com/showkoth/echain)]
 
@@ -94,6 +100,7 @@ cv:
         url: https://www.du.ac.bd/
         start_date: 2020-01-01
         end_date: 2020-12-31
+        blurb: Secure provenance tracking with PKI and blockchain at the Cyber Security Lab, advised by [Dr. Mosarrat Jahan](https://www.du.ac.bd/faculty/faculty_details/CSE/1777) and [Dr. Upama Kabir](https://du.ac.bd/index.php/faculty/faculty_details/CSE/1765); published two peer-reviewed papers.
         summary: Cyber Security Lab, advised by [Dr. Mosarrat Jahan](https://www.du.ac.bd/faculty/faculty_details/CSE/1777) and [Dr. Upama Kabir](https://du.ac.bd/index.php/faculty/faculty_details/CSE/1765).
         highlights:
           - Built a prototype system for secure provenance tracking and real-time monitoring using PKI and blockchain; published one peer-reviewed journal article and one conference paper.
