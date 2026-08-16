@@ -8,7 +8,21 @@
   .post-header {
     display: none;
   }
-</style> <h2 id="academic-service">academic service</h2> <ul> <li class="mb-3"> <strong>Reviewer</strong> — IEEE International Conference on Blockchain and Cryptocurrency (ICBC) <br> <em>2025 – 2026</em> <br>Reviewer for ICBC 2025 and ICBC 2026. </li> <li class="mb-3"> <strong>Student Volunteer</strong> — International Conference on Innovation and Engineering (ICIET 2019) · Dhaka, Bangladesh<br> <em>2019</em> </li> <li class="mb-3"> <strong>Mentor</strong> — SCB-PA Inter School and College Programming Contest · Bangladesh<br> <em>2019</em> </li> </ul> <script src="/assets/js/site-tweaks.js"></script> </article> </div> </div> <footer class="sticky-bottom mt-5" role="contentinfo"> <div class="container"> © Copyright 2026 Showkot Hossain. Last updated: July 30, 2026. </div> </footer> <script>
+
+  /* Mute in-content links: many orgs are linked here, and full accent color
+     turns the list into a stripe pattern. Accent returns on hover. */
+  .post article a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--global-divider-color);
+    text-underline-offset: 2px;
+  }
+
+  .post article a:hover {
+    color: var(--global-theme-color);
+    text-decoration-color: var(--global-theme-color);
+  }
+</style> <h2 id="academic-service">academic service</h2> <ul> <li class="mb-3"> <strong>Reviewer</strong> — IEEE International Conference on Blockchain and Cryptocurrency (ICBC) <br> <em>2025 – 2026</em> <br>Reviewer for ICBC 2025 and ICBC 2026. </li> <li class="mb-3"> <strong>Student Volunteer</strong> — International Conference on Innovation and Engineering (ICIET 2019) · Dhaka, Bangladesh<br> <em>2019</em> </li> <li class="mb-3"> <strong>Mentor</strong> — SCB-PA Inter School and College Programming Contest · Bangladesh<br> <em>2019</em> </li> </ul> <script src="/assets/js/site-tweaks.js"></script> </article> </div> </div> <footer class="sticky-bottom mt-5" role="contentinfo"> <div class="container"> © Copyright 2026 Showkot Hossain. Last updated: August 16, 2026. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
@@ -62,6 +76,9 @@ ninja.data = [{
             window.location.href = "/cv/";
           },
         },{id: "news-selected-for-a-research-assistant-position-at-the-department-of-computer-science-and-engineering-university-of-notre-dame",
+          title: 'Selected for a Research Assistant position at the Department of Computer Science and...',
+          description: "",
+          section: "News",},{id: "news-selected-for-a-research-assistant-position-at-the-department-of-computer-science-and-engineering-university-of-notre-dame",
           title: 'Selected for a Research Assistant position at the Department of Computer Science and...',
           description: "",
           section: "News",},{id: "news-started-my-phd-in-computer-science-and-engineering-at-the-university-of-notre-dame-joining-the-data-security-and-privacy-lab",
