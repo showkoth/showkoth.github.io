@@ -30,6 +30,13 @@ instead. The section headings below carry the page on their own.
     color: var(--global-theme-color);
     text-decoration-color: var(--global-theme-color);
   }
+
+  /* Keep dates on the right edge even when a long title forces a wrap. */
+  .post article li > .d-flex > em {
+    margin-left: auto;
+    white-space: nowrap;
+    padding-left: 1rem;
+  }
 </style>
 
 {% comment %}
