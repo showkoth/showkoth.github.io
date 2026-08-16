@@ -57,6 +57,18 @@
       ".profile img {",
       "  border-radius: 8px;",
       "}",
+      // Bibliography: the venue-badge column is a 16.7% Bootstrap col for a
+      // small pill, and the watermark year headers pad a tall empty band;
+      // tighten both so the list reads as one body of work.
+      "ol.bibliography .abbr {",
+      "  flex: 0 0 7.5rem;",
+      "  max-width: 7.5rem;",
+      "}",
+      "h2.bibliography {",
+      "  font-size: 1.75rem;",
+      "  margin-top: 1rem;",
+      "  padding-top: 0;",
+      "}",
     ].join("\n");
     document.head.appendChild(style);
   }
