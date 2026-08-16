@@ -65,7 +65,7 @@ cv:
       - company: Kona Software Lab Limited
         position: Software Engineer, Level 2
         location: Dhaka, Bangladesh
-        url: https://konai.com/
+        url: https://www.konasl.com/
         start_date: 2023-03-01
         end_date: 2023-11-30
         blurb: Implemented authentication and authorization for microservices serving 13M+ [KonaCard](https://www.konacard.co.kr/) users; cut query latency 25% with a database redesign and query optimization.
