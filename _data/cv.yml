@@ -53,7 +53,7 @@ cv:
         location: Dhaka, Bangladesh
         url: https://www.itransition.com
         start_date: 2023-11-01
-        end_date: 2024-06-30
+        end_date: 2024-07-31
         highlights:
           - Collaborated with global clients to design and implement high-performance APIs for [Product Madness](https://www.productmadness.com/), a leading mobile game studio with 5M+ monthly active users, consistently meeting release deadlines.
           - Led a team of 5 developers building and maintaining features with Spring Boot (Java), React, and PostgreSQL in an Agile process.
