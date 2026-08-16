@@ -68,7 +68,7 @@ cv:
         url: https://konai.com/
         start_date: 2023-03-01
         end_date: 2023-11-30
-        blurb: Implemented authentication and authorization for microservices serving 13M+ [KonaCard](https://www.konacard.co.kr/) users; cut query latency 25% with a database redesign.
+        blurb: Implemented authentication and authorization for microservices serving 13M+ [KonaCard](https://www.konacard.co.kr/) users; cut query latency 25% with a database redesign and query optimization.
         highlights:
           - Implemented the authentication and authorization system for microservices handling 13M+ [KonaCard](https://www.konacard.co.kr/) users.
           - Redesigned the database architecture and developed a migration script, reducing query latency by 25%.
@@ -90,9 +90,9 @@ cv:
         url: https://technohaven.com/
         start_date: 2020-06-01
         end_date: 2020-08-31
-        blurb: Built a prototype supply-chain traceability system on Hyperledger Fabric. [[Code](https://github.com/showkoth/echain)]
+        blurb: Built a prototype supply-chain traceability system on Hyperledger Fabric.
         highlights:
-          - Developed a prototype supply-chain traceability system using Hyperledger Fabric. [[Code](https://github.com/showkoth/echain)]
+          - Developed a prototype supply-chain traceability system using Hyperledger Fabric.
 
       - company: University of Dhaka
         position: Research Assistant
@@ -100,10 +100,10 @@ cv:
         url: https://www.du.ac.bd/
         start_date: 2020-01-01
         end_date: 2020-12-31
-        blurb: Secure provenance tracking with PKI and blockchain at the Cyber Security Lab, advised by [Dr. Mosarrat Jahan](https://www.du.ac.bd/faculty/faculty_details/CSE/1777) and [Dr. Upama Kabir](https://du.ac.bd/index.php/faculty/faculty_details/CSE/1765); published two peer-reviewed papers.
+        blurb: Built secure provenance tracking system with PKI and blockchain; authored two peer-reviewed papers.
         summary: Cyber Security Lab, advised by [Dr. Mosarrat Jahan](https://www.du.ac.bd/faculty/faculty_details/CSE/1777) and [Dr. Upama Kabir](https://du.ac.bd/index.php/faculty/faculty_details/CSE/1765).
         highlights:
-          - Built a prototype system for secure provenance tracking and real-time monitoring using PKI and blockchain; published one peer-reviewed journal article and one conference paper.
+          - Built a prototype system for secure provenance tracking and real-time monitoring using PKI and blockchain; authored one peer-reviewed journal article and one conference paper.
 
       # Teaching lives inside Experience because the CV plugin only renders a
       # fixed set of section names; `category` lets the site group it separately.
