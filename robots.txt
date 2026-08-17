@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://showkoth.github.io/sitemap.xml
+Sitemap: https://showkothossain.com/sitemap.xml
