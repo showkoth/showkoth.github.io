@@ -1,0 +1,33 @@
+name: Build CV PDF
+# Rebuilds assets/pdf/academic-cv.pdf whenever the LaTeX source changes, so
+# the PDF never depends on any one machine's TeX installation. The committed
+# PDF only (not cv-src) is pushed back, which cannot retrigger this workflow.
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "assets/cv-src/**"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    name: XeLaTeX
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile main.tex
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          working_directory: assets/cv-src
+          latexmk_use_xelatex: true
+      - name: Install the built PDF
+        run: mv assets/cv-src/main.pdf assets/pdf/academic-cv.pdf
+      - name: Commit and push if changed
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+          git add assets/pdf/academic-cv.pdf
+          git diff --cached --quiet || { git commit -m "chore: rebuild CV PDF from cv-src"; git push; }
