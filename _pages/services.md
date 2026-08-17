@@ -67,10 +67,10 @@ title/description header is a theme file and cannot be overridden here
   {% endfor %}
 </ol>
 
-## Other services
+## Community & leadership
 
 <ol class="service-list">
-  {% for item in academic %}
+  {% for item in community %}
     <li>
       <strong>{{ item.position }}</strong>, {{ item.company }}
       {% assign start_year = item.start_date | date: '%Y' %}
@@ -81,10 +81,10 @@ title/description header is a theme file and cannot be overridden here
   {% endfor %}
 </ol>
 
-## Community & leadership
+## Other services
 
 <ol class="service-list">
-  {% for item in community %}
+  {% for item in academic %}
     <li>
       <strong>{{ item.position }}</strong>, {{ item.company }}
       {% assign start_year = item.start_date | date: '%Y' %}
