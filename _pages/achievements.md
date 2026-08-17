@@ -36,20 +36,44 @@ overridden here (see test/style_contract.js), so it is hidden instead.
   .post article h2 {
     margin-top: 2rem;
   }
+
+  /* Numbered list; scale matches the services page. */
+  .service-list > li {
+    margin-bottom: 0.5rem;
+  }
+
+  .service-list .entry-detail {
+    color: var(--global-text-color-light);
+    font-size: 0.875rem;
+  }
 </style>
 
 {% assign sections = site.data.cv.cv.sections %}
+{% assign grants = sections.Awards | where: 'category', 'grant' %}
+{% assign honors = sections.Awards | where_exp: 'item', "item.category != 'grant'" %}
+
+## Grants & fellowships
+
+<ol class="service-list">
+  {% for item in grants %}
+    <li>
+      {% if item.url %}<a href="{{ item.url }}"><strong>{{ item.title }}</strong></a>{% else %}<strong>{{ item.title }}</strong>{% endif %}, {{ item.awarder }}
+      {% if item.date_label %}({{ item.date_label }}){% elsif item.date %}({{ item.date | date: '%Y' }}){% endif %}
+      {% if item.summary %}<div class="entry-detail">{{ item.summary }}</div>{% endif %}
+    </li>
+  {% endfor %}
+</ol>
 
 ## Honors & awards
 
-<ul>
-  {% for item in sections.Awards %}
-    <li class="mb-4">
-      {% if item.url %}<a href="{{ item.url }}"><strong>{{ item.title }}</strong></a>{% else %}<strong>{{ item.title }}</strong>{% endif %}<br />
-      {{ item.awarder }}{% if item.date %} · <em>{{ item.date | date: '%b %Y' }}</em>{% endif %}
-      {% if item.summary %}<br />{{ item.summary }}{% endif %}
+<ol class="service-list">
+  {% for item in honors %}
+    <li>
+      {% if item.url %}<a href="{{ item.url }}"><strong>{{ item.title }}</strong></a>{% else %}<strong>{{ item.title }}</strong>{% endif %}, {{ item.awarder }}
+      {% if item.date_label %}({{ item.date_label }}){% elsif item.date %}({{ item.date | date: '%Y' }}){% endif %}
+      {% if item.summary %}<div class="entry-detail">{{ item.summary }}</div>{% endif %}
     </li>
   {% endfor %}
-</ul>
+</ol>
 
 <script src="{{ '/assets/js/site-tweaks.js' | relative_url }}"></script>

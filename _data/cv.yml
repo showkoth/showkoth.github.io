@@ -207,15 +207,36 @@ cv:
         category: community
 
     Awards:
-      - title: Award of Merit — International Blockchain Olympiad (IBCOL 2020)
+      # category: grant entries render under "Grants & fellowships" on the
+      # achievements page; the rest render under "Honors & awards".
+      # date_label carries ranges the single `date` field can't express.
+      - title: Travel Grant
+        awarder: University of Notre Dame
+        date_label: "2025"
+        summary: $1,132 to participate in the IEEE Blockchain 2025 conference as an author (held in Zhengzhou, China).
+        category: grant
+
+      - title: Research Assistantship
+        awarder: University of Notre Dame
+        date_label: 2024 – 2029
+        summary: Tuition scholarship, including health insurance and bimonthly stipends.
+        category: grant
+
+      - title: ICT Innovation Fund
+        awarder: ICT Division, Bangladesh
+        date_label: 2020 – 2021
+        summary: Grant of 5,000 USD for innovative project development.
+        category: grant
+
+      - title: Award of Merit
         date: 2020-07-01
-        awarder: International Blockchain Olympiad
+        awarder: International Blockchain Olympiad (IBCOL)
         url: https://drive.google.com/drive/folders/1dYR3MENGxMj1R7cw1RVZr-ERpE4sGJLh
         summary: As part of team "DU_Hyperledger".
 
-      - title: 9th Place — Blockchain Olympiad Bangladesh (BCOLBD 2020)
+      - title: 9th Place
         date: 2020-05-01
-        awarder: Blockchain Olympiad Bangladesh
+        awarder: Blockchain Olympiad Bangladesh (BCOLBD)
         url: https://drive.google.com/drive/folders/1Wg1jzND3ncyZcagQsClQ7uz2KMjL8D6O
         summary: As part of team "DU_Hyperledger".
 
