@@ -251,6 +251,9 @@ cv:
     # Rendered only by the achievements page; the CV plugin ignores unknown
     # section names. Grouped by issuer, one line each.
     Certifications:
+      - issuer: HackerRank
+        name: Problem Solving (Intermediate)
+
       - issuer: Coursera
         name: Blockchain Basics, Smart Contracts, Decentralized Applications (DApps), Blockchain Platforms, Python for Everybody Specialization, and Introduction to Git and GitHub
 
@@ -259,9 +262,6 @@ cv:
 
       - issuer: Cognitive Class
         name: Blockchain Essentials
-
-      - issuer: HackerRank
-        name: Problem Solving (Intermediate)
 
     Skills:
       - name: Programming
