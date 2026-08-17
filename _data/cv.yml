@@ -126,7 +126,7 @@ cv:
         end_date: 2026-12-31
         current: true # ongoing role; the services timeline fills the dot
 
-      - company: International Conference on Innovation and Engineering (ICIET 2019)
+      - company: International Conference on Innovation and Engineering (ICIET)
         position: Student Volunteer
         location: Dhaka, Bangladesh
         start_date: 2019-01-01

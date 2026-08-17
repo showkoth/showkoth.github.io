@@ -38,25 +38,12 @@ title/description header is a theme file and cannot be overridden here
     margin-top: 2rem;
   }
 
-  /* Numbered service list; scale matches the education & experience page. */
   .service-list > li {
-    margin-bottom: 1rem;
-  }
-
-  .service-list strong {
-    font-size: 1.0625rem;
+    margin-bottom: 0.5rem;
   }
 
   .service-list .entry-detail {
     color: var(--global-text-color-light);
-    font-size: 0.875rem;
-  }
-
-  /* Keep dates on the right edge even when a long title forces a wrap. */
-  .service-list > li > .d-flex > em {
-    margin-left: auto;
-    white-space: nowrap;
-    padding-left: 1rem;
     font-size: 0.875rem;
   }
 </style>
@@ -70,14 +57,10 @@ title/description header is a theme file and cannot be overridden here
 <ol class="service-list">
   {% for item in academic %}
     <li>
-      <div class="d-flex flex-wrap justify-content-between align-items-baseline">
-        <span><strong>{{ item.position }}</strong> — {{ item.company }}</span>
-        <em>
-          {% assign start_year = item.start_date | date: '%Y' %}
-          {% assign end_year = item.end_date | date: '%Y' %}
-          {{ start_year }}{% unless end_year == start_year %} – {{ end_year }}{% endunless %}
-        </em>
-      </div>
+      <strong>{{ item.position }}</strong>, {{ item.company }}
+      {% assign start_year = item.start_date | date: '%Y' %}
+      {% assign end_year = item.end_date | date: '%Y' %}
+      ({{ start_year }}{% unless end_year == start_year %}–{{ end_year }}{% endunless %})
       {% if item.summary %}<div class="entry-detail">{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>{% endif %}
     </li>
   {% endfor %}
@@ -88,14 +71,10 @@ title/description header is a theme file and cannot be overridden here
 <ol class="service-list">
   {% for item in community %}
     <li>
-      <div class="d-flex flex-wrap justify-content-between align-items-baseline">
-        <span><strong>{{ item.position }}</strong> — {{ item.company }}</span>
-        <em>
-          {% assign start_year = item.start_date | date: '%Y' %}
-          {% assign end_year = item.end_date | date: '%Y' %}
-          {{ start_year }}{% unless end_year == start_year %} – {{ end_year }}{% endunless %}
-        </em>
-      </div>
+      <strong>{{ item.position }}</strong>, {{ item.company }}
+      {% assign start_year = item.start_date | date: '%Y' %}
+      {% assign end_year = item.end_date | date: '%Y' %}
+      ({{ start_year }}{% unless end_year == start_year %}–{{ end_year }}{% endunless %})
       {% if item.summary %}<div class="entry-detail">{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>{% endif %}
     </li>
   {% endfor %}
