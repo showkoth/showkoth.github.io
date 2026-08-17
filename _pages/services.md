@@ -67,7 +67,7 @@ title/description header is a theme file and cannot be overridden here
   {% endfor %}
 </ol>
 
-## Academic service
+## Other services
 
 <ol class="service-list">
   {% for item in academic %}
