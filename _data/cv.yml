@@ -248,6 +248,19 @@ cv:
         summary: Full tuition waiver for top-1% results (GPA 5.0/5.0, above 80% in every subject) in 5th, 8th, 10th, and 12th grade board examinations.
         category: grant
 
+    # Rendered only by the services page; the CV plugin ignores unknown
+    # section names. Markers: * University of Notre Dame, @ Indiana Institute
+    # of Technology — the legend is rendered by the page.
+    Mentoring:
+      - term: Spring 2026
+        mentees: Will Armsworthy*, Paola Lopez*, Aaron Wang*
+      - term: Fall 2025
+        mentees: Will Armsworthy*, Maria C. Leal*, Avery Hughes@
+      - term: Spring 2025
+        mentees: Ryan Nahm*, Aaron Wang*, Avery Hughes@
+      - term: Fall 2024
+        mentees: Gustavo Aniceto*, Jonathan D'Alonzo*
+
     # Rendered only by the achievements page; the CV plugin ignores unknown
     # section names. Grouped by issuer, one line each.
     Certifications:

@@ -46,6 +46,26 @@ title/description header is a theme file and cannot be overridden here
     color: var(--global-text-color-light);
     font-size: 0.875rem;
   }
+
+  /* Mentoring: one row per term, term column fixed and bold. */
+  .mentoring-note {
+    color: var(--global-text-color-light);
+    font-size: 0.875rem;
+  }
+
+  .mentoring tr {
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  .mentoring th {
+    white-space: nowrap;
+    padding: 0.4rem 1.5rem 0.4rem 0;
+    font-weight: 600;
+  }
+
+  .mentoring td {
+    padding: 0.4rem 0;
+  }
 </style>
 
 {% assign sections = site.data.cv.cv.sections %}
@@ -66,6 +86,22 @@ title/description header is a theme file and cannot be overridden here
     </li>
   {% endfor %}
 </ol>
+
+## Mentoring
+
+<p class="mentoring-note">
+  All mentees supervised in conjunction with <a href="https://sites.nd.edu/taeho-jung/">Prof. Taeho Jung</a> (University of Notre Dame).<br />
+  * University of Notre Dame &nbsp;|&nbsp; @ Indiana Institute of Technology
+</p>
+
+<table class="mentoring">
+  {% for row in sections.Mentoring %}
+    <tr>
+      <th scope="row">{{ row.term }}</th>
+      <td>{{ row.mentees }}</td>
+    </tr>
+  {% endfor %}
+</table>
 
 ## Community & leadership
 
