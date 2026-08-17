@@ -25,6 +25,7 @@
 \usepackage{hyperref}
 \usepackage{titlesec}
 \usepackage{parskip}
+\usepackage{needspace} % keep section headings with their content across page breaks
 \usepackage{tabularx}
 \usepackage{fancyhdr}   % For custom footers
 \usepackage{lastpage}   % For total page count
