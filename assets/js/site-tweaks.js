@@ -41,6 +41,22 @@
       "article h2::first-letter {",
       "  text-transform: uppercase;",
       "}",
+      // Section headings trail off into a thin rule. Inline-block + negative
+      // margin rather than flex: making the h2 a flex container would stop
+      // ::first-letter (above) from applying. Publications year headers are
+      // excluded — a rule under the watermark years would look wrong.
+      "article h2:not(.bibliography) {",
+      "  overflow: hidden;",
+      "}",
+      "article h2:not(.bibliography)::after {",
+      "  content: '';",
+      "  display: inline-block;",
+      "  width: 100%;",
+      "  margin-right: -100%;",
+      "  margin-left: 0.75rem;",
+      "  border-top: 1px solid var(--global-divider-color);",
+      "  vertical-align: middle;",
+      "}",
       // The theme renders social icons at 4rem; at that size nine icons
       // outweigh the page. Whisper, don't shout.
       ".social .contact-icons {",
