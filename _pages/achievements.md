@@ -52,7 +52,7 @@ overridden here (see test/style_contract.js), so it is hidden instead.
 {% assign grants = sections.Awards | where: 'category', 'grant' %}
 {% assign honors = sections.Awards | where_exp: 'item', "item.category != 'grant'" %}
 
-## Grants & fellowships
+## Grants & scholarships
 
 <ol class="service-list">
   {% for item in grants %}
