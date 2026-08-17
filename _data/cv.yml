@@ -163,12 +163,14 @@ cv:
         location: Dhaka, Bangladesh
         start_date: 2019-01-01
         end_date: 2019-12-31
+        summary: Assisted in organizing the conference, managing registrations, and coordinating with speakers and attendees.
 
       - company: SCB-PA Inter School and College Programming Contest
         position: Mentor
         location: Bangladesh
         start_date: 2018-01-01
         end_date: 2018-12-31
+        summary: Conducted workshops and training sessions for high school students to prepare for programming competitions.
 
       # category: community entries render under "Community & leadership" on
       # the services page; the others render under "Academic service".
@@ -178,6 +180,7 @@ cv:
         start_date: 2025-08-01
         end_date: 2026-05-31
         current: true
+        summary: Organized cultural events and sports activities for the Bangladeshi student community.
         category: community
 
       - company: Jiboner Alo
@@ -185,7 +188,7 @@ cv:
         location: Bangladesh
         start_date: 2017-01-01
         end_date: 2024-12-31
-        summary: Education for orphan and underprivileged children.
+        summary: Cofounded "Jiboner Alo" to provide education for orphan and underprivileged children.
         category: community
 
       - company: Private tutoring
@@ -193,10 +196,10 @@ cv:
         location: Bangladesh
         start_date: 2016-01-01
         end_date: 2021-12-31
-        summary: Tutored high school and undergraduate students.
+        summary: Tutored high school and undergraduate students to improve their academic performance.
 
       - company: Badhan, Dr. Muhammad Shahidullah Hall, University of Dhaka
-        position: Member
+        position: Executive member
         location: Bangladesh
         start_date: 2016-01-01
         end_date: 2020-12-31
