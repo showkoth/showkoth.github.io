@@ -167,8 +167,8 @@ cv:
       - company: SCB-PA Inter School and College Programming Contest
         position: Mentor
         location: Bangladesh
-        start_date: 2019-01-01
-        end_date: 2019-12-31
+        start_date: 2018-01-01
+        end_date: 2018-12-31
 
       # category: community entries render under "Community & leadership" on
       # the services page; the others render under "Academic service".
@@ -194,7 +194,6 @@ cv:
         start_date: 2016-01-01
         end_date: 2021-12-31
         summary: Tutored high school and undergraduate students.
-        category: community
 
       - company: Badhan
         position: Member
