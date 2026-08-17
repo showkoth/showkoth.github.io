@@ -91,6 +91,22 @@ instead. The section headings below carry the page on their own.
     padding-left: 1rem;
     font-size: 0.875rem;
   }
+
+  /* Skills: label column left, keywords right, like the PDF's layout. */
+  .skills tr {
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  .skills th {
+    white-space: nowrap;
+    padding: 0.4rem 1.5rem 0.4rem 0;
+    font-weight: 600;
+  }
+
+  .skills td {
+    padding: 0.4rem 0;
+    color: var(--global-text-color-light);
+  }
 </style>
 
 {% comment %}
@@ -177,5 +193,16 @@ Each experience entry's `blurb` is the one-line web version; the fuller
 </ul>
 
 {% endif %}
+
+## Technical skills
+
+<table class="skills">
+  {% for skill in sections.Skills %}
+    <tr>
+      <th scope="row">{{ skill.name }}</th>
+      <td>{{ skill.keywords }}</td>
+    </tr>
+  {% endfor %}
+</table>
 
 <script src="{{ '/assets/js/site-tweaks.js' | relative_url }}"></script>
