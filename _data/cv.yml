@@ -124,7 +124,8 @@ cv:
         location: ""
         start_date: 2025-01-01
         end_date: 2026-12-31
-        current: true # ongoing role; the services timeline fills the dot
+        current: true # ongoing role
+        category: review # renders under the Reviewer section on the services page
 
       - company: International Conference on Innovation and Engineering (ICIET)
         position: Student Volunteer

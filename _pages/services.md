@@ -49,8 +49,23 @@ title/description header is a theme file and cannot be overridden here
 </style>
 
 {% assign sections = site.data.cv.cv.sections %}
+{% assign review = sections.Volunteer | where: 'category', 'review' %}
 {% assign community = sections.Volunteer | where: 'category', 'community' %}
-{% assign academic = sections.Volunteer | where_exp: 'item', "item.category != 'community'" %}
+{% assign academic = sections.Volunteer | where_exp: 'item', "item.category != 'community' and item.category != 'review'" %}
+
+## Reviewer
+
+<ol class="service-list">
+  {% for item in review %}
+    <li>
+      <strong>{{ item.company }}</strong>,
+      {% assign start_year = item.start_date | date: '%Y' %}
+      {% assign end_year = item.end_date | date: '%Y' %}
+      {{ start_year }}{% unless end_year == start_year %}–{{ end_year }}{% endunless %}
+      {% if item.summary %}<div class="entry-detail">{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>{% endif %}
+    </li>
+  {% endfor %}
+</ol>
 
 ## Academic service
 
