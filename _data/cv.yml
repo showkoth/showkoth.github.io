@@ -124,7 +124,7 @@ cv:
         location: ""
         start_date: 2025-01-01
         end_date: 2026-12-31
-        summary: Reviewer for ICBC 2025 and ICBC 2026.
+        current: true # ongoing role; the services timeline fills the dot
 
       - company: International Conference on Innovation and Engineering (ICIET 2019)
         position: Student Volunteer
@@ -137,6 +137,40 @@ cv:
         location: Bangladesh
         start_date: 2019-01-01
         end_date: 2019-12-31
+
+      # category: community entries render under "Community & leadership" on
+      # the services page; the others render under "Academic service".
+      - company: Bangladeshi Students Association of Notre Dame (BDSA-ND)
+        position: Sports & Cultural Secretary
+        location: Notre Dame, IN, USA
+        start_date: 2025-08-01
+        end_date: 2026-05-31
+        current: true
+        category: community
+
+      - company: Jiboner Alo
+        position: Co-founder
+        location: Bangladesh
+        start_date: 2017-01-01
+        end_date: 2024-12-31
+        summary: Education for orphan and underprivileged children.
+        category: community
+
+      - company: Private tutoring
+        position: Tutor
+        location: Bangladesh
+        start_date: 2016-01-01
+        end_date: 2021-12-31
+        summary: Tutored high school and undergraduate students.
+        category: community
+
+      - company: Badhan
+        position: Member
+        location: Bangladesh
+        start_date: 2016-01-01
+        end_date: 2020-12-31
+        summary: Organized and participated in blood donation and educational workshops.
+        category: community
 
     Awards:
       - title: Award of Merit — International Blockchain Olympiad (IBCOL 2020)
