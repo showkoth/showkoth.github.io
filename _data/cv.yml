@@ -255,13 +255,10 @@ cv:
         name: Problem Solving (Intermediate)
 
       - issuer: Coursera
-        name: Blockchain Basics, Smart Contracts, Decentralized Applications (DApps), Blockchain Platforms, Python for Everybody Specialization, and Introduction to Git and GitHub
+        name: Smart Contracts, Decentralized Applications (DApps), and Blockchain Platforms
 
       - issuer: IBM
         name: IBM Blockchain Foundation Developer
-
-      - issuer: Cognitive Class
-        name: Blockchain Essentials
 
     Skills:
       - name: Programming
