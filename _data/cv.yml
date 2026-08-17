@@ -241,6 +241,7 @@ cv:
       - title: Government Scholarships (Primary through Higher Secondary)
         awarder: Board of Intermediate and Secondary Education, Rajshahi, Bangladesh
         summary: Full tuition waiver for top-1% results (GPA 5.0/5.0, above 80% in every subject) in 5th, 8th, 10th, and 12th grade board examinations.
+        category: grant
 
     Skills:
       - name: Programming
