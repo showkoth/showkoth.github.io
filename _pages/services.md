@@ -38,46 +38,22 @@ title/description header is a theme file and cannot be overridden here
     margin-top: 2rem;
   }
 
-  /* Timeline styles matching education & experience. */
-  .timeline {
-    list-style: none;
-    margin-left: 0.4rem;
-    padding-left: 1.4rem;
-    border-left: 2px solid var(--global-divider-color);
+  /* Numbered service list; scale matches the education & experience page. */
+  .service-list > li {
+    margin-bottom: 1rem;
   }
 
-  .timeline > li {
-    position: relative;
-    margin-bottom: 1.5rem;
-  }
-
-  .timeline > li::before {
-    content: "";
-    position: absolute;
-    left: calc(-1.4rem - 7px);
-    top: 0.4em;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: var(--global-bg-color);
-    border: 2px solid var(--global-theme-color);
-  }
-
-  /* Ongoing roles get a filled dot; past ones stay hollow. */
-  .timeline > li.current::before {
-    background: var(--global-theme-color);
-  }
-
-  .timeline strong {
+  .service-list strong {
     font-size: 1.0625rem;
   }
 
-  .timeline .entry-detail {
+  .service-list .entry-detail {
     color: var(--global-text-color-light);
     font-size: 0.875rem;
   }
 
-  .timeline > li > .d-flex > em {
+  /* Keep dates on the right edge even when a long title forces a wrap. */
+  .service-list > li > .d-flex > em {
     margin-left: auto;
     white-space: nowrap;
     padding-left: 1rem;
@@ -91,9 +67,9 @@ title/description header is a theme file and cannot be overridden here
 
 ## Academic service
 
-<ul class="timeline">
+<ol class="service-list">
   {% for item in academic %}
-    <li{% if item.current %} class="current"{% endif %}>
+    <li>
       <div class="d-flex flex-wrap justify-content-between align-items-baseline">
         <span><strong>{{ item.position }}</strong> — {{ item.company }}</span>
         <em>
@@ -105,13 +81,13 @@ title/description header is a theme file and cannot be overridden here
       {% if item.summary %}<div class="entry-detail">{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>{% endif %}
     </li>
   {% endfor %}
-</ul>
+</ol>
 
 ## Community & leadership
 
-<ul class="timeline">
+<ol class="service-list">
   {% for item in community %}
-    <li{% if item.current %} class="current"{% endif %}>
+    <li>
       <div class="d-flex flex-wrap justify-content-between align-items-baseline">
         <span><strong>{{ item.position }}</strong> — {{ item.company }}</span>
         <em>
@@ -123,6 +99,6 @@ title/description header is a theme file and cannot be overridden here
       {% if item.summary %}<div class="entry-detail">{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>{% endif %}
     </li>
   {% endfor %}
-</ul>
+</ol>
 
 <script src="{{ '/assets/js/site-tweaks.js' | relative_url }}"></script>
