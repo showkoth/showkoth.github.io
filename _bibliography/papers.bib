@@ -11,6 +11,7 @@
   year={2026},
   doi={10.1007/s00146-025-02817-6},
   html={https://link.springer.com/article/10.1007/s00146-025-02817-6},
+  abstract={Research on Artificial Intelligence (AI) is lined with moral considerations. In healthcare, a high-risk field, sub-fields have emerged to mitigate AI-specific ethical issues such as fairness and transparency. However, similar considerations remain unaddressed beyond healthcare, and as generative AI tools ('GenAI') reach lay audiences, this neglect yields ethical concerns. The present work focuses on learning from ethical considerations in healthcare to mitigate challenges of GenAI. We structure our proposed mitigation strategies around three of the five established biomedical and AI ethics principles (autonomy, transparency, beneficence), highlighting the risks GenAI poses for intellectual property owners (scraping of copyrighted data, unpaid labor, plagiarism, fraud). We propose concrete ways to affirm these principles on GenAI, using biomedical AI examples and the emerging frameworks they have sparked in domains of data ownership, federated learning, and data provenance. This article comes at a pivotal time for AI, generalizing ethics-aware principles to GenAI to open new research avenues toward responsible AI.},
   bibtex_show={true},
   selected={true}
 }
@@ -25,6 +26,7 @@
   organization={IEEE},
   doi={10.1109/Blockchain67634.2025.00020},
   html={https://ieeexplore.ieee.org/abstract/document/11264649/},
+  abstract={Healthcare data sharing is fundamental for advancing medical research and enhancing patient care, yet it faces significant challenges in privacy, data ownership, and interoperability due to fragmented data silos across institutions and strict regulations (e.g., GDPR, HIPAA). Patients possess distributed records across multiple hospitals, each maintaining autonomous databases. Access to consolidated records by secondary entities mandates explicit patient consent while ensuring strict isolation between multi-tenant datasets, requiring fine-grained access control across organizational boundaries. Existing solutions exhibit critical limitations: blockchain-based databases lack robust fine-grained cryptographic enforcement of dynamic access policies, while TEE-enhanced systems suffer from synchronization overhead and poor scalability in distributed deployments. To bridge these gaps, we propose MtDB, a novel decentralized database architecture addressing secure data sharing in multi-tenant database ecosystems. MtDB employs blockchain for metadata coordination and sharing, IPFS for distributed data addressing, a universal SQL query interface for data access, and Intel SGX for integrity-protected query execution with enforced access control. We provide an open-source implementation demonstrating MtDB's capabilities for secure, patient-centric healthcare data sharing while preserving ownership and enforcing policies. Experimental results show MtDB achieves 35 milliseconds query latency for indexed queries over 400M multi-tenant medical records while maintaining cryptographic security guarantees, with only 1.2--1.3x performance overhead compared to non-secure baselines.},
   bibtex_show={true},
   selected={true}
 }
@@ -39,6 +41,7 @@
   publisher={Springer},
   doi={10.1007/978-3-032-06323-6_9},
   html={https://link.springer.com/chapter/10.1007/978-3-032-06323-6_9},
+  abstract={Data sharing benefits various aspects of people's daily lives, while in most existing centralized sharing paradigms, data generators do not have the ownership or control over their data. There have been many recent works on decentralized data sharing that provide the data owners with full control over their generated data in a decentralized setting. However, besides guaranteeing the owners with more control over their data, record tracking for data requesters becomes challenging due to the decentralization attribute. To address this issue, we propose SecLog, an atomic-swap based secure logging for decentralized data sharing. We utilized the idea of atomic swap from existing works, modifying the triggered event when the access to the queried results is given to the data requester, a record will be automatically included on the blockchain. Simulation results indicate that our proposed protocol costs less gas compared to the original payment-based atomic swaps.},
   bibtex_show={true},
   selected={true}
 }
@@ -56,6 +59,7 @@
   pdf={https://drive.google.com/file/d/1XmRp3NtPElyY6rhJews8L1Dpv0XvZdyz/view},
   poster={https://drive.google.com/file/d/1ykxrhZhHBFXapdSb2-AaCOgUlvxgFWET/view?usp=sharing},
   code={https://github.com/mhhrakib/log-bc},
+  abstract={Log data is an essential tool to identify the footprint of unauthorized activities executed in a network system. Hence, a compact storage mechanism is required for the massive volume of log data to protect them from malicious tampering attacks. In this regard, Blockchain (BC) has been used to design tamper-proof storage of log records. However, the existing BC-based solutions cannot efficiently handle continuously growing massive log data, creating tremendous storage overhead on the participating BC nodes. Although some works address the storage scalability issue through separate off-chain storage, these works cannot support log data confidentiality and essential query mechanisms to manage log data are missing. To handle these deficiencies, we propose a BC-based network log data storage and management scheme that uses an InterPlanetary File System (IPFS) to outsource most of the log data to external off-chain storage. In addition, the proposed scheme performs query and audit operations to manage plaintext and encrypted log records efficiently. Extensive experiments on the prototype implementation show that storage gain increases exponentially with increasing log records per transaction, and our scheme attains nearly 93\% storage reduction in supporting per-day storage demand of log records with low computational overhead.},
   bibtex_show={true}
 }
 
@@ -71,5 +75,6 @@
   pdf={https://drive.google.com/file/d/1Xp0ipTiZPFf0pFZZY9SJiOViSwEsC_QU/view},
   video={https://www.youtube.com/watch?v=-qNZF6VylgQ},
   code={https://github.com/mhhrakib/log-bc},
+  abstract={Log data is crucial to detect mischievous activities conducted in a computing environment. Traditional log management systems that depend on cloud and centralized storage servers are vulnerable to a single point of failure and lack transparency and trust since adversaries tamper log records. In this paper, we propose a blockchain-based network log data storage, query, and audit system. We have implemented and deployed the scheme in a physical networking environment to collect log records. Our system ensures transparency, data accountability, and data confidentiality and incurs low overhead, demonstrating the feasibility of blockchain to build a time-efficient log management system while ensuring the privacy of log data.},
   bibtex_show={true}
 }
