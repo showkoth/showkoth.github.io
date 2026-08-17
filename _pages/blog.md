@@ -3,6 +3,7 @@ layout: default
 permalink: /blog/
 title: Blog
 nav: false
+sitemap: false # unlisted until the first post exists
 nav_order: 1
 pagination:
   enabled: true

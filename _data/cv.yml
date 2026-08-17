@@ -212,13 +212,13 @@ cv:
       - title: Travel Grant
         awarder: University of Notre Dame
         date_label: "2025"
-        summary: $1532 to participate in the IEEE Blockchain 2025 conference as an author (held in Zhengzhou, China).
+        summary: $1,532 to participate in the IEEE Blockchain 2025 conference as an author (held in Zhengzhou, China).
         category: grant
 
       - title: Travel Grant
         awarder: University of Notre Dame
         date_label: "2024"
-        summary: $1000 to attend the ACM CCS 2024 conference (held in Salt Lake City, Utah, USA).
+        summary: $1,000 to attend the ACM CCS 2024 conference (held in Salt Lake City, Utah, USA).
         category: grant
 
       - title: Research Assistantship
@@ -230,7 +230,7 @@ cv:
       - title: ICT Innovation Fund
         awarder: ICT Division, Bangladesh
         date_label: 2020 – 2021
-        summary: Grant of 5,000 USD for innovative project development.
+        summary: Grant of $5,000 for innovative project development.
         category: grant
 
       - title: Award of Merit
