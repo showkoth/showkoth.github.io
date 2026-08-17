@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /services/
-title: Services # kept for the nav label and browser tab; the header itself is hidden below
+title: Service # kept for the nav label and browser tab; the header itself is hidden below
 nav: true
 nav_order: 3
 ---
