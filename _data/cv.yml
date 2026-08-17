@@ -213,7 +213,13 @@ cv:
       - title: Travel Grant
         awarder: University of Notre Dame
         date_label: "2025"
-        summary: $1,132 to participate in the IEEE Blockchain 2025 conference as an author (held in Zhengzhou, China).
+        summary: $1532 to participate in the IEEE Blockchain 2025 conference as an author (held in Zhengzhou, China).
+        category: grant
+
+      - title: Travel Grant
+        awarder: University of Notre Dame
+        date_label: "2024"
+        summary: $1000 to attend the ACM CCS 2024 conference (held in Salt Lake City, Utah, USA).
         category: grant
 
       - title: Research Assistantship
