@@ -1,0 +1,23 @@
+---
+# The CV nav item points here; the page immediately opens the PDF itself.
+# A page (rather than a direct asset href) keeps the theme's nav generation
+# untouched — it only knows how to link pages with nav: true.
+permalink: /cv/
+title: CV
+nav: true
+nav_order: 5
+sitemap: false
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CV</title>
+    <link rel="canonical" href="{{ '/assets/pdf/academic-cv.pdf' | relative_url }}" />
+    <meta http-equiv="refresh" content="0; url={{ '/assets/pdf/academic-cv.pdf' | relative_url }}" />
+  </head>
+  <body>
+    <p>Opening the <a href="{{ '/assets/pdf/academic-cv.pdf' | relative_url }}">CV (PDF)</a>…</p>
+  </body>
+</html>
