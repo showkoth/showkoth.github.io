@@ -76,4 +76,12 @@ overridden here (see test/style_contract.js), so it is hidden instead.
   {% endfor %}
 </ol>
 
+## Certifications
+
+<ol class="service-list">
+  {% for item in sections.Certifications %}
+    <li><strong>{{ item.issuer }}:</strong> {{ item.name }}</li>
+  {% endfor %}
+</ol>
+
 <script src="{{ '/assets/js/site-tweaks.js' | relative_url }}"></script>

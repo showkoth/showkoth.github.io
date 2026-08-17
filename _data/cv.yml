@@ -237,17 +237,31 @@ cv:
       - title: Award of Merit
         date: 2020-07-01
         awarder: International Blockchain Olympiad (IBCOL)
-        summary: As part of team "DU_Hyperledger".
+  
 
       - title: 9th Place
         date: 2020-05-01
         awarder: Blockchain Olympiad Bangladesh (BCOLBD)
-        summary: As part of team "DU_Hyperledger".
 
       - title: Government Scholarships (Primary through Higher Secondary)
         awarder: Board of Intermediate and Secondary Education, Rajshahi, Bangladesh
         summary: Full tuition waiver for top-1% results (GPA 5.0/5.0, above 80% in every subject) in 5th, 8th, 10th, and 12th grade board examinations.
         category: grant
+
+    # Rendered only by the achievements page; the CV plugin ignores unknown
+    # section names. Grouped by issuer, one line each.
+    Certifications:
+      - issuer: Coursera
+        name: Blockchain Basics, Smart Contracts, Decentralized Applications (DApps), Blockchain Platforms, Python for Everybody Specialization, and Introduction to Git and GitHub
+
+      - issuer: IBM
+        name: IBM Blockchain Foundation Developer
+
+      - issuer: Cognitive Class
+        name: Blockchain Essentials
+
+      - issuer: HackerRank
+        name: Problem Solving (Intermediate)
 
     Skills:
       - name: Programming
