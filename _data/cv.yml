@@ -119,13 +119,44 @@ cv:
         category: teaching
 
     Volunteer:
+      - company: ACM Distributed Ledger Technologies (DLT)
+        position: Reviewer
+        location: ""
+        start_date: 2026-01-01
+        end_date: 2026-12-31
+        current: true
+        category: review # renders under the Reviewer section on the services page
+
+      - company: IEEE Transactions on Dependable and Secure Computing (TDSC)
+        position: Reviewer
+        location: ""
+        start_date: 2026-01-01
+        end_date: 2026-12-31
+        current: true
+        category: review
+
+      - company: IEEE Network
+        position: Reviewer
+        location: ""
+        start_date: 2026-01-01
+        end_date: 2026-12-31
+        current: true
+        category: review
+
       - company: IEEE International Conference on Blockchain and Cryptocurrency (ICBC)
         position: Reviewer
         location: ""
         start_date: 2025-01-01
         end_date: 2026-12-31
         current: true # ongoing role
-        category: review # renders under the Reviewer section on the services page
+        category: review
+
+      - company: IEEE International Conference on Blockchain (Blockchain 2025)
+        position: Reviewer
+        location: ""
+        start_date: 2025-01-01
+        end_date: 2025-12-31
+        category: review
 
       - company: International Conference on Innovation and Engineering (ICIET)
         position: Student Volunteer
