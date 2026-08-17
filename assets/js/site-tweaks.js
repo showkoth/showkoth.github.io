@@ -54,7 +54,7 @@
       "  width: 100%;",
       "  margin-right: -100%;",
       "  margin-left: 0.75rem;",
-      "  border-top: 1px solid var(--global-divider-color);",
+      "  border-top: 2px solid var(--global-divider-color);",
       "  vertical-align: middle;",
       "}",
       // The theme renders social icons at 4rem; at that size nine icons
