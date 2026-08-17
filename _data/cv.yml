@@ -108,14 +108,13 @@ cv:
 
       # Teaching lives inside Experience because the CV plugin only renders a
       # fixed set of section names; `category` lets the site group it separately.
-      - company: University of Notre Dame
+      - company: CSE-20110 Discrete Mathematics, University of Notre Dame
         position: Teaching Assistant
         location: Notre Dame, IN, USA
-        url: https://www.nd.edu/
         start_date: 2025-08-01
         end_date: 2025-12-31
         date_label: Fall 2025 # seasonal label the web timeline shows instead of the month range
-        summary: CSE-20110 Discrete Mathematics · Instructor — [Prof. Taeho Jung](https://sites.nd.edu/taeho-jung/)
+        summary: Held the office hours and graded exam scripts of a class of 99 students under the guidance of instructor [Prof. Taeho Jung](https://sites.nd.edu/taeho-jung/)
         category: teaching
 
     Volunteer:
