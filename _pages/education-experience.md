@@ -84,11 +84,15 @@ instead. The section headings below carry the page on their own.
     font-size: 0.875rem;
   }
 
-  /* Keep dates on the right edge even when a long title forces a wrap. */
+  /* Keep dates on the right edge even when a long title forces a wrap.
+     The trailing padding leaves room for the last italic glyph's overhang:
+     the theme gives table-bearing articles overflow-x auto, which otherwise
+     clips the slanted ink at the article's right edge. */
   .timeline > li > .d-flex > em {
     margin-left: auto;
     white-space: nowrap;
     padding-left: 1rem;
+    padding-right: 0.15em;
     font-size: 0.875rem;
   }
 
