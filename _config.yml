@@ -211,7 +211,6 @@ exclude:
   - CLAUDE.md
   - Dockerfile
   - docker-compose.yml
-  - docker-compose-slim.yml
   - docs/
   - Gemfile
   - Gemfile.lock
