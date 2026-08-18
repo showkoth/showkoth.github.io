@@ -70,7 +70,7 @@ bundle exec jekyll build --baseurl /al-folio
 bundle exec jekyll serve            # http://localhost:4000/al-folio/  (note the path)
 ```
 
-What breaks the site is **blanking the baseurl out** — build with an empty baseurl and every asset and internal link resolves one path segment too high. The Docker entry point serves under `/al-folio` too. A build that "works" but renders unstyled is almost always a baseurl mismatch. In **your own** site this is different: personal and organization sites (`username.github.io`) must leave `baseurl` **empty but present**; project sites set `baseurl: /<project-name>/`. See [FAQ](FAQ.md#my-webpage-works-locally-but-after-deploying-it-is-not-displayed-correctly-css-and-js-are-not-loaded-properly-how-do-i-fix-that).
+What breaks the site is **blanking the baseurl out** — build with an empty baseurl and every asset and internal link resolves one path segment too high. The Docker entry point serves under `/al-folio` too. A build that "works" but renders unstyled is almost always a baseurl mismatch. In **your own** site this is different: personal and organization sites (`username.github.io`) must leave `baseurl` **empty but present**; project sites set `baseurl: /<project-name>/`.
 
 ## Wrapper to tag to gem delegation
 
@@ -139,7 +139,7 @@ bundle exec al-folio upgrade overrides accept <path>
 - Deprecated in `v1.3`
 - Removed in `v2.0`
 
-Migrate content off Bootstrap markup before then. See [FAQ](FAQ.md#how-do-i-handle-legacy-bootstrap-marked-pages-on-tailwind-first-v1x).
+Migrate content off Bootstrap markup before then.
 
 ## Working on a gem alongside the starter
 

@@ -7,10 +7,6 @@
       ".github/agents/docs.agent.md",
       ".github/instructions/**/*.md",
       "docs/README.md",
-      "docs/CUSTOMIZE.md",
-      "docs/INSTALL.md",
-      "docs/TROUBLESHOOTING.md",
-      "docs/QUICKSTART.md",
       "docs/BOUNDARIES.md"
     ]
   }

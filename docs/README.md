@@ -1,16 +1,6 @@
 # al-folio Documentation
 
-These guides cover the `al-folio` v1.x starter and its pluginized runtime.
-
-## User Guides
-
-- [Quick Start](QUICKSTART.md): create a site from the template and get it live quickly.
-- [Installing and Deploying](INSTALL.md): Docker, local setup, GitHub Pages, Netlify, and upgrade guidance.
-- [Customizing](CUSTOMIZE.md): content, CVs, publications, layouts, local overrides, and feature configuration.
-- [FAQ](FAQ.md): common deployment, upgrade, plugin, and troubleshooting questions.
-- [Troubleshooting](TROUBLESHOOTING.md): build, deployment, styling, and content debugging.
-- [Analytics](ANALYTICS.md): analytics provider setup.
-- [SEO](SEO.md): search-engine and social preview setup.
+These guides cover the `al-folio` v1.x starter and its pluginized runtime. Upstream user guides (install, customize, FAQ, troubleshooting) live in the [al-folio docs](https://github.com/alshedivat/al-folio/tree/main/docs).
 
 ## Maintainer Guides
 
@@ -30,7 +20,7 @@ When changing feature behavior, route the work to the owning plugin repo first. 
 
 - `Gemfile` dependency pins,
 - `_config.yml` plugin activation or feature flags,
-- `_data/featured_plugins.yml` catalog metadata (rendered as the [plugin catalog page](https://alshedivat.github.io/al-folio/plugins/), source [`_pages/plugins.md`](../_pages/plugins.md)),
+- `_data/featured_plugins.yml` catalog metadata,
 - documentation, examples, integration tests, or visual parity coverage.
 
 See [Ownership Boundaries](BOUNDARIES.md) for the full routing table.

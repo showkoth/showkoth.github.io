@@ -12,7 +12,7 @@ Note that since [#2048](https://github.com/alshedivat/al-folio/pull/2048) al-fol
 
 ## Adding your site to the showcase
 
-**Please do not open a pull request to add your site to the showcase list.** We have retired that process. Instead, post a request in the _Showcase_ category of [GitHub Discussions](https://github.com/alshedivat/al-folio/discussions) with a link to your site and the group it belongs in (Academics, Labs, Courses, or Conferences & workshops). Requests are reviewed and added to [`docs/SHOWCASE.md`](SHOWCASE.md) in batches, so it may take a little while before your entry appears.
+**Please do not open a pull request to add your site to the showcase list.** We have retired that process. Instead, post a request in the _Showcase_ category of [GitHub Discussions](https://github.com/alshedivat/al-folio/discussions) with a link to your site and the group it belongs in (Academics, Labs, Courses, or Conferences & workshops). Requests are reviewed and added to [`docs/SHOWCASE.md`](https://github.com/alshedivat/al-folio/blob/main/docs/SHOWCASE.md) in batches, so it may take a little while before your entry appears.
 
 ## Repository Routing (v1.x)
 
@@ -133,7 +133,7 @@ To use the customization agent, you need to have [GitHub Copilot](https://github
 
 The **Documentation Agent** (`.github/agents/docs.agent.md`) maintains the project documentation. It:
 
-- Updates and maintains documentation files (`README.md`, `docs/README.md`, `docs/INSTALL.md`, `docs/CUSTOMIZE.md`, `docs/FAQ.md`, `docs/CONTRIBUTING.md`)
+- Updates and maintains documentation files (`README.md`, `docs/README.md`, `docs/CONTRIBUTING.md`)
 - Keeps documentation in sync with code changes
 - Writes clear, concise documentation for users without technical backgrounds
 - Follows documentation standards and best practices
@@ -185,7 +185,7 @@ For more information about GitHub Copilot agents and how to use them, see the [G
 We use GitHub issues to track bugs and feature requests.
 Before submitting an issue, please make sure:
 
-1. You have read [the FAQ section](FAQ.md) of the README and your question is NOT addressed there.
+1. You have read [the upstream FAQ](https://github.com/alshedivat/al-folio/blob/main/docs/FAQ.md) of the README and your question is NOT addressed there.
 2. You have done your best to ensure that your issue is NOT a duplicate of one of [the previous issues](https://github.com/alshedivat/al-folio/issues).
 3. Your issue is either a bug (unexpected/undesirable behavior) or a feature request.
    If it is just a question, please ask it in the [Discussions](https://github.com/alshedivat/al-folio/discussions) forum.

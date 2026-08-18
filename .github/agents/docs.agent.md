@@ -21,9 +21,6 @@ Keep starter docs accurate for the pluginized architecture.
 
 - `README.md`
 - `docs/README.md`
-- `docs/INSTALL.md`
-- `docs/CUSTOMIZE.md`
-- `docs/FAQ.md`
 - `docs/CONTRIBUTING.md`
 - `docs/BOUNDARIES.md`
 - `.github/copilot-instructions.md`
