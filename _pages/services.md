@@ -91,14 +91,14 @@ title/description header is a theme file and cannot be overridden here
 
 <p class="mentoring-note">
   All mentees supervised in conjunction with <a href="https://sites.nd.edu/taeho-jung/">Prof. Taeho Jung</a> (University of Notre Dame).<br />
-  * University of Notre Dame &nbsp;|&nbsp; @ Indiana Institute of Technology
+  <sup>*</sup>University of Notre Dame &nbsp;|&nbsp; <sup>†</sup>Indiana Institute of Technology
 </p>
 
 <table class="mentoring">
   {% for row in sections.Mentoring %}
     <tr>
       <th scope="row">{{ row.term }}</th>
-      <td>{{ row.mentees }}</td>
+      <td>{{ row.mentees | replace: '*', '<sup>*</sup>' | replace: '†', '<sup>†</sup>' }}</td>
     </tr>
   {% endfor %}
 </table>
