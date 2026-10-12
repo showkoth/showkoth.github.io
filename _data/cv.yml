@@ -127,6 +127,7 @@ cv:
         end_date: 2026-12-31
         current: true
         category: review # renders under the Reviewer section on the services page
+        venue: journal # journal or conference: the Reviewer section's two groups
 
       - company: IEEE Transactions on Dependable and Secure Computing (TDSC)
         position: Reviewer
@@ -135,6 +136,7 @@ cv:
         end_date: 2026-12-31
         current: true
         category: review
+        venue: journal
 
       - company: IEEE Network
         position: Reviewer
@@ -143,6 +145,7 @@ cv:
         end_date: 2026-12-31
         current: true
         category: review
+        venue: journal
 
       - company: IEEE International Conference on Blockchain and Cryptocurrency (ICBC)
         position: Reviewer
@@ -151,6 +154,7 @@ cv:
         end_date: 2026-12-31
         current: true # ongoing role
         category: review
+        venue: conference
 
       - company: IEEE International Conference on Blockchain (Blockchain)
         position: Reviewer
@@ -158,6 +162,7 @@ cv:
         start_date: 2025-01-01
         end_date: 2025-12-31
         category: review
+        venue: conference
 
       - company: International Conference on Innovation and Engineering (ICIET)
         position: Student Volunteer
@@ -165,6 +170,7 @@ cv:
         start_date: 2019-01-01
         end_date: 2019-12-31
         summary: Assisted in organizing the conference, managing registrations, and coordinating with speakers and attendees.
+        category: outreach
 
       - company: SCB-PA Inter School and College Programming Contest
         position: Mentor
@@ -172,9 +178,10 @@ cv:
         start_date: 2018-01-01
         end_date: 2018-12-31
         summary: Conducted workshops and training sessions for high school students to prepare for programming competitions.
+        category: outreach
 
-      # category: community entries render under "Community & leadership" on
-      # the services page; the others render under "Academic service".
+      # category: outreach entries render under "Leadership & outreach" on the
+      # services page, most recent first (by end_date).
       - company: Bangladeshi Students Association of Notre Dame (BDSA-ND)
         position: Sports & Cultural Secretary
         location: Notre Dame, IN, USA
@@ -182,22 +189,23 @@ cv:
         end_date: 2026-05-31
         current: true
         summary: Organized cultural events and sports activities for the Bangladeshi student community.
-        category: community
+        category: outreach
 
       - company: Jiboner Alo
         position: Co-founder
         location: Bangladesh
         start_date: 2017-01-01
         end_date: 2024-12-31
-        summary: Cofounded "Jiboner Alo" to provide education for orphan and underprivileged children in rural areas of Bangladesh.
-        category: community
+        summary: Provided education for orphaned and underprivileged children in rural Bangladesh.
+        category: outreach
 
-      - company: Private tutoring
-        position: Tutor
+      - company: ""
+        position: Private tutor
         location: Bangladesh
         start_date: 2016-01-01
         end_date: 2021-12-31
-        summary: Tutored high school and undergraduate students to improve their academic performance.
+        summary: Tutored high school and undergraduate students.
+        category: outreach
 
       - company: Badhan, Dr. Muhammad Shahidullah Hall, University of Dhaka
         position: Executive member
@@ -205,7 +213,7 @@ cv:
         start_date: 2016-01-01
         end_date: 2020-12-31
         summary: Organized and participated in blood donation and educational workshops.
-        category: community
+        category: outreach
 
     Awards:
       # category: grant entries render under "Grants & fellowships" on the

@@ -17,23 +17,6 @@ instead. The section headings below carry the page on their own.
     display: none;
   }
 
-  /* Links: organization names read as plain text until hovered; links inside
-     detail lines keep the accent so they stay discoverable. Underlines only on
-     hover, so a page with many linked orgs doesn't turn into a stripe pattern. */
-  .post article a {
-    text-decoration: none;
-  }
-
-  .post article a:hover {
-    color: var(--global-hover-color);
-    text-decoration: underline;
-    text-underline-offset: 2px;
-  }
-
-  .entry-head a {
-    color: inherit;
-  }
-
   /* Air between sections so entries group under their heading. */
   .post article h2 {
     margin-top: 2rem;
@@ -44,44 +27,6 @@ instead. The section headings below carry the page on their own.
   .post article {
     max-width: 56rem;
     margin-inline: auto;
-  }
-
-  /* Plain entries, like the CV: title and organization left, dates right,
-     detail lines beneath in one small muted size. */
-  .entries {
-    list-style: none;
-    padding-left: 0;
-  }
-
-  .entries > li {
-    margin-bottom: 1.25rem;
-  }
-
-  .entry-head strong {
-    font-size: 1.0625rem;
-  }
-
-  .entry-detail {
-    color: var(--global-text-color-light);
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
-
-  .entry-detail strong {
-    font-weight: 600;
-  }
-
-  /* Keep dates on the right edge even when a long title forces a wrap.
-     The trailing padding leaves room for the last italic glyph's overhang:
-     the theme gives table-bearing articles overflow-x auto, which otherwise
-     clips the slanted ink at the article's right edge. */
-  .entry-head > em {
-    margin-left: auto;
-    white-space: nowrap;
-    padding-left: 1rem;
-    padding-right: 0.15em;
-    font-size: 0.875rem;
-    color: var(--global-text-color-light);
   }
 
   /* Skills: label column left, keywords right, like the PDF's layout. */

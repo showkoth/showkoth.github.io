@@ -19,32 +19,23 @@ title/description header is a theme file and cannot be overridden here
     display: none;
   }
 
-  /* Mute in-content links: many orgs are linked here, and full accent color
-     turns the list into a stripe pattern. Accent returns on hover. */
-  .post article a {
-    color: inherit;
-    text-decoration: underline;
-    text-decoration-color: var(--global-divider-color);
-    text-underline-offset: 2px;
-  }
-
-  .post article a:hover {
-    color: var(--global-theme-color);
-    text-decoration-color: var(--global-theme-color);
-  }
-
   /* Air between sections so entries group under their heading. */
   .post article h2 {
     margin-top: 2rem;
   }
 
-  .service-list > li {
-    margin-bottom: 0.5rem;
+  /* Cap the measure, as on the education & experience page. */
+  .post article {
+    max-width: 56rem;
+    margin-inline: auto;
   }
 
-  .service-list .entry-detail {
+  /* Journals / Conferences labels inside the Reviewer section. */
+  .entry-group {
+    font-size: 0.95rem;
+    font-weight: 600;
     color: var(--global-text-color-light);
-    font-size: 0.875rem;
+    margin: 0.75rem 0 0.4rem;
   }
 
   /* Mentoring: one row per term, term column fixed and bold. */
@@ -70,22 +61,34 @@ title/description header is a theme file and cannot be overridden here
 
 {% assign sections = site.data.cv.cv.sections %}
 {% assign review = sections.Volunteer | where: 'category', 'review' %}
-{% assign community = sections.Volunteer | where: 'category', 'community' %}
-{% assign academic = sections.Volunteer | where_exp: 'item', "item.category != 'community' and item.category != 'review'" %}
+{% assign outreach = sections.Volunteer | where: 'category', 'outreach' | sort: 'end_date' | reverse %}
 
 ## Reviewer
 
-<ol class="service-list">
-  {% for item in review %}
-    <li>
-      <strong>{{ item.company }}</strong>,
-      {% assign start_year = item.start_date | date: '%Y' %}
-      {% assign end_year = item.end_date | date: '%Y' %}
-      {{ start_year }}{% unless end_year == start_year %}–{{ end_year }}{% endunless %}
-      {% if item.summary %}<div class="entry-detail">{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>{% endif %}
-    </li>
+<div class="reviewing">
+  {% assign venue_groups = "journal,conference" | split: "," %}
+  {% for group in venue_groups %}
+    {% assign venues = review | where: 'venue', group %}
+    {% if venues.size > 0 %}
+      <p class="entry-group">{% if group == 'journal' %}Journals{% else %}Conferences{% endif %}</p>
+      <ul class="entries compact">
+        {% for item in venues %}
+          <li>
+            <div class="entry-head d-flex flex-wrap justify-content-between align-items-baseline">
+              <span>{{ item.company }}</span>
+              <em>
+                {%- assign start_year = item.start_date | date: '%Y' -%}
+                {%- assign end_year = item.end_date | date: '%Y' -%}
+                {{- start_year -}}
+                {%- unless end_year == start_year %}–{{ end_year }}{% endunless -%}
+              </em>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
   {% endfor %}
-</ol>
+</div>
 
 ## Mentoring
 
@@ -103,32 +106,20 @@ title/description header is a theme file and cannot be overridden here
   {% endfor %}
 </table>
 
-## Community & leadership
+## Leadership & outreach
 
-<ol class="service-list">
-  {% for item in community %}
+<ul class="entries">
+  {% for item in outreach %}
     <li>
-      <strong>{{ item.position }}</strong>, {{ item.company }}
-      {% assign start_year = item.start_date | date: '%Y' %}
-      {% assign end_year = item.end_date | date: '%Y' %}
-      ({{ start_year }}{% unless end_year == start_year %}–{{ end_year }}{% endunless %})
+      <div class="entry-head d-flex flex-wrap justify-content-between align-items-baseline">
+        <span>
+          <strong>{{ item.position }}</strong>{% if item.company != "" %} — {{ item.company }}{% endif %}
+        </span>
+        <em>{% assign start_year = item.start_date | date: '%Y' %}{% assign end_year = item.end_date | date: '%Y' %}{{ start_year }}{% unless end_year == start_year %}–{{ end_year }}{% endunless %}</em>
+      </div>
       {% if item.summary %}<div class="entry-detail">{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>{% endif %}
     </li>
   {% endfor %}
-</ol>
-
-## Other services
-
-<ol class="service-list">
-  {% for item in academic %}
-    <li>
-      <strong>{{ item.position }}</strong>, {{ item.company }}
-      {% assign start_year = item.start_date | date: '%Y' %}
-      {% assign end_year = item.end_date | date: '%Y' %}
-      ({{ start_year }}{% unless end_year == start_year %}–{{ end_year }}{% endunless %})
-      {% if item.summary %}<div class="entry-detail">{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>{% endif %}
-    </li>
-  {% endfor %}
-</ol>
+</ul>
 
 <script src="{{ '/assets/js/site-tweaks.js' | relative_url }}"></script>

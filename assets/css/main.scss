@@ -175,6 +175,70 @@ article h2:not(.bibliography) {
   }
 }
 
+// --- Entry lists (education & experience, service) --------------------------
+
+// Plain entries, like the CV: title and organization left, dates right,
+// detail lines beneath in one small muted size.
+.entries {
+  list-style: none;
+  padding-left: 0;
+
+  > li {
+    margin-bottom: 1.25rem;
+  }
+
+  // Single-line entries (e.g. reviewing) sit closer together.
+  &.compact > li {
+    margin-bottom: 0.35rem;
+  }
+
+  // Organization names read as plain text until hovered; links inside detail
+  // lines keep the accent so they stay discoverable. Underlines only on hover,
+  // so a list with many linked orgs doesn't turn into a stripe pattern.
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-hover-color);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+  }
+}
+
+.entry-head {
+  strong {
+    font-size: 1.0625rem;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  // Keep dates on the right edge even when a long title forces a wrap. The
+  // trailing padding leaves room for the last italic glyph's overhang: the
+  // theme gives table-bearing articles overflow-x auto, which otherwise clips
+  // the slanted ink at the article's right edge.
+  > em {
+    margin-left: auto;
+    white-space: nowrap;
+    padding-left: 1rem;
+    padding-right: 0.15em;
+    font-size: 0.875rem;
+    color: var(--global-text-color-light);
+  }
+}
+
+.entry-detail {
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+  line-height: 1.5;
+
+  strong {
+    font-weight: 600;
+  }
+}
+
 // --- Publications -----------------------------------------------------------
 
 // Year headers: a plain left-aligned label over a hairline, not a watermark.
