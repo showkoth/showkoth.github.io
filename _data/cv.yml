@@ -150,7 +150,7 @@ cv:
         current: true # ongoing role
         category: review
 
-      - company: IEEE International Conference on Blockchain (Blockchain 2025)
+      - company: IEEE International Conference on Blockchain (Blockchain)
         position: Reviewer
         location: ""
         start_date: 2025-01-01
