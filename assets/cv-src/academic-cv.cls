@@ -2,15 +2,15 @@
 %                ACADEMIC CV - Custom LaTeX Class File
 %-------------------------------------------------------------------------------
 %
-% A classic academic CV: dates and labels in a narrow left column, content in
-% the right column, small-caps section headings trailing into a hairline.
-% Version 8.0.
+% A classic academic CV in Computer Modern: dates and labels in a narrow left
+% column, content in the right column, plain uppercase section headings over a
+% full-width rule, no color. Version 9.0.
 %
 %-------------------------------------------------------------------------------
 
 %----- IDENTIFICATION ----------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{academic-cv}[2026/10/12 v8.0 Academic CV Class]
+\ProvidesClass{academic-cv}[2026/10/12 v9.0 Academic CV Class]
 
 %----- BASE CLASS --------------------------------------------------------------
 \LoadClass[10pt, letterpaper]{article}
@@ -18,7 +18,7 @@
 %----- REQUIRED PACKAGES -------------------------------------------------------
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
-\usepackage[charter]{mathdesign}  % Charter: classic academic serif
+\usepackage{lmodern}  % Latin Modern: the classic LaTeX (Computer Modern) face
 \usepackage{microtype}
 \usepackage{geometry}
 \usepackage{xcolor}
@@ -44,9 +44,9 @@
 \raggedbottom
 
 %----- COLORS ------------------------------------------------------------------
-\definecolor{accent}{HTML}{0C2340}     % Notre Dame navy
+\definecolor{accent}{HTML}{000000}
 \definecolor{graytext}{HTML}{4D4D4D}
-\definecolor{rulecolor}{HTML}{A6A6A6}
+\definecolor{rulecolor}{HTML}{000000}
 
 \hypersetup{
   colorlinks=true,
@@ -100,15 +100,14 @@
 \fancyfoot[R]{\footnotesize\color{graytext}\thepage\ of \pageref*{LastPage}}
 
 %----- SECTION STYLING ---------------------------------------------------------
-% Small-caps heading followed by a hairline that runs to the right margin.
-\newcommand{\cv@sectiontitle}[1]{%
-  #1\hspace{0.6em}{\color{rulecolor}\leaders\hrule height 0.62ex depth -0.55ex\hfill}\kern0pt}
+% Plain uppercase heading over a full-width rule.
 \titleformat{\section}
-  {\normalfont\large\bfseries\scshape\color{accent}}
+  {\normalfont\large}
   {}
   {0em}
-  {\cv@sectiontitle}
-\titlespacing*{\section}{0pt}{1.6ex plus 0.3ex minus 0.2ex}{0.6ex}
+  {\MakeUppercase}
+  [\vspace{0.3ex}\titlerule]
+\titlespacing*{\section}{0pt}{2ex plus 0.3ex minus 0.2ex}{0.9ex}
 
 % Never strand a heading at the bottom of a page.
 \let\cv@origsection\section
@@ -123,7 +122,7 @@
 % Every section is a list whose item labels (dates, [C1], categories) sit in a
 % fixed left column. Labels may break onto a second line.
 \newlength{\cvleftwidth}
-\setlength{\cvleftwidth}{0.95in}
+\setlength{\cvleftwidth}{0.82in}
 \newlength{\cvgutter}
 \setlength{\cvgutter}{0.15in}
 \newlength{\cvitemsep}
@@ -174,12 +173,12 @@
 }{\end{itemize}}
 
 %----- PUBLICATIONS ------------------------------------------------------------
-% \cvpub[short venue]{label}{title}{authors}{venue}: title, authors, and venue
-% run on as one paragraph. The short venue is only used by the resume's
-% compact list.
+% \cvpub[short venue]{label}{title}{authors}{venue}: authors, then the title in
+% bold quotes, then the venue, run on as one paragraph. The short venue is only
+% used by the resume's compact list.
 \newcommand{\cvpub}[5][]{%
   \Needspace{3\baselineskip}%
-  \item[{#2}]\textbf{#3.} #4. \textit{#5}.\par}
+  \item[{#2}]#4. \textbf{``#3''}. \textit{#5}.\par}
 
 % Resume variant: one entry per paper, "[C3] Title. Short venue." Use inside
 % a group so the CV's definitions are untouched.

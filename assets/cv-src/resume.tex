@@ -8,9 +8,9 @@
 \input{profile}
 
 % A resume is one page: tighter margins and no page footer.
-\newgeometry{left=0.6in, right=0.6in, top=0.45in, bottom=0.45in}
+\newgeometry{left=0.6in, right=0.6in, top=0.4in, bottom=0.4in}
 \pagestyle{empty}
-\titlespacing*{\section}{0pt}{1.1ex plus 0.3ex minus 0.2ex}{0.4ex}
+\titlespacing*{\section}{0pt}{0.8ex plus 0.2ex minus 0.2ex}{0.3ex}
 \raggedright
 
 \makeatletter
@@ -28,6 +28,9 @@
       \href{https://scholar.google.com/citations?user=\@cvscholar}{Scholar}\par}
   \end{center}
   \vspace{-8pt}}
+% On a one-page resume a heading may sit near the page foot; the CV's
+% keep-together rule would push the last section onto a second page.
+\let\section\cv@origsection
 % One line per degree: degree, school, dates.
 \newcommand{\resdegree}[3]{\textbf{#1}, \textit{#2}\hfill{\small\color{graytext}#3}\par}
 \makeatother
@@ -65,7 +68,7 @@
     {Dhaka, Bangladesh}
     {Nov 2023 -- Jul 2024}
 \begin{resbullets}
-    \item Built high-performance APIs with global clients for Product Madness, a mobile game studio with 5M+ monthly active users.
+    \item Built high-performance APIs for Product Madness, a mobile game studio with 5M+ monthly active users.
     \item Led a team of 5 developers building features with Spring Boot (Java), React, and PostgreSQL in an Agile process.
 \end{resbullets}
 
@@ -85,7 +88,7 @@
     {Dhaka, Bangladesh}
     {Oct 2020 -- Mar 2023}
 \begin{resbullets}
-    \item Developed the microservices backend for ePMIS, the Government of Bangladesh's national project-management system.
+    \item Developed the microservices backend for ePMIS, Bangladesh's national project-management system.
     \item Built RESTful APIs with Spring (Java), AngularJS, and SQL Server in cross-functional Agile teams.
 \end{resbullets}
 
@@ -129,7 +132,7 @@
 %                           HONORS & SERVICE
 %-------------------------------------------------------------------------------
 \section{Honors \& Service}
-\resline{Honors}{Award of Merit, International Blockchain Olympiad (2020); \$5,000 ICT Innovation Fund (2020); travel grants (2024, 2025)}
+\resline{Honors}{Award of Merit, International Blockchain Olympiad (2020); \$5,000 ICT Innovation Fund (2020); travel grants (2024--25)}
 \resline{Service}{TPC member, IEEE Blockchain 2025; reviewer for IEEE TDSC, IEEE Network, ACM DLT, and IEEE ICBC}
 
 \end{document}
