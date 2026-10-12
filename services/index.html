@@ -9,32 +9,23 @@
     display: none;
   }
 
-  /* Mute in-content links: many orgs are linked here, and full accent color
-     turns the list into a stripe pattern. Accent returns on hover. */
-  .post article a {
-    color: inherit;
-    text-decoration: underline;
-    text-decoration-color: var(--global-divider-color);
-    text-underline-offset: 2px;
-  }
-
-  .post article a:hover {
-    color: var(--global-theme-color);
-    text-decoration-color: var(--global-theme-color);
-  }
-
   /* Air between sections so entries group under their heading. */
   .post article h2 {
     margin-top: 2rem;
   }
 
-  .service-list > li {
-    margin-bottom: 0.5rem;
+  /* Cap the measure, as on the education & experience page. */
+  .post article {
+    max-width: 56rem;
+    margin-inline: auto;
   }
 
-  .service-list .entry-detail {
+  /* Journals / Conferences labels inside the Reviewer section. */
+  .entry-group {
+    font-size: 0.95rem;
+    font-weight: 600;
     color: var(--global-text-color-light);
-    font-size: 0.875rem;
+    margin: 0.75rem 0 0.4rem;
   }
 
   /* Mentoring: one row per term, term column fixed and bold. */
@@ -56,7 +47,7 @@
   .mentoring td {
     padding: 0.4rem 0;
   }
-</style> <h2 id="reviewer">Reviewer</h2> <ol class="service-list"> <li> <strong>ACM Distributed Ledger Technologies (DLT)</strong>, 2026 </li> <li> <strong>IEEE Transactions on Dependable and Secure Computing (TDSC)</strong>, 2026 </li> <li> <strong>IEEE Network</strong>, 2026 </li> <li> <strong>IEEE International Conference on Blockchain and Cryptocurrency (ICBC)</strong>, 2025–2026 </li> <li> <strong>IEEE International Conference on Blockchain (Blockchain)</strong>, 2025 </li> </ol> <h2 id="mentoring">Mentoring</h2> <p class="mentoring-note"> All mentees supervised in conjunction with <a href="https://sites.nd.edu/taeho-jung/" rel="external nofollow noopener" target="_blank">Prof. Taeho Jung</a> (University of Notre Dame).<br> <sup>*</sup>University of Notre Dame  |  <sup>†</sup>Indiana Institute of Technology </p> <table class="mentoring"> <tr> <th scope="row">Spring 2026</th> <td>Will Armsworthy<sup>*</sup>, Paola Lopez<sup>*</sup>, Aaron Wang<sup>*</sup> </td> </tr> <tr> <th scope="row">Fall 2025</th> <td>Will Armsworthy<sup>*</sup>, Maria C. Leal<sup>*</sup>, Avery Hughes<sup>†</sup> </td> </tr> <tr> <th scope="row">Spring 2025</th> <td>Ryan Nahm<sup>*</sup>, Aaron Wang<sup>*</sup>, Avery Hughes<sup>†</sup> </td> </tr> <tr> <th scope="row">Fall 2024</th> <td>Gustavo Aniceto<sup>*</sup>, Jonathan D'Alonzo<sup>*</sup> </td> </tr> </table> <h2 id="community--leadership">Community &amp; leadership</h2> <ol class="service-list"> <li> <strong>Sports &amp; Cultural Secretary</strong>, Bangladeshi Students Association of Notre Dame (BDSA-ND) (2025–2026) <div class="entry-detail">Organized cultural events and sports activities for the Bangladeshi student community. </div> </li> <li> <strong>Co-founder</strong>, Jiboner Alo (2017–2024) <div class="entry-detail">Cofounded “Jiboner Alo” to provide education for orphan and underprivileged children in rural areas of Bangladesh. </div> </li> <li> <strong>Executive member</strong>, Badhan, Dr. Muhammad Shahidullah Hall, University of Dhaka (2016–2020) <div class="entry-detail">Organized and participated in blood donation and educational workshops. </div> </li> </ol> <h2 id="other-services">Other services</h2> <ol class="service-list"> <li> <strong>Student Volunteer</strong>, International Conference on Innovation and Engineering (ICIET) (2019) <div class="entry-detail">Assisted in organizing the conference, managing registrations, and coordinating with speakers and attendees. </div> </li> <li> <strong>Mentor</strong>, SCB-PA Inter School and College Programming Contest (2018) <div class="entry-detail">Conducted workshops and training sessions for high school students to prepare for programming competitions. </div> </li> <li> <strong>Tutor</strong>, Private tutoring (2016–2021) <div class="entry-detail">Tutored high school and undergraduate students to improve their academic performance. </div> </li> </ol> <script src="/assets/js/site-tweaks.js"></script> </article> </div> </div> <footer class="sticky-bottom mt-5" role="contentinfo"> <div class="container"> © Copyright 2026 Showkot Hossain. Last updated: October 12, 2026. </div> </footer> <script>
+</style> <h2 id="reviewer">Reviewer</h2> <div class="reviewing"> <p class="entry-group">Journals</p> <ol class="entries compact numbered" start="1"> <li> <div class="entry-head d-flex flex-wrap justify-content-between align-items-baseline"> <span>ACM Distributed Ledger Technologies (DLT)</span> <em>2026</em> </div> </li> <li> <div class="entry-head d-flex flex-wrap justify-content-between align-items-baseline"> <span>IEEE Transactions on Dependable and Secure Computing (TDSC)</span> <em>2026</em> </div> </li> <li> <div class="entry-head d-flex flex-wrap justify-content-between align-items-baseline"> <span>IEEE Network</span> <em>2026</em> </div> </li> </ol> <p class="entry-group">Conferences</p> <ol class="entries compact numbered" start="4"> <li> <div class="entry-head d-flex flex-wrap justify-content-between align-items-baseline"> <span>IEEE International Conference on Blockchain and Cryptocurrency (ICBC)</span> <em>2025–2026</em> </div> </li> <li> <div class="entry-head d-flex flex-wrap justify-content-between align-items-baseline"> <span>IEEE International Conference on Blockchain (Blockchain)</span> <em>2025</em> </div> </li> </ol> </div> <h2 id="mentoring">Mentoring</h2> <p class="mentoring-note"> All mentees supervised in conjunction with <a href="https://sites.nd.edu/taeho-jung/" rel="external nofollow noopener" target="_blank">Prof. Taeho Jung</a> (University of Notre Dame).<br> <sup>*</sup>University of Notre Dame  |  <sup>†</sup>Indiana Institute of Technology </p> <table class="mentoring"> <tr> <th scope="row">Spring 2026</th> <td>Will Armsworthy<sup>*</sup>, Paola Lopez<sup>*</sup>, Aaron Wang<sup>*</sup> </td> </tr> <tr> <th scope="row">Fall 2025</th> <td>Will Armsworthy<sup>*</sup>, Maria C. Leal<sup>*</sup>, Avery Hughes<sup>†</sup> </td> </tr> <tr> <th scope="row">Spring 2025</th> <td>Ryan Nahm<sup>*</sup>, Aaron Wang<sup>*</sup>, Avery Hughes<sup>†</sup> </td> </tr> <tr> <th scope="row">Fall 2024</th> <td>Gustavo Aniceto<sup>*</sup>, Jonathan D'Alonzo<sup>*</sup> </td> </tr> </table> <h2 id="leadership--outreach">Leadership &amp; outreach</h2> <ol class="entries numbered"> <li> <div class="entry-head d-flex flex-wrap justify-content-between align-items-baseline"> <span> <strong>Sports &amp; Cultural Secretary</strong>, Bangladeshi Students Association of Notre Dame (BDSA-ND) </span> <em>2025–2026</em> </div> <div class="entry-detail">Organized cultural events and sports activities for the Bangladeshi student community. </div> </li> <li> <div class="entry-head d-flex flex-wrap justify-content-between align-items-baseline"> <span> <strong>Co-founder</strong>, Jiboner Alo </span> <em>2017–2024</em> </div> <div class="entry-detail">Provided education for orphaned and underprivileged children in rural Bangladesh. </div> </li> <li> <div class="entry-head d-flex flex-wrap justify-content-between align-items-baseline"> <span> <strong>Private tutor</strong> </span> <em>2016–2021</em> </div> <div class="entry-detail">Tutored high school and undergraduate students. </div> </li> <li> <div class="entry-head d-flex flex-wrap justify-content-between align-items-baseline"> <span> <strong>Executive member</strong>, Badhan, Dr. Muhammad Shahidullah Hall, University of Dhaka </span> <em>2016–2020</em> </div> <div class="entry-detail">Organized and participated in blood donation and educational workshops. </div> </li> <li> <div class="entry-head d-flex flex-wrap justify-content-between align-items-baseline"> <span> <strong>Student Volunteer</strong>, International Conference on Innovation and Engineering (ICIET) </span> <em>2019</em> </div> <div class="entry-detail">Assisted in organizing the conference, managing registrations, and coordinating with speakers and attendees. </div> </li> <li> <div class="entry-head d-flex flex-wrap justify-content-between align-items-baseline"> <span> <strong>Mentor</strong>, SCB-PA Inter School and College Programming Contest </span> <em>2018</em> </div> <div class="entry-detail">Conducted workshops and training sessions for high school students to prepare for programming competitions. </div> </li> </ol> <script src="/assets/js/site-tweaks.js"></script> </article> </div> </div> <footer class="sticky-bottom mt-5" role="contentinfo"> <div class="container"> © Copyright 2026 Showkot Hossain. Last updated: October 12, 2026. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
