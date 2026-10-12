@@ -1,10 +1,10 @@
 cv:
   name: Showkot Hossain
-  label: PhD Student, Computer Science and Engineering
+  label: Ph.D. Student, Computer Science and Engineering
   email: shossain@nd.edu
   location: Notre Dame, IN, USA
   image: ""
-  summary: PhD student at the University of Notre Dame researching distributed systems, security, and confidential computing. Previously a software engineer with 3.5+ years of industry experience.
+  summary: Ph.D. student at the University of Notre Dame researching security and privacy, distributed systems, and confidential computing. Previously a software engineer with 3.5+ years of industry experience.
 
   social_networks:
     - network: GitHub
@@ -20,18 +20,18 @@ cv:
         location: Notre Dame, IN, USA
         url: https://www.nd.edu/
         area: Computer Science and Engineering
-        studyType: PhD
+        studyType: Ph.D.
         start_date: 2024-08-01
         end_date: present
         highlights:
           - "**GPA:** 3.91/4.0 · **Advisor:** [Prof. Taeho Jung](https://sites.nd.edu/taeho-jung/)"
-          - "**Research:** Distributed systems, Security, and Confidential computing"
+          - "**Research:** Security and privacy, distributed systems, confidential computing"
 
       - institution: University of Dhaka
         location: Dhaka, Bangladesh
         url: https://www.du.ac.bd/
         area: Computer Science and Engineering
-        studyType: BSc
+        studyType: B.Sc.
         start_date: 2016-01-01
         end_date: 2020-01-31
         highlights:
@@ -45,6 +45,7 @@ cv:
         url: https://www.nd.edu/
         start_date: 2024-08-01
         end_date: present
+        category: research # research roles list apart from industry roles on the web page
         # blurb is the one-line web version; the CV plugin and PDF use highlights.
         blurb: Researching and developing a decentralized platform for secure data sharing ([Web3DB](https://www.web3db.org/), [Web3FS](https://fs.web3db.org/)); mentoring [undergraduate researchers](/services/#mentoring).
         highlights:
@@ -101,6 +102,7 @@ cv:
         url: https://www.du.ac.bd/
         start_date: 2020-01-01
         end_date: 2020-12-31
+        category: research
         blurb: Built secure provenance tracking system with PKI and blockchain; authored two peer-reviewed papers.
         summary: Cyber Security Lab, advised by [Dr. Mosarrat Jahan](https://www.du.ac.bd/faculty/faculty_details/CSE/1777) and [Dr. Upama Kabir](https://du.ac.bd/index.php/faculty/faculty_details/CSE/1765).
         highlights:

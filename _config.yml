@@ -9,7 +9,7 @@ last_name: Hossain
 contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Showkot Hossain — PhD student in Computer Science and Engineering at the University of Notre Dame.
-  Research in distributed systems, security, and confidential computing.
+  Research in security and privacy, distributed systems, and confidential computing.
 footer_text:
 keywords: Showkot Hossain, Notre Dame, distributed systems, security, confidential computing, blockchain, PhD
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)

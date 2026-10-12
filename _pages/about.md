@@ -28,7 +28,7 @@ latest_posts:
 
 I am a PhD student in Computer Science and Engineering at the [University of Notre Dame](https://www.nd.edu/), where I work as a Graduate Research Assistant in the [Data Security and Privacy Lab](https://sites.nd.edu/taeho-jung/dsp-lab/) advised by [Prof. Taeho Jung](https://sites.nd.edu/taeho-jung/).
 
-My research focuses on **distributed systems, security, and confidential computing**. I build systems that let mutually distrusting parties share and compute on data with strong integrity and confidentiality guarantees. You can find my recent publications on my [Google Scholar profile](https://scholar.google.com/citations?user=kbODGysAAAAJ).
+My research focuses on **security and privacy, distributed systems, and confidential computing**. I build systems that let mutually distrusting parties share and compute on data with strong integrity and confidentiality guarantees. You can find my recent publications on my [Google Scholar profile](https://scholar.google.com/citations?user=kbODGysAAAAJ).
 
 Previously I received my BSc in Computer Science and Engineering from the [University of Dhaka](https://www.du.ac.bd/) in 2020. Before starting my PhD, I spent about 3.5 years as a software engineer at multinational software companies in Dhaka, Bangladesh. For my full academic and professional background, see the [Education & Experience]({{ '/education-experience/' | relative_url }}) page.
 
