@@ -13,7 +13,7 @@
 \ProvidesClass{academic-cv}[2026/10/12 v8.0 Academic CV Class]
 
 %----- BASE CLASS --------------------------------------------------------------
-\LoadClass[11pt, letterpaper]{article}
+\LoadClass[10pt, letterpaper]{article}
 
 %----- REQUIRED PACKAGES -------------------------------------------------------
 \usepackage[T1]{fontenc}
@@ -33,9 +33,9 @@
 %----- GEOMETRY & LAYOUT -------------------------------------------------------
 \geometry{
   letterpaper,
-  left=0.85in,
-  right=0.85in,
-  top=0.75in,
+  left=0.75in,
+  right=0.75in,
+  top=0.6in,
   bottom=0.85in,
   footskip=0.4in
 }
@@ -108,7 +108,7 @@
   {}
   {0em}
   {\cv@sectiontitle}
-\titlespacing*{\section}{0pt}{2.2ex plus 0.5ex minus 0.2ex}{0.9ex}
+\titlespacing*{\section}{0pt}{1.6ex plus 0.3ex minus 0.2ex}{0.6ex}
 
 % Never strand a heading at the bottom of a page.
 \let\cv@origsection\section
@@ -123,7 +123,7 @@
 % Every section is a list whose item labels (dates, [C1], categories) sit in a
 % fixed left column. Labels may break onto a second line.
 \newlength{\cvleftwidth}
-\setlength{\cvleftwidth}{1.05in}
+\setlength{\cvleftwidth}{0.95in}
 \newlength{\cvgutter}
 \setlength{\cvgutter}{0.15in}
 
@@ -144,7 +144,7 @@
     \setlength{\itemindent}{0pt}%
     \setlength{\topsep}{0.2ex}%
     \setlength{\partopsep}{0pt}%
-    \setlength{\itemsep}{0.9ex}%
+    \setlength{\itemsep}{0.5ex}%
     \setlength{\parsep}{0pt}%
     \renewcommand{\makelabel}[1]{\cv@label{##1}\hfil}}%
   \raggedright
