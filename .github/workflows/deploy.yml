@@ -44,6 +44,12 @@ on:
 permissions:
   contents: write
 
+# A newer deploy supersedes an older one, so a deploy built from a stale
+# checkout can never finish last and overwrite gh-pages with old content.
+concurrency:
+  group: deploy-site-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   deploy:
     # available images: https://github.com/actions/runner-images#available-images
