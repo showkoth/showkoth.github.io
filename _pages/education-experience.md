@@ -17,18 +17,21 @@ instead. The section headings below carry the page on their own.
     display: none;
   }
 
-  /* Mute in-content links: many orgs are linked here, and full accent color
-     turns the list into a stripe pattern. Accent returns on hover. */
+  /* Links: organization names read as plain text until hovered; links inside
+     detail lines keep the accent so they stay discoverable. Underlines only on
+     hover, so a page with many linked orgs doesn't turn into a stripe pattern. */
   .post article a {
-    color: inherit;
-    text-decoration: underline;
-    text-decoration-color: var(--global-divider-color);
-    text-underline-offset: 2px;
+    text-decoration: none;
   }
 
   .post article a:hover {
-    color: var(--global-theme-color);
-    text-decoration-color: var(--global-theme-color);
+    color: var(--global-hover-color);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .entry-head a {
+    color: inherit;
   }
 
   /* Air between sections so entries group under their heading. */
@@ -43,57 +46,42 @@ instead. The section headings below carry the page on their own.
     margin-inline: auto;
   }
 
-  /* Timeline: a rail down the left with a dot per entry. */
-  .timeline {
+  /* Plain entries, like the CV: title and organization left, dates right,
+     detail lines beneath in one small muted size. */
+  .entries {
     list-style: none;
-    margin-left: 0.4rem;
-    padding-left: 1.4rem;
-    border-left: 2px solid var(--global-divider-color);
+    padding-left: 0;
   }
 
-  .timeline > li {
-    position: relative;
-    margin-bottom: 1.5rem;
+  .entries > li {
+    margin-bottom: 1.25rem;
   }
 
-  .timeline > li::before {
-    content: "";
-    position: absolute;
-    left: calc(-1.4rem - 7px);
-    top: 0.4em;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: var(--global-bg-color);
-    border: 2px solid var(--global-theme-color);
-  }
-
-  /* Ongoing roles get a filled dot; past ones stay hollow. */
-  .timeline > li.current::before {
-    background: var(--global-theme-color);
-  }
-
-  /* Scale contrast: titles lifted slightly, secondary info (dates, blurbs)
-     stepped down, so entries read as headline + detail instead of flat text. */
-  .timeline strong {
+  .entry-head strong {
     font-size: 1.0625rem;
   }
 
-  .timeline .entry-detail {
+  .entry-detail {
     color: var(--global-text-color-light);
-    font-size: 0.875rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .entry-detail strong {
+    font-weight: 600;
   }
 
   /* Keep dates on the right edge even when a long title forces a wrap.
      The trailing padding leaves room for the last italic glyph's overhang:
      the theme gives table-bearing articles overflow-x auto, which otherwise
      clips the slanted ink at the article's right edge. */
-  .timeline > li > .d-flex > em {
+  .entry-head > em {
     margin-left: auto;
     white-space: nowrap;
     padding-left: 1rem;
     padding-right: 0.15em;
     font-size: 0.875rem;
+    color: var(--global-text-color-light);
   }
 
   /* Skills: label column left, keywords right, like the PDF's layout. */
@@ -121,37 +109,16 @@ Each experience entry's `blurb` is the one-line web version; the fuller
 {% endcomment %}
 
 {% assign sections = site.data.cv.cv.sections %}
+{% assign research = sections.Experience | where: 'category', 'research' %}
 {% assign teaching = sections.Experience | where: 'category', 'teaching' %}
-{% assign roles = sections.Experience | where_exp: 'item', "item.category != 'teaching'" %}
-
-## Professional experience
-
-<ul class="timeline">
-  {% for item in roles %}
-    <li{% if item.end_date == 'present' %} class="current"{% endif %}>
-      <div class="d-flex flex-wrap justify-content-between align-items-baseline">
-        <span>
-          <strong>{{ item.position }}</strong> —
-          {% if item.url %}<a href="{{ item.url }}">{{ item.company }}</a>{% else %}{{ item.company }}{% endif %}
-        </span>
-        <em>
-          {{ item.start_date | date: '%b %Y' }} –
-          {% if item.end_date == 'present' %}Present{% else %}{{ item.end_date | date: '%b %Y' }}{% endif %}
-        </em>
-      </div>
-      {% if item.blurb %}
-        <div class="entry-detail">{{ item.blurb | markdownify | remove: '<p>' | remove: '</p>' }}</div>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>
+{% assign industry = sections.Experience | where_exp: 'item', "item.category != 'research' and item.category != 'teaching'" %}
 
 ## Education
 
-<ul class="timeline">
+<ul class="entries">
   {% for item in sections.Education %}
-    <li{% if item.end_date == 'present' %} class="current"{% endif %}>
-      <div class="d-flex flex-wrap justify-content-between align-items-baseline">
+    <li>
+      <div class="entry-head d-flex flex-wrap justify-content-between align-items-baseline">
         <span>
           <strong>{{ item.studyType }} in {{ item.area }}</strong> —
           {% if item.url %}<a href="{{ item.url }}">{{ item.institution }}</a>{% else %}{{ item.institution }}{% endif %}
@@ -161,23 +128,19 @@ Each experience entry's `blurb` is the one-line web version; the fuller
           {% if item.end_date == 'present' %}Present{% else %}{{ item.end_date | date: '%b %Y' }}{% endif %}
         </em>
       </div>
-      {% if item.highlights %}
-        {% for highlight in item.highlights %}
-          <div class="entry-detail">{{ highlight | markdownify | remove: '<p>' | remove: '</p>' }}</div>
-        {% endfor %}
-      {% endif %}
+      {% for highlight in item.highlights %}
+        <div class="entry-detail">{{ highlight | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+      {% endfor %}
     </li>
   {% endfor %}
 </ul>
 
-{% if teaching.size > 0 %}
+## Research experience
 
-## Teaching
-
-<ul class="timeline">
-  {% for item in teaching %}
-    <li{% if item.end_date == 'present' %} class="current"{% endif %}>
-      <div class="d-flex flex-wrap justify-content-between align-items-baseline">
+<ul class="entries">
+  {% for item in research %}
+    <li>
+      <div class="entry-head d-flex flex-wrap justify-content-between align-items-baseline">
         <span>
           <strong>{{ item.position }}</strong> —
           {% if item.url %}<a href="{{ item.url }}">{{ item.company }}</a>{% else %}{{ item.company }}{% endif %}
@@ -191,7 +154,69 @@ Each experience entry's `blurb` is the one-line web version; the fuller
           {% endif %}
         </em>
       </div>
-      {% if item.summary %}<div class="entry-detail">{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>{% endif %}
+      {% if item.blurb %}
+        <div class="entry-detail">{{ item.blurb | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+      {% elsif item.summary %}
+        <div class="entry-detail">{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+## Industry experience
+
+<ul class="entries">
+  {% for item in industry %}
+    <li>
+      <div class="entry-head d-flex flex-wrap justify-content-between align-items-baseline">
+        <span>
+          <strong>{{ item.position }}</strong> —
+          {% if item.url %}<a href="{{ item.url }}">{{ item.company }}</a>{% else %}{{ item.company }}{% endif %}
+        </span>
+        <em>
+          {% if item.date_label %}
+            {{ item.date_label }}
+          {% else %}
+            {{ item.start_date | date: '%b %Y' }} –
+            {% if item.end_date == 'present' %}Present{% else %}{{ item.end_date | date: '%b %Y' }}{% endif %}
+          {% endif %}
+        </em>
+      </div>
+      {% if item.blurb %}
+        <div class="entry-detail">{{ item.blurb | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+      {% elsif item.summary %}
+        <div class="entry-detail">{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+{% if teaching.size > 0 %}
+
+## Teaching
+
+<ul class="entries">
+  {% for item in teaching %}
+    <li>
+      <div class="entry-head d-flex flex-wrap justify-content-between align-items-baseline">
+        <span>
+          <strong>{{ item.position }}</strong> —
+          {% if item.url %}<a href="{{ item.url }}">{{ item.company }}</a>{% else %}{{ item.company }}{% endif %}
+        </span>
+        <em>
+          {% if item.date_label %}
+            {{ item.date_label }}
+          {% else %}
+            {{ item.start_date | date: '%b %Y' }} –
+            {% if item.end_date == 'present' %}Present{% else %}{{ item.end_date | date: '%b %Y' }}{% endif %}
+          {% endif %}
+        </em>
+      </div>
+      {% if item.blurb %}
+        <div class="entry-detail">{{ item.blurb | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+      {% elsif item.summary %}
+        <div class="entry-detail">{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+      {% endif %}
     </li>
   {% endfor %}
 </ul>
