@@ -126,6 +126,8 @@
 \setlength{\cvleftwidth}{0.95in}
 \newlength{\cvgutter}
 \setlength{\cvgutter}{0.15in}
+\newlength{\cvitemsep}
+\setlength{\cvitemsep}{0.5ex}
 
 % \leavevmode before \color: a color special at the very top of the parbox
 % would otherwise become its first line and break [t] baseline alignment.
@@ -144,7 +146,7 @@
     \setlength{\itemindent}{0pt}%
     \setlength{\topsep}{0.2ex}%
     \setlength{\partopsep}{0pt}%
-    \setlength{\itemsep}{0.5ex}%
+    \setlength{\itemsep}{\cvitemsep}%
     \setlength{\parsep}{0pt}%
     \renewcommand{\makelabel}[1]{\cv@label{##1}\hfil}}%
   \raggedright
@@ -169,12 +171,39 @@
 }{\end{itemize}}
 
 %----- PUBLICATIONS ------------------------------------------------------------
-% \cvpub{label}{title}{authors}{venue}: title, authors, venue on three lines.
-\newcommand{\cvpub}[4]{%
+% \cvpub[short venue]{label}{title}{authors}{venue}: title, authors, venue on
+% three lines. The short venue is only used by the resume's compact list.
+\newcommand{\cvpub}[5][]{%
   \Needspace{3\baselineskip}%
-  \item[{#1}]\textbf{#2}\par
-  #3\par
-  \textit{#4}\par}
+  \item[{#2}]\textbf{#3}\par
+  #4\par
+  \textit{#5}\par}
+
+% Resume variant: one entry per paper, "[C3] Title. Short venue." Use inside
+% a group so the CV's definitions are untouched.
+\newcommand{\cv@compactpub}[5][]{\item[{#2}]#3.\ {\itshape #1}.}
+\newcommand{\usecompactpublications}{%
+  \renewcommand{\cvsubsection}[1]{}%
+  \let\cvpub\cv@compactpub
+  \setlength{\cvleftwidth}{0.4in}%
+  \setlength{\cvgutter}{0.08in}%
+  \setlength{\cvitemsep}{0.1ex}}
+
+%----- RESUME ENTRIES ----------------------------------------------------------
+% \resentry{role}{organization}{location}{dates}: the industry convention, with
+% dates right-aligned and no left column, so the page keeps its full width.
+\newcommand{\resentry}[4]{%
+  \Needspace{3\baselineskip}%
+  \vspace{0.3ex}%
+  \textbf{#1}\hfill{\small\color{graytext}#4}\par
+  \textit{#2}\hfill{\small\itshape\color{graytext}#3}\par}
+
+\newenvironment{resbullets}{%
+  \begin{itemize}[leftmargin=1.1em, label={\small\textbullet}, itemsep=0pt, topsep=0.1ex, parsep=0pt, partopsep=0pt]%
+}{\end{itemize}}
+
+% \resline{label}{content}: a bold run-in label, for skills and similar lists.
+\newcommand{\resline}[2]{\textbf{#1:} #2\par}
 
 %----- REFERENCES --------------------------------------------------------------
 \newenvironment{cvreferences}{%
