@@ -110,7 +110,7 @@ title/description header is a theme file and cannot be overridden here
 
 ## Leadership & outreach
 
-<ul class="entries">
+<ol class="entries numbered">
   {% for item in outreach %}
     <li>
       <div class="entry-head d-flex flex-wrap justify-content-between align-items-baseline">
@@ -122,6 +122,6 @@ title/description header is a theme file and cannot be overridden here
       {% if item.summary %}<div class="entry-detail">{{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>{% endif %}
     </li>
   {% endfor %}
-</ul>
+</ol>
 
 <script src="{{ '/assets/js/site-tweaks.js' | relative_url }}"></script>
