@@ -43,9 +43,44 @@
  * page's first paint instead of flashing in after the theme's styles.
  ******************************************************************************/
 
-// System serif stack: Charter on macOS/iOS, Sitka/Cambria on Windows. No web
-// font request, so there is no flash of a fallback face while one loads.
-$site-serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, "Iowan Old Style", Georgia, serif;
+// Charis SIL (SIL Open Font License, see assets/fonts/charis-sil/LICENSE) is a
+// Charter derivative, self-hosted so Windows, Android, and Linux visitors see
+// the same face as Apple devices, which ship Charter itself. Latin subset only:
+// the site uses no characters outside it. font-display: swap shows the fallback
+// stack immediately rather than invisible text while the font loads.
+@font-face {
+  font-family: "Charis SIL";
+  src: url("../fonts/charis-sil/charis-sil-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Charis SIL";
+  src: url("../fonts/charis-sil/charis-sil-latin-400-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Charis SIL";
+  src: url("../fonts/charis-sil/charis-sil-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Charis SIL";
+  src: url("../fonts/charis-sil/charis-sil-latin-700-italic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+$site-serif: "Charis SIL", Charter, "Bitstream Charter", "Sitka Text", Cambria, "Iowan Old Style", Georgia, serif;
 
 // 16px reads small at desktop widths; the theme sizes everything in rem, so
 // raising the root scales the whole type scale proportionally.
