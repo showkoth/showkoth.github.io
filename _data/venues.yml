@@ -1,4 +1,11 @@
 # Optional venue styling/links for publication badges (keyed by the `abbr` field in papers.bib).
+"NeurIPS":
+  url: https://neurips.cc/
+  color: "#8C1D40"
+
+"HealthCom":
+  color: "#00629B"
+
 "IEEE BC":
   url: https://ieee-blockchain.org/
   color: "#00629B"
