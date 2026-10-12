@@ -95,7 +95,7 @@
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-\fancyfoot[L]{\footnotesize\color{graytext}\@cvname\ --- Curriculum Vitae}
+\fancyfoot[L]{\footnotesize\color{graytext}\@cvname}
 \fancyfoot[C]{\footnotesize\color{graytext}Updated \@footerdate}
 \fancyfoot[R]{\footnotesize\color{graytext}\thepage\ of \pageref*{LastPage}}
 
