@@ -100,29 +100,14 @@ button {
   letter-spacing: -0.01em;
 }
 
-// Site headings are sentence case. Repo-owned text is already edited; this
-// catches theme-rendered lowercase headings (the about page's news block).
-article h2::first-letter {
-  text-transform: uppercase;
-}
-
-// Section headings: modest semibold, trailing off into a thin rule.
-// Inline-block + negative margin rather than flex: making the h2 a flex
-// container would stop ::first-letter (above) from applying.
+// Section headings: plain uppercase over a full-width rule, matching the CV.
 article h2:not(.bibliography) {
-  font-size: 1.45rem;
-  font-weight: 600;
-  overflow: hidden;
-
-  &::after {
-    content: "";
-    display: inline-block;
-    width: 100%;
-    margin-right: -100%;
-    margin-left: 0.75rem;
-    border-top: 1px solid var(--global-divider-color);
-    vertical-align: middle;
-  }
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--global-text-color);
 }
 
 // --- About page -------------------------------------------------------------
