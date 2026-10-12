@@ -82,12 +82,6 @@
 
 $site-serif: "Charis SIL", Charter, "Bitstream Charter", "Sitka Text", Cambria, "Iowan Old Style", Georgia, serif;
 
-// 16px reads small at desktop widths; the theme sizes everything in rem, so
-// raising the root scales the whole type scale proportionally.
-html {
-  font-size: 17px;
-}
-
 // Light mode only: near-black text and a Notre Dame blue accent in place of
 // the theme's purple. Dark mode keeps the theme's own palette.
 html:not([data-theme="dark"]) {
