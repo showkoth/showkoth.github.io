@@ -155,6 +155,7 @@ cv:
         current: true # ongoing role
         category: review
         venue: conference
+        role: External reviewer # reviews delegated by a TPC member (Prof. Jung)
 
       - company: IEEE International Conference on Blockchain (Blockchain)
         position: Reviewer
@@ -163,6 +164,7 @@ cv:
         end_date: 2025-12-31
         category: review
         venue: conference
+        role: TPC member # assigned by the chairs as TPC member
 
       - company: International Conference on Innovation and Engineering (ICIET)
         position: Student Volunteer

@@ -30,7 +30,12 @@ title/description header is a theme file and cannot be overridden here
     margin-inline: auto;
   }
 
-  /* Journals / Conferences labels inside the Reviewer section. */
+  /* Role after a venue name (TPC member, external reviewer). */
+  .entry-role {
+    color: var(--global-text-color-light);
+  }
+
+  /* Journals / Conferences labels inside the Reviewing section. */
   .entry-group {
     font-size: 0.95rem;
     font-weight: 600;
@@ -63,7 +68,7 @@ title/description header is a theme file and cannot be overridden here
 {% assign review = sections.Volunteer | where: 'category', 'review' %}
 {% assign outreach = sections.Volunteer | where: 'category', 'outreach' | sort: 'end_date' | reverse %}
 
-## Reviewer
+## Reviewing
 
 <div class="reviewing">
   {% assign venue_groups = "journal,conference" | split: "," %}
@@ -76,7 +81,7 @@ title/description header is a theme file and cannot be overridden here
         {% for item in venues %}
           <li>
             <div class="entry-head d-flex flex-wrap justify-content-between align-items-baseline">
-              <span>{{ item.company }}</span>
+              <span>{{ item.company }}{% if item.role %}<span class="entry-role">, {{ item.role }}</span>{% endif %}</span>
               <em>
                 {%- assign start_year = item.start_date | date: '%Y' -%}
                 {%- assign end_year = item.end_date | date: '%Y' -%}
