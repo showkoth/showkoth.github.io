@@ -192,46 +192,19 @@ article h2:not(.bibliography) {
 .publications ol.bibliography li {
   margin-bottom: 1.4rem;
 
-  // Narrow venue column; the entry takes the rest of the row instead of the
-  // theme's fixed two-thirds. Phones keep the theme's stacked layout.
-  @media (min-width: 576px) {
-    .row > .abbr {
-      flex: 0 0 6.5rem;
-      max-width: 6.5rem;
-    }
-
-    // min-width: 0 because the hidden BibTeX <pre> inside the entry has
-    // unbreakable lines that otherwise force it onto its own row.
-    .row > div:not(.abbr):not(.preview) {
-      flex: 1 1 0;
-      max-width: none;
-      min-width: 0;
-    }
+  // No venue column: the venue is already named in each entry's citation
+  // line, and a sidebar of short labels reads like app tags. The entry spans
+  // the full row (the theme gives it a fixed two-thirds).
+  .row > .abbr {
+    display: none;
   }
 
-  // Venue as quiet text in the left column, not a colored pill. venues.yml
-  // colors arrive as an inline style, hence !important.
-  .abbr {
-    margin-bottom: 0.2rem;
-
-    abbr.badge {
-      background-color: transparent !important;
-      color: var(--global-theme-color) !important;
-      font-family: $site-serif;
-      font-size: 0.85rem;
-      font-weight: 600;
-      letter-spacing: 0.02em;
-      text-align: left;
-      padding: 0.1rem 0 0;
-      width: auto !important;
-
-      // Venues without a url render their label in a <div>, which the theme
-      // colors separately from the <abbr>.
-      a,
-      div {
-        color: inherit !important;
-      }
-    }
+  // min-width: 0 because the hidden BibTeX <pre> inside the entry has
+  // unbreakable lines that otherwise force it wider than the row.
+  .row > div:not(.abbr):not(.preview) {
+    flex: 1 1 0;
+    max-width: none;
+    min-width: 0;
   }
 
   .title {
