@@ -15,9 +15,9 @@ sitemap: false
     <meta charset="utf-8" />
     <title>CV</title>
     <link rel="canonical" href="{{ '/assets/pdf/academic-cv.pdf' | relative_url }}" />
-    <meta http-equiv="refresh" content="0; url={{ '/assets/pdf/academic-cv.pdf' | relative_url }}" />
+    <meta http-equiv="refresh" content="0; url={{ '/assets/pdf/academic-cv.pdf' | relative_url | bust_file_cache }}" />
   </head>
   <body>
-    <p>Opening the <a href="{{ '/assets/pdf/academic-cv.pdf' | relative_url }}">CV (PDF)</a>…</p>
+    <p>Opening the <a href="{{ '/assets/pdf/academic-cv.pdf' | relative_url | bust_file_cache }}">CV (PDF)</a>…</p>
   </body>
 </html>
