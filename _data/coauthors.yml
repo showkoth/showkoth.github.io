@@ -1,13 +1,6 @@
 # Links co-author names in publication entries to their websites.
-# Key is the co-author's last name from papers.bib, lowercased (the theme lowercases before lookup).
-"jung":
-  - firstname: ["Taeho", "T."]
-    url: https://sites.nd.edu/taeho-jung/
-
-"jahan":
-  - firstname: ["Mosarrat", "M."]
-    url: https://www.du.ac.bd/faculty/faculty_details/CSE/1777
-
-"kabir":
-  - firstname: ["Upama", "U."]
-    url: https://du.ac.bd/index.php/faculty/faculty_details/CSE/1765
+# Intentionally empty: co-author names render as plain text.
+# To link one, add an entry keyed by the lowercased last name from papers.bib, e.g.:
+# "jung":
+#   - firstname: ["Taeho", "T."]
+#     url: https://sites.nd.edu/taeho-jung/
