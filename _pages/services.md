@@ -67,11 +67,12 @@ title/description header is a theme file and cannot be overridden here
 
 <div class="reviewing">
   {% assign venue_groups = "journal,conference" | split: "," %}
+  {% assign review_number = 1 %}
   {% for group in venue_groups %}
     {% assign venues = review | where: 'venue', group %}
     {% if venues.size > 0 %}
       <p class="entry-group">{% if group == 'journal' %}Journals{% else %}Conferences{% endif %}</p>
-      <ul class="entries compact">
+      <ol class="entries compact numbered" start="{{ review_number }}">
         {% for item in venues %}
           <li>
             <div class="entry-head d-flex flex-wrap justify-content-between align-items-baseline">
@@ -85,7 +86,8 @@ title/description header is a theme file and cannot be overridden here
             </div>
           </li>
         {% endfor %}
-      </ul>
+      </ol>
+      {% assign review_number = review_number | plus: venues.size %}
     {% endif %}
   {% endfor %}
 </div>

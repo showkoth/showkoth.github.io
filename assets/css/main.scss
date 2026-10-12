@@ -192,6 +192,16 @@ article h2:not(.bibliography) {
     margin-bottom: 0.35rem;
   }
 
+  // Numbered lists (e.g. reviewing) keep native numbers in the margin.
+  &.numbered {
+    list-style: decimal;
+    padding-left: 1.6rem;
+
+    > li::marker {
+      color: var(--global-text-color-light);
+    }
+  }
+
   // Organization names read as plain text until hovered; links inside detail
   // lines keep the accent so they stay discoverable. Underlines only on hover,
   // so a list with many linked orgs doesn't turn into a stripe pattern.
