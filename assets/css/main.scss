@@ -189,6 +189,36 @@ article h2:not(.bibliography) {
   margin: 2rem 0 1rem;
 }
 
+// Type sections on the research page, labeled like the CV: [C6]…[C1] and
+// [J2]…[J1]. Each section's counter starts at its total + 1 (set inline in
+// research.md), and every entry steps it down by one.
+.pub-conference,
+.pub-journal {
+  margin-top: 0.75rem;
+
+  ol.bibliography > li {
+    counter-increment: pub -1;
+    position: relative;
+    padding-left: 2.75rem;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0.05rem;
+      color: var(--global-text-color-light);
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.pub-conference ol.bibliography > li::before {
+  content: "[C" counter(pub) "]";
+}
+
+.pub-journal ol.bibliography > li::before {
+  content: "[J" counter(pub) "]";
+}
+
 .publications ol.bibliography li {
   margin-bottom: 1.4rem;
 

@@ -13,9 +13,26 @@ I build systems that let mutually distrusting parties store, share, and compute 
 
 **Profiles:** [Google Scholar](https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}) · [Semantic Scholar](https://www.semanticscholar.org/author/{{ site.data.socials.semanticscholar_id }}) · [DBLP]({{ site.data.socials.dblp_url }}) · [OpenReview]({{ site.data.socials.custom_social.url }}) · [ORCID](https://orcid.org/{{ site.data.socials.orcid_id }})
 
-<div class="publications">
+<!-- Grouped by type and labeled [C#]/[J#] to match the CV. Labels count down
+     from the section total (main.scss), so papers.bib must stay newest-first. -->
 
-{% bibliography %}
+## Conference papers
+
+{% capture conference_count %}{% bibliography_count --query @inproceedings %}{% endcapture %}
+
+<div class="publications pub-conference" style="counter-reset: pub {{ conference_count | strip | plus: 1 }}">
+
+{% bibliography --query @inproceedings --group_by none %}
+
+</div>
+
+## Journal articles
+
+{% capture journal_count %}{% bibliography_count --query @article %}{% endcapture %}
+
+<div class="publications pub-journal" style="counter-reset: pub {{ journal_count | strip | plus: 1 }}">
+
+{% bibliography --query @article --group_by none %}
 
 </div>
 
