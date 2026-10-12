@@ -2,74 +2,60 @@
 %                ACADEMIC CV - Custom LaTeX Class File
 %-------------------------------------------------------------------------------
 %
-% Description:
-% A custom LaTeX class for creating a professional, academic CV.
-% Version 7.0: Serif typography, small-caps headers, refined academic layout.
+% A classic academic CV: dates and labels in a narrow left column, content in
+% the right column, small-caps section headings trailing into a hairline.
+% Version 8.0.
 %
 %-------------------------------------------------------------------------------
 
 %----- IDENTIFICATION ----------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{academic-cv}[2026/03/03 v7.0 Academic CV Class]
+\ProvidesClass{academic-cv}[2026/10/12 v8.0 Academic CV Class]
 
 %----- BASE CLASS --------------------------------------------------------------
-\LoadClass[11pt, a4paper]{article}
+\LoadClass[10pt, letterpaper]{article}
 
 %----- REQUIRED PACKAGES -------------------------------------------------------
-\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
+\usepackage[charter]{mathdesign}  % Charter: classic academic serif
+\usepackage{microtype}
 \usepackage{geometry}
 \usepackage{xcolor}
-\usepackage{fontawesome5}
 \usepackage{hyperref}
 \usepackage{titlesec}
-\usepackage{parskip}
-\usepackage{needspace} % keep section headings with their content across page breaks
+\usepackage{enumitem}
+\usepackage{needspace}  % keep section headings with their content across page breaks
 \usepackage{tabularx}
-\usepackage{fancyhdr}   % For custom footers
-\usepackage{lastpage}   % For total page count
-\usepackage{etaremune}  % For reverse-numbered lists
-
-%----- FONT SETUP --------------------------------------------------------------
-% Use Charter for body text (classic academic serif)
-\usepackage[charter]{mathdesign}
-\usepackage[scaled=0.95]{helvet}  % Helvetica for sans-serif elements
+\usepackage{fancyhdr}
+\usepackage{lastpage}
 
 %----- GEOMETRY & LAYOUT -------------------------------------------------------
 \geometry{
-  left=1.8cm,
-  right=1.8cm,
-  top=1.5cm,
-  bottom=2cm,
-  footskip=1cm
+  letterpaper,
+  left=0.75in,
+  right=0.75in,
+  top=0.6in,
+  bottom=0.85in,
+  footskip=0.4in
 }
-\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\raggedbottom
 
-%----- COLORS & FONTS ----------------------------------------------------------
-\definecolor{primarycolor}{HTML}{1a1a2e}
-\definecolor{secondarycolor}{HTML}{2C3E50}
-\definecolor{graytext}{HTML}{555555}
-\definecolor{rulecolor}{HTML}{333333}
+%----- COLORS ------------------------------------------------------------------
+\definecolor{accent}{HTML}{0C2340}     % Notre Dame navy
+\definecolor{graytext}{HTML}{4D4D4D}
+\definecolor{rulecolor}{HTML}{A6A6A6}
 
 \hypersetup{
-    colorlinks=true,
-    urlcolor=black,
-    linkcolor=black,
-    citecolor=black,
+  colorlinks=true,
+  urlcolor=accent,
+  linkcolor=accent,
+  citecolor=accent,
+  pdfauthor={Showkot Hossain},
+  pdftitle={Showkot Hossain - Curriculum Vitae},
 }
-
-%----- HEADER & FOOTER SETUP ---------------------------------------------------
-\pagestyle{fancy}
-\fancyhf{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-% Define footer content (dynamic name)
-\newcommand{\footerdate}[1]{\def\@footerdate{#1}}
-\fancyfoot[L]{\footnotesize\color{graytext} \@footerdate}
-\fancyfoot[C]{\footnotesize\color{graytext} \@cvname}
-\fancyfoot[R]{\footnotesize\color{graytext} Page \thepage\ of \pageref{LastPage}}
 
 %----- HEADER COMMANDS ---------------------------------------------------------
 \newcommand{\cvname}[1]{\def\@cvname{#1}}
@@ -82,96 +68,119 @@
 \newcommand{\cvlinkedin}[1]{\def\@cvlinkedin{#1}}
 \newcommand{\cvscholar}[1]{\def\@cvscholar{#1}}
 \newcommand{\cvresearchgate}[1]{\def\@cvresearchgate{#1}}
+\newcommand{\footerdate}[1]{\def\@footerdate{#1}}
+
+\newcommand{\cvsep}{\enspace{\color{rulecolor}\textbar}\enspace}
 
 \newcommand{\makecvheader}{%
   \begin{center}
-    {\LARGE\bfseries\scshape \@cvname}\\[6pt]
-    {\small\color{secondarycolor}
-    \faMapMarker~\@cvaddress \\[3pt]
-    \faPhone~\@cvphone \quad\textbar\quad
-    \href{mailto:\@cvemail}{\faEnvelope~\@cvemail} \quad\textbar\quad
-    \href{http://\@cvsite}{\faGlobe~\@cvsite} \quad\textbar\quad
-    \href{https://github.com/\@cvgithub}{\faGithub~\@cvgithub} \\[3pt]
-    \href{https://linkedin.com/in/\@cvlinkedin}{\faLinkedin~\@cvlinkedin} \quad\textbar\quad
-    \href{https://scholar.google.com/citations?user=\@cvscholar}{\faGraduationCap~Google Scholar} \quad\textbar\quad
-    \href{\@cvresearchgate}{\faFlask~ResearchGate}}
+    {\fontsize{24}{28}\selectfont\scshape\color{accent}\@cvname}\par
+    \vspace{3pt}
+    {\@cvposition}\par
+    \vspace{5pt}
+    {\small
+      \@cvaddress\cvsep\@cvphone\cvsep\href{mailto:\@cvemail}{\@cvemail}\par
+      \vspace{1pt}
+      \href{https://\@cvsite}{\@cvsite}\cvsep
+      \href{https://scholar.google.com/citations?user=\@cvscholar}{Google Scholar}\cvsep
+      \href{https://github.com/\@cvgithub}{GitHub}\cvsep
+      \href{https://www.linkedin.com/\@cvlinkedin}{LinkedIn}\cvsep
+      \href{\@cvresearchgate}{ResearchGate}\par}
   \end{center}
-  \vspace{2pt}
-  {\color{rulecolor}\hrule height 0.6pt}
-  \vspace{6pt}
+  \vspace{-4pt}
 }
+
+%----- FOOTER ------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize\color{graytext}\@cvname\ --- Curriculum Vitae}
+\fancyfoot[C]{\footnotesize\color{graytext}Updated \@footerdate}
+\fancyfoot[R]{\footnotesize\color{graytext}\thepage\ of \pageref*{LastPage}}
 
 %----- SECTION STYLING ---------------------------------------------------------
-\titlespacing*{\section}{0pt}{2ex}{1.5ex}
+% Small-caps heading followed by a hairline that runs to the right margin.
+\newcommand{\cv@sectiontitle}[1]{%
+  #1\hspace{0.6em}{\color{rulecolor}\leaders\hrule height 0.62ex depth -0.55ex\hfill}\kern0pt}
 \titleformat{\section}
-  {\large\bfseries\scshape\color{primarycolor}}
+  {\normalfont\large\bfseries\scshape\color{accent}}
   {}
   {0em}
-  {}
-  [\vspace{-2pt}{\color{rulecolor}\titlerule[0.4pt]}\vspace{-4pt}]
+  {\cv@sectiontitle}
+\titlespacing*{\section}{0pt}{1.6ex plus 0.3ex minus 0.2ex}{0.6ex}
 
+% Never strand a heading at the bottom of a page.
+\let\cv@origsection\section
+\renewcommand{\section}{\Needspace{5\baselineskip}\cv@origsection}
 
-%----- CV ENTRY ENVIRONMENT ----------------------------------------------------
-\newenvironment{cventries}{
-  \begin{list}{}{\setlength{\leftmargin}{0em}\setlength{\itemsep}{4pt}}
-}{
-  \end{list}
-}
+% A run-in italic label for grouping inside a section (e.g. journal papers).
+\newcommand{\cvsubsection}[1]{%
+  \Needspace{4\baselineskip}%
+  \vspace{0.6ex}{\itshape\color{accent}#1}\par\vspace{0.3ex}}
 
+%----- TWO-COLUMN LIST ---------------------------------------------------------
+% Every section is a list whose item labels (dates, [C1], categories) sit in a
+% fixed left column. Labels may break onto a second line.
+\newlength{\cvleftwidth}
+\setlength{\cvleftwidth}{0.95in}
+\newlength{\cvgutter}
+\setlength{\cvgutter}{0.15in}
+
+% \leavevmode before \color: a color special at the very top of the parbox
+% would otherwise become its first line and break [t] baseline alignment.
+% Zero depth lets a two-line date hang beside the entry instead of pushing
+% the entry's second line down.
+\newcommand{\cv@label}[1]{%
+  \raisebox{0pt}[\height][0pt]{%
+    \parbox[t]{\labelwidth}{\raggedright\small\leavevmode\color{graytext}#1}}}
+
+\newenvironment{cvlist}{%
+  \begin{list}{}{%
+    \setlength{\leftmargin}{\cvleftwidth}%
+    \setlength{\labelsep}{\cvgutter}%
+    \setlength{\labelwidth}{\cvleftwidth}%
+    \addtolength{\labelwidth}{-\cvgutter}%
+    \setlength{\itemindent}{0pt}%
+    \setlength{\topsep}{0.2ex}%
+    \setlength{\partopsep}{0pt}%
+    \setlength{\itemsep}{0.5ex}%
+    \setlength{\parsep}{0pt}%
+    \renewcommand{\makelabel}[1]{\cv@label{##1}\hfil}}%
+  \raggedright
+}{\end{list}}
+
+% \cvitem{left label}{body}
+\newcommand{\cvitem}[2]{\item[{#1}]#2}
+
+% \cventry{dates}{role}{organization}{location}: role and location on the
+% first line, organization in italics beneath. Follow with \cvdetail or
+% cvbullets as needed.
 \newcommand{\cventry}[4]{%
-  \item
-    \begin{tabular*}{\textwidth}{@{}p{0.7\textwidth} @{\extracolsep{\fill}} r@{}}
-      \textbf{#1} & {\small\color{graytext} #4} \\
-      \textit{\color{secondarycolor} #2} & \textit{\small\color{graytext} #3} \\
-    \end{tabular*}
-    \vspace{-6pt}
-}
+  \Needspace{4\baselineskip}%
+  \item[{#1}]\textbf{#2}\hfill{\small\itshape\color{graytext}#4}\par
+  \textit{#3}\par}
 
-%----- PUBLICATION ENVIRONMENT -------------------------------------------------
-% Uses etaremune for reverse-numbered list
-\newenvironment{cvpublications}{
-  \begin{etaremune}[leftmargin=2.5em, itemsep=4pt, topsep=2pt]
-}{
-  \end{etaremune}
-}
-\newcommand{\cvpublication}[4]{%
-  \item
-    #1. \textbf{#2}. \textit{#3}, #4.
-}
+% A plain extra line under an entry (advisor, GPA, ...).
+\newcommand{\cvdetail}[1]{{#1}\par}
 
-%----- PROJECTS ENVIRONMENT ----------------------------------------------------
-\newenvironment{cvprojects}{
-  \begin{list}{}{\setlength{\leftmargin}{0em}\setlength{\itemsep}{2pt}}
-}{
-  \end{list}
-}
-\newcommand{\cvproject}[2]{%
-  \item
-    \begin{tabular*}{\textwidth}{@{}p{0.9\textwidth} @{\extracolsep{\fill}} r@{}}
-      \textbf{#1} & \href{#2}{\faGithub} \\
-    \end{tabular*}
-    \vspace{-8pt}
-}
+\newenvironment{cvbullets}{%
+  \begin{itemize}[leftmargin=1.1em, label={\small\textbullet}, itemsep=0.2ex, topsep=0.2ex, parsep=0pt, partopsep=0pt]%
+}{\end{itemize}}
 
-%----- SKILLS ENVIRONMENT ------------------------------------------------------
-\newenvironment{cvskills}{
-  \vspace{-2pt}
-  \begin{tabular*}{\textwidth}{@{}p{0.2\textwidth} p{0.75\textwidth}@{}}
-}{
-  \end{tabular*}
-}
-\newcommand{\cvskill}[2]{%
-  \textbf{\color{secondarycolor}#1} & #2 \\[4pt]
-}
+%----- PUBLICATIONS ------------------------------------------------------------
+% \cvpub{label}{title}{authors}{venue}: title, authors, venue on three lines.
+\newcommand{\cvpub}[4]{%
+  \Needspace{3\baselineskip}%
+  \item[{#1}]\textbf{#2}\par
+  #3\par
+  \textit{#4}\par}
 
-
-%----- DESCRIPTION ITEMS -------------------------------------------------------
-\newenvironment{cvitems}{
-  \begin{list}{\textbullet}{\setlength{\leftmargin}{1.5em} \setlength{\itemsep}{-2pt} \setlength{\topsep}{0pt} \setlength{\partopsep}{0pt}}
-    \vspace{-4pt}
-}{
-  \end{list}
-}
+%----- REFERENCES --------------------------------------------------------------
+\newenvironment{cvreferences}{%
+  \vspace{0.4ex}%
+  \tabularx{\textwidth}{@{}X X@{}}%
+}{\endtabularx}
 
 \endinput
 %----- END OF CLASS FILE -------------------------------------------------------
