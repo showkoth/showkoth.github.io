@@ -1,0 +1,297 @@
+---
+# Local override of al_folio_core's assets/css/main.scss: the @use block below
+# is the gem's file verbatim; site styles follow it. Tracked in
+# .al-folio-overrides.yml so a gem bump that changes the upstream file is
+# flagged by `bundle exec al-folio upgrade overrides audit`.
+---
+
+@charset "utf-8";
+
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  $max-content-width: {{site.max_width | default: "930px"}}
+);
+
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+/*******************************************************************************
+ * Site styles — a quiet, document-like academic look.
+ *
+ * Kept here rather than injected from site-tweaks.js so they arrive with the
+ * page's first paint instead of flashing in after the theme's styles.
+ ******************************************************************************/
+
+// System serif stack: Charter on macOS/iOS, Sitka/Cambria on Windows. No web
+// font request, so there is no flash of a fallback face while one loads.
+$site-serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, "Iowan Old Style", Georgia, serif;
+
+// 16px reads small at desktop widths; the theme sizes everything in rem, so
+// raising the root scales the whole type scale proportionally.
+html {
+  font-size: 17px;
+}
+
+// Light mode only: near-black text and a Notre Dame blue accent in place of
+// the theme's purple. Dark mode keeps the theme's own palette.
+html:not([data-theme="dark"]) {
+  --global-text-color: #1a1a1a;
+  --global-text-color-light: #5c5c5c;
+  --global-theme-color: #1c4f8f;
+  --global-hover-color: #0c2340;
+  --global-code-bg-color: rgba(12, 35, 64, 0.05);
+}
+
+body {
+  font-family: $site-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar,
+.btn,
+input,
+button {
+  font-family: $site-serif;
+}
+
+// Theme utility classes ask for weights a serif doesn't ship (100–300).
+.font-weight-lighter,
+.font-weight-light {
+  font-weight: 400 !important;
+}
+
+// --- Page chrome ------------------------------------------------------------
+
+.navbar .nav-link {
+  font-size: 0.95rem;
+}
+
+.post-header .post-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+// Site headings are sentence case. Repo-owned text is already edited; this
+// catches theme-rendered lowercase headings (the about page's news block).
+article h2::first-letter {
+  text-transform: uppercase;
+}
+
+// Section headings: modest semibold, trailing off into a thin rule.
+// Inline-block + negative margin rather than flex: making the h2 a flex
+// container would stop ::first-letter (above) from applying.
+article h2:not(.bibliography) {
+  font-size: 1.45rem;
+  font-weight: 600;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    margin-right: -100%;
+    margin-left: 0.75rem;
+    border-top: 1px solid var(--global-divider-color);
+    vertical-align: middle;
+  }
+}
+
+// --- About page -------------------------------------------------------------
+
+// Match the profile photo's rounding to the callout box.
+.profile img {
+  border-radius: 8px;
+}
+
+// The theme sets the address block in monospace; read it as text instead.
+.profile .more-info {
+  font-family: $site-serif;
+  font-size: 0.95rem;
+  color: var(--global-text-color-light);
+
+  p {
+    margin-bottom: 0.15rem;
+  }
+}
+
+// The theme renders social icons at 4rem; at that size nine icons outweigh
+// the page.
+.social .contact-icons {
+  font-size: 1.75rem;
+}
+
+// The news table hardcodes an inline 20% date column, stranding the date far
+// from its text; !important is the only way past an inline style.
+.news th[scope="row"] {
+  width: 6.5rem !important;
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--global-text-color-light);
+}
+
+// The "show older news" toggle (added by site-tweaks.js) as a text link.
+.more-news .btn {
+  border: 0;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  font-size: 0.95rem;
+  color: var(--global-theme-color);
+
+  &:hover,
+  &:focus {
+    background: none;
+    color: var(--global-hover-color);
+    text-decoration: underline;
+  }
+}
+
+// --- Publications -----------------------------------------------------------
+
+// Year headers: a plain left-aligned label over a hairline, not a watermark.
+.publications h2.bibliography {
+  color: var(--global-text-color);
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-align: left;
+  border-top: 0;
+  border-bottom: 1px solid var(--global-divider-color);
+  padding: 0 0 0.3rem;
+  margin: 2rem 0 1rem;
+}
+
+.publications ol.bibliography li {
+  margin-bottom: 1.4rem;
+
+  // Narrow venue column; the entry takes the rest of the row instead of the
+  // theme's fixed two-thirds. Phones keep the theme's stacked layout.
+  @media (min-width: 576px) {
+    .row > .abbr {
+      flex: 0 0 6.5rem;
+      max-width: 6.5rem;
+    }
+
+    // min-width: 0 because the hidden BibTeX <pre> inside the entry has
+    // unbreakable lines that otherwise force it onto its own row.
+    .row > div:not(.abbr):not(.preview) {
+      flex: 1 1 0;
+      max-width: none;
+      min-width: 0;
+    }
+  }
+
+  // Venue as quiet text in the left column, not a colored pill. venues.yml
+  // colors arrive as an inline style, hence !important.
+  .abbr {
+    margin-bottom: 0.2rem;
+
+    abbr.badge {
+      background-color: transparent !important;
+      color: var(--global-theme-color) !important;
+      font-family: $site-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      text-align: left;
+      padding: 0.1rem 0 0;
+      width: auto !important;
+
+      // Venues without a url render their label in a <div>, which the theme
+      // colors separately from the <abbr>.
+      a,
+      div {
+        color: inherit !important;
+      }
+    }
+  }
+
+  .title {
+    font-weight: 600;
+    line-height: 1.35;
+    margin-bottom: 0.15rem;
+  }
+
+  .author {
+    line-height: 1.45;
+
+    > em {
+      font-weight: 700;
+      border-bottom: 0;
+    }
+  }
+
+  .periodical {
+    color: var(--global-text-color-light);
+    line-height: 1.45;
+  }
+
+  // Expanded abstracts: a thin left rule, like a quoted passage, instead of
+  // a dashed box; ragged-right avoids the rivers of justified text.
+  div.abstract.hidden {
+    border: 0;
+    border-left: 2px solid transparent;
+    text-align: left;
+  }
+
+  div.abstract.hidden.open {
+    border-left-color: var(--global-divider-color);
+  }
+
+  // Links as bracketed text — [abs] [bib] [pdf] — instead of outlined buttons.
+  .links {
+    margin-top: 0.2rem;
+
+    a.btn {
+      border: 0;
+      padding: 0;
+      margin: 0 0.7rem 0 0;
+      background: none;
+      box-shadow: none;
+      font-size: 0.9rem;
+      text-transform: lowercase;
+      color: var(--global-theme-color);
+
+      &::before {
+        content: "[";
+      }
+
+      &::after {
+        content: "]";
+      }
+
+      &:hover {
+        color: var(--global-hover-color);
+        text-decoration: underline;
+      }
+    }
+  }
+}

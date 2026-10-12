@@ -10,9 +10,10 @@
  *   2. Footer "Last updated" drops the day: "July 29, 2026" -> "July 2026".
  *   3. On pages that opt in via `data-news-collapse`, news entries past the
  *      third are hidden behind a "show older news" button.
- *   4. Light mode swaps the theme's purple accent for the palette's deep blue.
- *   5. Root font-size is raised 16px -> 17px; the theme sizes everything in
- *      rem, so the whole type scale grows proportionally on every page.
+ *   4. First-time visitors default to the light theme.
+ *
+ * Visual styling lives in assets/css/main.scss, not here, so it applies on
+ * first paint.
  */
 (function () {
   "use strict";
@@ -42,78 +43,6 @@
   }
 
   defaultToLightTheme();
-
-  // The light theme hardcodes purple in the theme gem's _sass/_themes.scss,
-  // which the starter contract forbids shadowing, so re-declare the variables
-  // here. #00369f is the theme's own $blue-color-dark. Dark mode is untouched.
-  function quietLightAccent() {
-    const style = document.createElement("style");
-    style.textContent = [
-      'html:not([data-theme="dark"]) {',
-      "  --global-theme-color: #00369f;",
-      "  --global-hover-color: #00369f;",
-      "  --global-code-bg-color: rgba(0, 54, 159, 0.05);",
-      "}",
-      // 16px reads small at desktop widths; the theme's own Sass can't be
-      // shadowed here (see the style contract), so scale the root instead.
-      "html {",
-      "  font-size: 17px;",
-      "}",
-      // Site headings are sentence case. Repo-owned text is already edited;
-      // this catches theme-rendered lowercase headings (the about page's
-      // announcements block renders a hardcoded "news").
-      "article h2::first-letter {",
-      "  text-transform: uppercase;",
-      "}",
-      // Section headings trail off into a thin rule. Inline-block + negative
-      // margin rather than flex: making the h2 a flex container would stop
-      // ::first-letter (above) from applying. Publications year headers are
-      // excluded — a rule under the watermark years would look wrong.
-      "article h2:not(.bibliography) {",
-      "  overflow: hidden;",
-      "}",
-      "article h2:not(.bibliography)::after {",
-      "  content: '';",
-      "  display: inline-block;",
-      "  width: 100%;",
-      "  margin-right: -100%;",
-      "  margin-left: 0.75rem;",
-      "  border-top: 2px solid var(--global-divider-color);",
-      "  vertical-align: middle;",
-      "}",
-      // The theme renders social icons at 4rem; at that size nine icons
-      // outweigh the page. Whisper, don't shout.
-      ".social .contact-icons {",
-      "  font-size: 2rem;",
-      "}",
-      // The news table hardcodes an inline 20% date column, stranding the
-      // date far from its text; !important is the only way past an inline
-      // style. 6.5rem fits 'Jan 2026' with room.
-      ".news th[scope='row'] {",
-      "  width: 6.5rem !important;",
-      "  white-space: nowrap;",
-      "}",
-      // Match the profile photo's rounding to the callout box.
-      ".profile img {",
-      "  border-radius: 8px;",
-      "}",
-      // Bibliography: the venue-badge column is a 16.7% Bootstrap col for a
-      // small pill, and the watermark year headers pad a tall empty band;
-      // tighten both so the list reads as one body of work.
-      "ol.bibliography .abbr {",
-      "  flex: 0 0 7.5rem;",
-      "  max-width: 7.5rem;",
-      "}",
-      "h2.bibliography {",
-      "  font-size: 1.75rem;",
-      "  margin-top: 1rem;",
-      "  padding-top: 0;",
-      "}",
-    ].join("\n");
-    document.head.appendChild(style);
-  }
-
-  quietLightAccent();
 
   function trimNewsDates() {
     document.querySelectorAll(".news th[scope='row']").forEach(function (cell) {

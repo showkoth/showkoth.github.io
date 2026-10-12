@@ -13,10 +13,6 @@ I build systems that let mutually distrusting parties store, share, and compute 
 
 **Profiles:** [Google Scholar](https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}) · [Semantic Scholar](https://www.semanticscholar.org/author/{{ site.data.socials.semanticscholar_id }}) · [DBLP]({{ site.data.socials.dblp_url }}) · [OpenReview]({{ site.data.socials.custom_social.url }}) · [ORCID](https://orcid.org/{{ site.data.socials.orcid_id }})
 
-<!-- Bibsearch Feature -->
-
-{% include bib_search.liquid %}
-
 <div class="publications">
 
 {% bibliography %}
