@@ -155,13 +155,16 @@
 % \cvitem{left label}{body}
 \newcommand{\cvitem}[2]{\item[{#1}]#2}
 
-% \cventry{dates}{role}{organization}{location}: role and location on the
-% first line, organization in italics beneath. Follow with \cvdetail or
-% cvbullets as needed.
+% \cventry{dates}{role}{organization}{location}: role, organization, and
+% location on one line. Follow with \cvdetail or cvbullets as needed. The
+% location never splits: when the line is full it moves, whole and still
+% right-aligned, to the next line (the TeXbook's trick for a right-aligned
+% final item).
 \newcommand{\cventry}[4]{%
-  \Needspace{4\baselineskip}%
-  \item[{#1}]\textbf{#2}\hfill{\small\itshape\color{graytext}#4}\par
-  \textit{#3}\par}
+  \Needspace{3\baselineskip}%
+  \item[{#1}]\textbf{#2}, \textit{#3}\unskip
+  \nobreak\hfil\penalty50\hskip1em\hbox{}\nobreak\hfill
+  \mbox{\small\itshape\color{graytext}#4}{\parfillskip=0pt\par}}
 
 % A plain extra line under an entry (advisor, GPA, ...).
 \newcommand{\cvdetail}[1]{{#1}\par}
@@ -171,13 +174,12 @@
 }{\end{itemize}}
 
 %----- PUBLICATIONS ------------------------------------------------------------
-% \cvpub[short venue]{label}{title}{authors}{venue}: title, authors, venue on
-% three lines. The short venue is only used by the resume's compact list.
+% \cvpub[short venue]{label}{title}{authors}{venue}: title, authors, and venue
+% run on as one paragraph. The short venue is only used by the resume's
+% compact list.
 \newcommand{\cvpub}[5][]{%
   \Needspace{3\baselineskip}%
-  \item[{#2}]\textbf{#3}\par
-  #4\par
-  \textit{#5}\par}
+  \item[{#2}]\textbf{#3.} #4. \textit{#5}.\par}
 
 % Resume variant: one entry per paper, "[C3] Title. Short venue." Use inside
 % a group so the CV's definitions are untouched.
