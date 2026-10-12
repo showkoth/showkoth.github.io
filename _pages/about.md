@@ -35,7 +35,7 @@ Previously I received my BSc in Computer Science and Engineering from the [Unive
 <!-- My undergraduate thesis on secure log management was advised by [Dr. Mosarrat Jahan](https://www.du.ac.bd/faculty/faculty_details/CSE/1777) and [Dr. Upama Kabir](https://du.ac.bd/index.php/faculty/faculty_details/CSE/1765). -->
 
 <div class="internship-callout" style="clear: right; border-left: 4px solid var(--global-theme-color); padding: 0.75rem 1rem; margin: 1.5rem 0; background: var(--global-code-bg-color); border-radius: 4px;">
-  <strong>🔍 Seeking Summer 2027 internships</strong> in research or software engineering — systems, security, or confidential computing. If you have anything to discuss with me, feel free to email me or <a href="https://calendly.com/shossain-nd">schedule a chat</a>.
+  <strong>🔍 Seeking Summer 2027 internships</strong> in research or software engineering, focused on systems, security, or confidential computing. If you have anything to discuss with me, feel free to email me or <a href="https://calendly.com/shossain-nd">schedule a chat</a>.
 </div>
 
 <div data-news-collapse="3" hidden></div>

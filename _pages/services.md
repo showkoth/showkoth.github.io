@@ -113,7 +113,7 @@ title/description header is a theme file and cannot be overridden here
     <li>
       <div class="entry-head d-flex flex-wrap justify-content-between align-items-baseline">
         <span>
-          <strong>{{ item.position }}</strong>{% if item.company != "" %} — {{ item.company }}{% endif %}
+          <strong>{{ item.position }}</strong>{% if item.company != "" %}, {{ item.company }}{% endif %}
         </span>
         <em>{% assign start_year = item.start_date | date: '%Y' %}{% assign end_year = item.end_date | date: '%Y' %}{{ start_year }}{% unless end_year == start_year %}–{{ end_year }}{% endunless %}</em>
       </div>

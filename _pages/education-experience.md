@@ -65,7 +65,7 @@ Each experience entry's `blurb` is the one-line web version; the fuller
     <li>
       <div class="entry-head d-flex flex-wrap justify-content-between align-items-baseline">
         <span>
-          <strong>{{ item.studyType }} in {{ item.area }}</strong> —
+          <strong>{{ item.studyType }} in {{ item.area }}</strong>,
           {% if item.url %}<a href="{{ item.url }}">{{ item.institution }}</a>{% else %}{{ item.institution }}{% endif %}
         </span>
         <em>
@@ -87,7 +87,7 @@ Each experience entry's `blurb` is the one-line web version; the fuller
     <li>
       <div class="entry-head d-flex flex-wrap justify-content-between align-items-baseline">
         <span>
-          <strong>{{ item.position }}</strong> —
+          <strong>{{ item.position }}</strong>,
           {% if item.url %}<a href="{{ item.url }}">{{ item.company }}</a>{% else %}{{ item.company }}{% endif %}
         </span>
         <em>
@@ -115,7 +115,7 @@ Each experience entry's `blurb` is the one-line web version; the fuller
     <li>
       <div class="entry-head d-flex flex-wrap justify-content-between align-items-baseline">
         <span>
-          <strong>{{ item.position }}</strong> —
+          <strong>{{ item.position }}</strong>,
           {% if item.url %}<a href="{{ item.url }}">{{ item.company }}</a>{% else %}{{ item.company }}{% endif %}
         </span>
         <em>
@@ -145,7 +145,7 @@ Each experience entry's `blurb` is the one-line web version; the fuller
     <li>
       <div class="entry-head d-flex flex-wrap justify-content-between align-items-baseline">
         <span>
-          <strong>{{ item.position }}</strong> —
+          <strong>{{ item.position }}</strong>,
           {% if item.url %}<a href="{{ item.url }}">{{ item.company }}</a>{% else %}{{ item.company }}{% endif %}
         </span>
         <em>
