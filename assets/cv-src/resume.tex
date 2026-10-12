@@ -1,0 +1,135 @@
+% !TEX program = xelatex
+%
+% One-page industry resume. Shares the class, contact details (profile.tex),
+% and publication list (publications.tex) with the academic CV in main.tex.
+%
+\documentclass{academic-cv}
+
+\input{profile}
+
+% A resume is one page: tighter margins and no page footer.
+\newgeometry{left=0.6in, right=0.6in, top=0.45in, bottom=0.45in}
+\pagestyle{empty}
+\titlespacing*{\section}{0pt}{1.1ex plus 0.3ex minus 0.2ex}{0.4ex}
+\raggedright
+
+\makeatletter
+% Compact two-line header: name, then every contact detail on one line.
+\renewcommand{\makecvheader}{%
+  \begin{center}
+    {\fontsize{20}{24}\selectfont\scshape\color{accent}\@cvname}\par
+    \vspace{3pt}
+    {\small
+      Ph.D. Student, University of Notre Dame\cvsep Notre Dame, IN\cvsep\mbox{\@cvphone}\cvsep\href{mailto:\@cvemail}{\@cvemail}\par
+      \vspace{1pt}
+      \href{https://\@cvsite}{\@cvsite}\cvsep
+      \href{https://github.com/\@cvgithub}{GitHub}\cvsep
+      \href{https://www.linkedin.com/\@cvlinkedin}{LinkedIn}\cvsep
+      \href{https://scholar.google.com/citations?user=\@cvscholar}{Scholar}\par}
+  \end{center}
+  \vspace{-8pt}}
+% One line per degree: degree, school, dates.
+\newcommand{\resdegree}[3]{\textbf{#1}, \textit{#2}\hfill{\small\color{graytext}#3}\par}
+\makeatother
+
+\begin{document}
+
+\makecvheader
+
+%-------------------------------------------------------------------------------
+%                               EDUCATION
+%-------------------------------------------------------------------------------
+\section{Education}
+\resdegree{Ph.D. in Computer Science}{University of Notre Dame, IN, USA}{Aug 2024 -- Present}
+{\small Advisor: Dr.\ Taeho Jung\enspace\textperiodcentered\enspace GPA: 3.91/4.0\enspace\textperiodcentered\enspace Security and privacy, distributed systems, confidential computing}\par
+\resdegree{B.Sc. in Computer Science and Engineering}{University of Dhaka, Bangladesh}{Jan 2016 -- Jan 2020}
+
+%-------------------------------------------------------------------------------
+%                               EXPERIENCE
+%-------------------------------------------------------------------------------
+\section{Experience}
+\resentry
+    {Graduate Research Assistant}
+    {Data Security and Privacy Lab, University of Notre Dame}
+    {Notre Dame, IN, USA}
+    {Aug 2024 -- Present}
+\begin{resbullets}
+    \item Designed and built MtDB, a decentralized multi-tenant database combining blockchain, IPFS, a SQL query interface, and Intel SGX to enforce access policies; 35\,ms indexed-query latency over 400M records at 1.2--1.3$\times$ the cost of a non-secure baseline (first author, IEEE Blockchain 2025).
+    \item Develop \href{https://www.web3db.org/}{Web3DB}, a decentralized data-sharing platform, and its file system \href{https://fs.web3db.org/}{Web3FS} with a team.
+    \item Co-authored 6 papers in the Ph.D., including NeurIPS 2026 (22.9\% acceptance); mentored 8 undergraduates.
+\end{resbullets}
+
+\resentry
+    {Software Engineer, Level 3}
+    {Itransition Software Bangladesh Limited}
+    {Dhaka, Bangladesh}
+    {Nov 2023 -- Jul 2024}
+\begin{resbullets}
+    \item Built high-performance APIs with global clients for Product Madness, a mobile game studio with 5M+ monthly active users.
+    \item Led a team of 5 developers building features with Spring Boot (Java), React, and PostgreSQL in an Agile process.
+\end{resbullets}
+
+\resentry
+    {Software Engineer, Level 2}
+    {Kona Software Lab Limited}
+    {Dhaka, Bangladesh}
+    {Mar 2023 -- Nov 2023}
+\begin{resbullets}
+    \item Implemented authentication and authorization for microservices serving 13M+ KonaCard users.
+    \item Redesigned the database architecture and wrote the migration, reducing query latency by 25\%.
+\end{resbullets}
+
+\resentry
+    {Software Engineer, Level 1}
+    {Dohatec New Media}
+    {Dhaka, Bangladesh}
+    {Oct 2020 -- Mar 2023}
+\begin{resbullets}
+    \item Developed the microservices backend for ePMIS, the Government of Bangladesh's national project-management system.
+    \item Built RESTful APIs with Spring (Java), AngularJS, and SQL Server in cross-functional Agile teams.
+\end{resbullets}
+
+\resentry
+    {Research Assistant}
+    {Cyber Security Lab, University of Dhaka}
+    {Dhaka, Bangladesh}
+    {Jan 2020 -- Dec 2020}
+\begin{resbullets}
+    \item Built secure provenance tracking with PKI and blockchain; co-developed a blockchain log-management system with IPFS off-chain storage that cut storage by nearly 93\% (J.\ Computer Science 2022).
+\end{resbullets}
+
+\resentry
+    {Blockchain Developer (Intern)}
+    {Technohaven Company Limited}
+    {Dhaka, Bangladesh}
+    {Jun 2020 -- Aug 2020}
+\begin{resbullets}
+    \item Built a prototype supply-chain traceability system on Hyperledger Fabric.
+\end{resbullets}
+
+%-------------------------------------------------------------------------------
+%                               PUBLICATIONS
+%-------------------------------------------------------------------------------
+\section{Publications}
+\begingroup
+\usecompactpublications
+\input{publications}
+\endgroup
+
+%-------------------------------------------------------------------------------
+%                                 SKILLS
+%-------------------------------------------------------------------------------
+\section{Skills}
+\resline{Languages}{Python, Java, C/C++, JavaScript, Solidity}
+\resline{Backend}{Spring Boot, Node.js, FastAPI, React, Hibernate, RabbitMQ, Kafka, ELK Stack, REST microservices}
+\resline{Data \& ML}{PostgreSQL, SQL Server, MongoDB, Redis, PyTorch, TensorFlow, Pandas, NumPy}
+\resline{Security \& Infra}{Intel SGX, smart contracts, Hyperledger Fabric, IPFS, Docker, Jenkins, Git}
+
+%-------------------------------------------------------------------------------
+%                           HONORS & SERVICE
+%-------------------------------------------------------------------------------
+\section{Honors \& Service}
+\resline{Honors}{Award of Merit, International Blockchain Olympiad (2020); \$5,000 ICT Innovation Fund (2020); travel grants (2024, 2025)}
+\resline{Reviewer}{IEEE TDSC, IEEE Network, ACM DLT, IEEE ICBC, IEEE Blockchain}
+
+\end{document}

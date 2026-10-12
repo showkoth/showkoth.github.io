@@ -23,13 +23,14 @@ Deployment is automatic: pushing to `main` triggers the `deploy.yml` workflow, w
 
 ## Content map
 
-| What              | Where                                           |
-| ----------------- | ----------------------------------------------- |
-| About page        | `_pages/about.md`                               |
-| Publications      | `_bibliography/papers.bib` + `_data/*.yml`      |
-| News items        | `_news/`                                        |
-| CV (rendered PDF) | `assets/cv-src/` → `assets/pdf/academic-cv.pdf` |
-| Site config       | `_config.yml`                                   |
+| What              | Where                                                                                 |
+| ----------------- | ------------------------------------------------------------------------------------- |
+| About page        | `_pages/about.md`                                                                     |
+| Publications      | `_bibliography/papers.bib` + `_data/*.yml`                                            |
+| News items        | `_news/`                                                                              |
+| CV (rendered PDF) | `assets/cv-src/` → `assets/pdf/academic-cv.pdf`                                       |
+| Résumé (one page) | `assets/cv-src/resume.tex` → "resume" artifact of the Build CV PDF run (not deployed) |
+| Site config       | `_config.yml`                                                                         |
 
 For maintenance rules, tests, and the starter/gem boundary, see [AGENTS.md](AGENTS.md) and [docs/](docs/README.md).
 
