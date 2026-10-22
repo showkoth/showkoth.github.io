@@ -221,6 +221,11 @@ cv:
       # category: grant entries render under "Grants & fellowships" on the
       # achievements page; the rest render under "Honors & awards".
       # date_label carries ranges the single `date` field can't express.
+      - title: Best Paper Award
+        date: 2026-10-22
+        awarder: IEEE HealthCom
+        summary: "For the paper Web3IoT: A Decentralized Database Engine for Secure and Scalable IoT Data Management."
+
       - title: Travel Grant
         awarder: University of Notre Dame
         date_label: "2025"
